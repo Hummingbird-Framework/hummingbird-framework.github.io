@@ -42,6 +42,9 @@ var hierarchy =
     [ "hb::Resource< sf::SoundBuffer, std::string, SoundManager >", "classhb_1_1Resource.html", [
       [ "hb::SoundBuffer", "classhb_1_1SoundBuffer.html", null ]
     ] ],
+    [ "hb::Resource< sf::Texture, detail::tex_id, TextureManager >", "classhb_1_1Resource.html", [
+      [ "hb::Texture", "classhb_1_1Texture.html", null ]
+    ] ],
     [ "hb::ResourceManager< ManagerType, Resource, ResourceId, Hash >", "classhb_1_1ResourceManager.html", null ],
     [ "hb::ResourceManager< SoundManager, sf::SoundBuffer, std::string >", "classhb_1_1ResourceManager.html", [
       [ "hb::SoundManager", "classhb_1_1SoundManager.html", null ]
@@ -52,6 +55,7 @@ var hierarchy =
     [ "hb::Game::Scene", "classhb_1_1Game_1_1Scene.html", [
       [ "hb::TmxScene", "classhb_1_1TmxScene.html", null ]
     ] ],
+    [ "hb::Sprite", "classhb_1_1Sprite.html", null ],
     [ "hb::Time", "classhb_1_1Time.html", null ],
     [ "hb::TmxObjectTypeFactory", "classhb_1_1TmxObjectTypeFactory.html", null ],
     [ "hb::detail::traits< T >", "structhb_1_1detail_1_1traits.html", null ],

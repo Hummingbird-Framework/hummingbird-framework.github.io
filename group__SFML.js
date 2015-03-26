@@ -101,6 +101,30 @@ var group__SFML =
     [ "SoundManager", "classhb_1_1SoundManager.html", [
       [ "SoundManager", "classhb_1_1SoundManager.html#a35f9c3c6de9953ad11e9c38efb4dd3c4", null ]
     ] ],
+    [ "Sprite", "classhb_1_1Sprite.html", [
+      [ "Sprite", "classhb_1_1Sprite.html#a7df6f7b9d35830becf52a01dc487b795", null ],
+      [ "Sprite", "classhb_1_1Sprite.html#adc67c3afe2928b1e737f9d6a6017ffdd", null ],
+      [ "~Sprite", "classhb_1_1Sprite.html#aadf2bef0612a528283d2ba69e2f54a33", null ],
+      [ "getCenter", "classhb_1_1Sprite.html#a0ab20fa85e276640581c0a4329e2a486", null ],
+      [ "getFrameMargin", "classhb_1_1Sprite.html#aa21c857f5d132e59909b2ee9314aadfe", null ],
+      [ "getFrameSize", "classhb_1_1Sprite.html#a57aa133c3397b89a22fc49bffa566c14", null ],
+      [ "getTexture", "classhb_1_1Sprite.html#a8d948efa92c7f38e7f5c7bd09921c5b5", null ],
+      [ "getTexture", "classhb_1_1Sprite.html#ad3402c97b15a552dd787216b5d8a2bac", null ],
+      [ "operator=", "classhb_1_1Sprite.html#a58526516e0c94b3129b14af1af797432", null ],
+      [ "setCenter", "classhb_1_1Sprite.html#a64f1f419b23344a9609c4ccd9823c401", null ],
+      [ "setFrameMargin", "classhb_1_1Sprite.html#a7a86ab6d7360951f191ef18a40668439", null ],
+      [ "setFrameSize", "classhb_1_1Sprite.html#a750d78e499a5064c6081f59287b27769", null ],
+      [ "SpriteComponent", "classhb_1_1Sprite.html#a04bd92deb850ef3bcf06dd2a0497b6af", null ]
+    ] ],
+    [ "Texture", "classhb_1_1Texture.html", [
+      [ "Texture", "classhb_1_1Texture.html#ac3ab3e15265d35704fdfe66729be4b77", null ],
+      [ "~Texture", "classhb_1_1Texture.html#aa2dd6c7c72d798ac688481da0e31db32", null ],
+      [ "fill", "classhb_1_1Texture.html#a001bf03af5f264d1f7c7b650c9cad1f6", null ],
+      [ "repeat", "classhb_1_1Texture.html#ad5908c54ac805c1b35d541e8ea4bdd5a", null ],
+      [ "size", "classhb_1_1Texture.html#a1aa5e732b7c40903d162be735b7732d1", null ],
+      [ "smooth", "classhb_1_1Texture.html#a8ce2bbf1be4be0960dc71a46fcaf6f73", null ],
+      [ "stroke", "classhb_1_1Texture.html#a6c1e49610d66c4d86e4b1ec8de84dc77", null ]
+    ] ],
     [ "TextureManager", "classhb_1_1TextureManager.html", [
       [ "TextureManager", "classhb_1_1TextureManager.html#aaf16dea06a913b024a18a585ebee7b04", null ],
       [ "getT404", "classhb_1_1TextureManager.html#acf3adcea5643318c586abf00474ca902", null ],

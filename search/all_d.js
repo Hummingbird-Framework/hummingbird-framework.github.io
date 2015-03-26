@@ -5,5 +5,6 @@ var searchData=
   ['soundbuffer',['SoundBuffer',['../classhb_1_1SoundBuffer.html',1,'hb']]],
   ['soundcomponent',['SoundComponent',['../classhb_1_1SoundComponent.html',1,'hb']]],
   ['soundmanager',['SoundManager',['../classhb_1_1SoundManager.html',1,'hb']]],
+  ['sprite',['Sprite',['../classhb_1_1Sprite.html',1,'hb']]],
   ['spritecomponent',['SpriteComponent',['../classhb_1_1SpriteComponent.html',1,'hb']]]
 ];

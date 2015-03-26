@@ -1,0 +1,9 @@
+<map id="hb::GameObject::Component" name="hb::GameObject::Component">
+<area shape="rect" id="node2" href="$classhb_1_1ClickableComponent.html" title="hb::ClickableComponent" alt="" coords="248,5,413,32"/>
+<area shape="rect" id="node3" href="$classhb_1_1CollisionComponent.html" title="hb::CollisionComponent" alt="" coords="250,56,411,83"/>
+<area shape="rect" id="node4" href="$classhb_1_1DataComponent.html" title="hb::DataComponent\&lt; T \&gt;" alt="" coords="245,107,416,133"/>
+<area shape="rect" id="node5" href="$classhb_1_1FunctionComponent.html" title="hb::FunctionComponent" alt="" coords="250,157,411,184"/>
+<area shape="rect" id="node6" href="$classhb_1_1ListenerComponent.html" title="hb::ListenerComponent" alt="" coords="252,208,409,235"/>
+<area shape="rect" id="node7" href="$classhb_1_1SoundComponent.html" title="hb::SoundComponent" alt="" coords="257,259,405,285"/>
+<area shape="rect" id="node8" href="$classhb_1_1SpriteComponent.html" title="hb::SpriteComponent" alt="" coords="258,309,403,336"/>
+</map>

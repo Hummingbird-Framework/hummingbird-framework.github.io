@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classhb_1_1detail_1_1EventManager.html" title="hb::detail::EventManager\l\&lt; Events \&gt;" alt="" coords="5,67,172,109"/>
+<area shape="rect" id="node2" href="$classhb_1_1EventManager.html" title="hb::EventManager\&lt; MouseButton\lWindow, MouseButtonWorld,\l KeyPressed, KeyReleased,\l JoyButtonPressed, JoyButtonReleased,\l JoyAxis, WindowResized \&gt;" alt="" coords="220,5,479,91"/>
+<area shape="rect" id="node4" href="$classhb_1_1EventManager.html" title="hb::EventManager\&lt; Events \&gt;" alt="" coords="253,115,446,141"/>
+<area shape="rect" id="node3" href="$classhb_1_1InputManager.html" title="hb::InputManager" alt="" coords="527,35,649,61"/>
+</map>

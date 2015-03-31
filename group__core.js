@@ -62,9 +62,11 @@ var group__core =
         [ "GameObject", "classhb_1_1GameObject_1_1Component.html#a00df87c957d8f7ee0fc51f07a0542f4a", null ]
       ] ],
       [ "GameObject", "classhb_1_1GameObject.html#a2df53b7a8326694c9d66cf8dd6bd71c4", null ],
+      [ "GameObject", "classhb_1_1GameObject.html#ad0c6be742616c0d6a63bd10c2b89b09b", null ],
       [ "GameObject", "classhb_1_1GameObject.html#ac4080921f78117f6af64977d2ec43607", null ],
       [ "~GameObject", "classhb_1_1GameObject.html#a0de3997452e176374d07bc47e12d2893", null ],
       [ "addComponent", "classhb_1_1GameObject.html#a88474e0c909caee858052fd10bc86b63", null ],
+      [ "addComponents", "classhb_1_1GameObject.html#af39027159d16cf2cfa94ed2da79eb14b", null ],
       [ "destroy", "classhb_1_1GameObject.html#a79e85dd8726a20b6f073439d5a0b46dc", null ],
       [ "getComponent", "classhb_1_1GameObject.html#a895bba8659d9e51e9f1da96c8d8cab54", null ],
       [ "getComponents", "classhb_1_1GameObject.html#a60ea059cac27ff01ba1f344a2c10675c", null ],

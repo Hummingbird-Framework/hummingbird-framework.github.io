@@ -20,7 +20,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classhb_1_1SoundManager.html"
+"classhb_1_1SoundComponent.html#a3a9f2e4c6aea907331db439837c26fcf"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,10 +1,16 @@
 var hierarchy =
 [
+    [ "b2ContactListener", null, [
+      [ "hb::PhysicsWorld", "classhb_1_1PhysicsWorld.html", null ]
+    ] ],
     [ "hb::Camera", "classhb_1_1Camera.html", null ],
     [ "hb::Clock", "classhb_1_1Clock.html", null ],
     [ "hb::CollisionComponent::Collision", "structhb_1_1CollisionComponent_1_1Collision.html", null ],
     [ "hb::Color", "structhb_1_1Color.html", null ],
     [ "hb::GameObject::Component", "classhb_1_1GameObject_1_1Component.html", [
+      [ "hb::DataComponent< b2Body * >", "classhb_1_1DataComponent.html", [
+        [ "hb::CollisionComponent", "classhb_1_1CollisionComponent.html", null ]
+      ] ],
       [ "hb::ClickableComponent", "classhb_1_1ClickableComponent.html", null ],
       [ "hb::CollisionComponent", "classhb_1_1CollisionComponent.html", null ],
       [ "hb::DataComponent< T >", "classhb_1_1DataComponent.html", null ],
@@ -62,6 +68,7 @@ var hierarchy =
     [ "hb::detail::traits< R(C::*)(const A &) const  >", "structhb_1_1detail_1_1traits_3_01R_07C_1_1_5_08_07const_01A_01_6_08_01const_01_01_4.html", null ],
     [ "hb::Transform", "classhb_1_1Transform.html", [
       [ "hb::ClickableComponent", "classhb_1_1ClickableComponent.html", null ],
+      [ "hb::CollisionComponent", "classhb_1_1CollisionComponent.html", null ],
       [ "hb::CollisionComponent", "classhb_1_1CollisionComponent.html", null ],
       [ "hb::GameObject", "classhb_1_1GameObject.html", null ],
       [ "hb::SoundComponent", "classhb_1_1SoundComponent.html", null ],

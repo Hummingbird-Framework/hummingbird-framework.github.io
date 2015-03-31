@@ -1,6 +1,6 @@
 var classhb_1_1Sprite =
 [
-    [ "Sprite", "classhb_1_1Sprite.html#a7df6f7b9d35830becf52a01dc487b795", null ],
+    [ "Sprite", "classhb_1_1Sprite.html#acaeb6fc79ef0c786d0f94d84e4d68e44", null ],
     [ "Sprite", "classhb_1_1Sprite.html#adc67c3afe2928b1e737f9d6a6017ffdd", null ],
     [ "~Sprite", "classhb_1_1Sprite.html#aadf2bef0612a528283d2ba69e2f54a33", null ],
     [ "getCenter", "classhb_1_1Sprite.html#a0ab20fa85e276640581c0a4329e2a486", null ],

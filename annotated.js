@@ -26,6 +26,7 @@ var annotated =
       [ "ListenerComponent", "classhb_1_1ListenerComponent.html", "classhb_1_1ListenerComponent" ],
       [ "MouseButtonWindow", "structhb_1_1MouseButtonWindow.html", "structhb_1_1MouseButtonWindow" ],
       [ "MouseButtonWorld", "structhb_1_1MouseButtonWorld.html", "structhb_1_1MouseButtonWorld" ],
+      [ "PhysicsWorld", "classhb_1_1PhysicsWorld.html", "classhb_1_1PhysicsWorld" ],
       [ "Plugin", "classhb_1_1Plugin.html", "classhb_1_1Plugin" ],
       [ "Rect", "classhb_1_1Rect.html", "classhb_1_1Rect" ],
       [ "Renderer", "classhb_1_1Renderer.html", "classhb_1_1Renderer" ],

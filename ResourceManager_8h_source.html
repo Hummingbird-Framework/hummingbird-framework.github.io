@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('ResourceManager_8h_source.html','');})
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef HB_RESOURCE_MANAGER_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define HB_RESOURCE_MANAGER_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Log.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehb.html">hb</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('ResourceManager_8h_source.html','');})
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                ti.data = resource;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                m_info_table.insert(std::pair&lt;int, ResourceInfo&gt;(ret, ti));</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            assert(m_id_table.size() == m_info_table.size());</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            hb_assert(m_id_table.size() == m_info_table.size(), <span class="stringliteral">&quot;Resource management broke bad&quot;</span>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// Release a Resource resource with identifier id</span></div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('ResourceManager_8h_source.html','');})
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                m_id_table.erase(ti.it);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                m_info_table.erase(<span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            assert(m_id_table.size() == m_info_table.size());</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            hb_assert(m_id_table.size() == m_info_table.size(), <span class="stringliteral">&quot;Resource management broke bad&quot;</span>);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// Release all Resource resources with identifier id</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">void</span> releaseAll(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
@@ -174,27 +174,27 @@ $(document).ready(function(){initNavTree('ResourceManager_8h_source.html','');})
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            ResourceInfo&amp; ti = i-&gt;second;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            m_id_table.erase(ti.it);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            m_info_table.erase(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            assert(m_id_table.size() == m_info_table.size());</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            hb_assert(m_id_table.size() == m_info_table.size(), <span class="stringliteral">&quot;Resource management broke bad&quot;</span>);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">// Get Resource with identifier id</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">const</span> <a class="code" href="classhb_1_1Resource.html">Resource</a>&amp; <span class="keyword">get</span>(<span class="keywordtype">int</span> id) <span class="keyword">const</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keyword">auto</span> it = m_info_table.find(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            assert(it != m_info_table.end());</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            hb_assert(it != m_info_table.end(), <span class="stringliteral">&quot;Resource with id &quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="stringliteral">&quot;does not exist.&quot;</span>);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">return</span> it-&gt;second.data;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">// Get Resource with identifier id</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classhb_1_1Resource.html">Resource</a>&amp; <span class="keyword">get</span>(<span class="keywordtype">int</span> id)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keyword">auto</span> it = m_info_table.find(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            assert(it != m_info_table.end());</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            hb_assert(it != m_info_table.end(), <span class="stringliteral">&quot;Resource with id &quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="stringliteral">&quot;does not exist.&quot;</span>);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">return</span> it-&gt;second.data;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">// Get ResourceId of resource with identifier id </span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">const</span> ResourceId&amp; getId(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">        </span>{</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keyword">auto</span> it = m_info_table.find(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            assert(it != m_info_table.end());</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            hb_assert(it != m_info_table.end(), <span class="stringliteral">&quot;Resource with id &quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="stringliteral">&quot;does not exist.&quot;</span>);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">return</span> it-&gt;second.it-&gt;first;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">// Returns wether the Resource resource with identifier id is loaded</span></div>
@@ -252,7 +252,7 @@ $(document).ready(function(){initNavTree('ResourceManager_8h_source.html','');})
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;ManagerType* <a class="code" href="classhb_1_1ResourceManager.html">hb::ResourceManager&lt;ManagerType, Resource, ResourceId, Hash&gt;::s_instance</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classhb_1_1Resource_html"><div class="ttname"><a href="classhb_1_1Resource.html">hb::Resource</a></div><div class="ttdef"><b>Definition:</b> Resource.h:12</div></div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Clock.h:6</div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
 <div class="ttc" id="classhb_1_1ResourceManager_html"><div class="ttname"><a href="classhb_1_1ResourceManager.html">hb::ResourceManager</a></div><div class="ttdef"><b>Definition:</b> ResourceManager.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -260,7 +260,7 @@ $(document).ready(function(){initNavTree('ResourceManager_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_dedefa15ca1a139218af74091b4b5d5f.html">Core</a></li><li class="navelem"><b>ResourceManager.h</b></li>
-    <li class="footer">Generated on Thu Mar 26 2015 16:28:25 for Hummingbird Framework by
+    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -2,7 +2,7 @@ var dir_9e7812ef929956c40f0ec0fafa91b536 =
 [
     [ "Camera.h", "Camera_8h_source.html", null ],
     [ "ClickableComponent.h", "ClickableComponent_8h_source.html", null ],
-    [ "CollisionComponent.h", "CollisionComponent_8h_source.html", null ],
+    [ "CollisionComponent.h", "SFML_2SFML_2CollisionComponent_8h_source.html", null ],
     [ "hash_pair.h", "hash__pair_8h_source.html", null ],
     [ "InputManager.h", "InputManager_8h_source.html", null ],
     [ "ListenerComponent.h", "ListenerComponent_8h_source.html", null ],

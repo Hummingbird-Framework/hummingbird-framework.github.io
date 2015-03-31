@@ -67,10 +67,10 @@ var group__SFML =
       [ "getInverseAxisX", "classhb_1_1Camera.html#a2923e51d1e714fe81a265b98b76ed721", null ],
       [ "getInverseAxisY", "classhb_1_1Camera.html#a29025d623036b0618d6e3f8eef41a034", null ],
       [ "getInverseAxisZ", "classhb_1_1Camera.html#a1de37a6435aca48b891ca95f741c44b3", null ],
-      [ "getPosition", "classhb_1_1Camera.html#a58f92a2bce52b8b04a70d653574eb803", null ],
+      [ "getPosition", "classhb_1_1Camera.html#a12fdf9f3f1c7e85df1f2237667327493", null ],
       [ "getZFar", "classhb_1_1Camera.html#a3854c58301498b4546f0881d7b5609a1", null ],
       [ "getZNear", "classhb_1_1Camera.html#a8da29e34885582c68432924b68dace8b", null ],
-      [ "ObjecspaceToDrawspace", "classhb_1_1Camera.html#ad85cd5f17fb780c794dc4984d372f66f", null ],
+      [ "ObjectspaceToDrawspace", "classhb_1_1Camera.html#a6d882718e1906f8801e4034c53673f04", null ],
       [ "setAxisX", "classhb_1_1Camera.html#ae45d38e36f6f1478d8d11e9a8b09e7fc", null ],
       [ "setAxisY", "classhb_1_1Camera.html#a99c6cd2e2159f225cd8c6412082cb727", null ],
       [ "setAxisZ", "classhb_1_1Camera.html#a358f45f37219c6eeb46ef5506b214903", null ],
@@ -102,7 +102,7 @@ var group__SFML =
       [ "SoundManager", "classhb_1_1SoundManager.html#a35f9c3c6de9953ad11e9c38efb4dd3c4", null ]
     ] ],
     [ "Sprite", "classhb_1_1Sprite.html", [
-      [ "Sprite", "classhb_1_1Sprite.html#a7df6f7b9d35830becf52a01dc487b795", null ],
+      [ "Sprite", "classhb_1_1Sprite.html#acaeb6fc79ef0c786d0f94d84e4d68e44", null ],
       [ "Sprite", "classhb_1_1Sprite.html#adc67c3afe2928b1e737f9d6a6017ffdd", null ],
       [ "~Sprite", "classhb_1_1Sprite.html#aadf2bef0612a528283d2ba69e2f54a33", null ],
       [ "getCenter", "classhb_1_1Sprite.html#a0ab20fa85e276640581c0a4329e2a486", null ],

@@ -117,14 +117,14 @@ Inheritance diagram for hb::CollisionComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhb_1_1CollisionComponent__inherit__graph.png" border="0" usemap="#hb_1_1CollisionComponent_inherit__map" alt="Inheritance graph"/></div>
 <map name="hb_1_1CollisionComponent_inherit__map" id="hb_1_1CollisionComponent_inherit__map">
-<area shape="rect" id="node2" href="classhb_1_1GameObject_1_1Component.html" title="hb::GameObject::Component" alt="" coords="5,5,197,32"/><area shape="rect" id="node3" href="classhb_1_1Transform.html" title="hb::Transform" alt="" coords="222,5,325,32"/></map>
+<area shape="rect" id="node2" href="classhb_1_1GameObject_1_1Component.html" title="hb::GameObject::Component" alt="" coords="5,5,197,32"/><area shape="rect" id="node4" href="classhb_1_1DataComponent.html" title="hb::DataComponent\&lt;\l b2Body * \&gt;" alt="" coords="84,80,231,121"/><area shape="rect" id="node3" href="classhb_1_1Transform.html" title="hb::Transform" alt="" coords="255,87,358,114"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for hb::CollisionComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhb_1_1CollisionComponent__coll__graph.png" border="0" usemap="#hb_1_1CollisionComponent_coll__map" alt="Collaboration graph"/></div>
 <map name="hb_1_1CollisionComponent_coll__map" id="hb_1_1CollisionComponent_coll__map">
-<area shape="rect" id="node2" href="classhb_1_1GameObject_1_1Component.html" title="hb::GameObject::Component" alt="" coords="5,5,197,32"/><area shape="rect" id="node3" href="classhb_1_1Transform.html" title="hb::Transform" alt="" coords="222,5,325,32"/></map>
+<area shape="rect" id="node2" href="classhb_1_1GameObject_1_1Component.html" title="hb::GameObject::Component" alt="" coords="5,5,197,32"/><area shape="rect" id="node4" href="classhb_1_1DataComponent.html" title="hb::DataComponent\&lt;\l b2Body * \&gt;" alt="" coords="84,80,231,121"/><area shape="rect" id="node3" href="classhb_1_1Transform.html" title="hb::Transform" alt="" coords="255,87,358,114"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -134,6 +134,33 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a93375b20328551da008612065e5e54db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93375b20328551da008612065e5e54db"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CollisionComponent</b> (b2Body *b)</td></tr>
+<tr class="separator:a93375b20328551da008612065e5e54db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9eafa45c83ef9bc8e933a85c721ef2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca9eafa45c83ef9bc8e933a85c721ef2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBody</b> (b2Body *b)</td></tr>
+<tr class="separator:aca9eafa45c83ef9bc8e933a85c721ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba2b757437a8cc4dc98605590052830"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afba2b757437a8cc4dc98605590052830"></a>
+b2Body *&#160;</td><td class="memItemRight" valign="bottom"><b>getBody</b> ()</td></tr>
+<tr class="separator:afba2b757437a8cc4dc98605590052830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7110d69bdbff6839773c52f8aa5f20b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7110d69bdbff6839773c52f8aa5f20b"></a>
+const b2Body *&#160;</td><td class="memItemRight" valign="bottom"><b>getBody</b> () const </td></tr>
+<tr class="separator:ad7110d69bdbff6839773c52f8aa5f20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5bc6a75b30c64a40a083d1a777990ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5bc6a75b30c64a40a083d1a777990ab"></a>
+std::queue&lt; <a class="el" href="classhb_1_1CollisionComponent.html">CollisionComponent</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getCollisionQueue</b> ()</td></tr>
+<tr class="separator:af5bc6a75b30c64a40a083d1a777990ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4acb1f0ab73dcda86dc403f40a37c07b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4acb1f0ab73dcda86dc403f40a37c07b"></a>
+const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getPosition</b> ()</td></tr>
+<tr class="separator:a4acb1f0ab73dcda86dc403f40a37c07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd032496c837d40b5f0188f9bed23110"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd032496c837d40b5f0188f9bed23110"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addCollision</b> (<a class="el" href="classhb_1_1CollisionComponent.html">CollisionComponent</a> *b)</td></tr>
+<tr class="separator:afd032496c837d40b5f0188f9bed23110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24328e75770570c44f434a8051e0a29a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24328e75770570c44f434a8051e0a29a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>preUpdate</b> () override</td></tr>
+<tr class="separator:a24328e75770570c44f434a8051e0a29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a471fdb41b032dd2dd7978e308eb4e379"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a471fdb41b032dd2dd7978e308eb4e379"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>postUpdate</b> () override</td></tr>
+<tr class="separator:a471fdb41b032dd2dd7978e308eb4e379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb07c238402e9e7fc21700e6416a2fbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb07c238402e9e7fc21700e6416a2fbf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CollisionComponent</b> (const <a class="el" href="classhb_1_1Vector2d.html">Vector2d</a> &amp;size=<a class="el" href="classhb_1_1Vector2d.html">Vector2d</a>())</td></tr>
 <tr class="separator:acb07c238402e9e7fc21700e6416a2fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,6 +226,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setScale</b> (const <
 <tr class="memitem:ad00e4822c5465e090740555df63c11d0 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad00e4822c5465e090740555df63c11d0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setScale</b> (double scale_x, double scale_y, double scale_z)</td></tr>
 <tr class="separator:ad00e4822c5465e090740555df63c11d0 inherit pub_methods_classhb_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classhb_1_1DataComponent"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhb_1_1DataComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhb_1_1DataComponent.html">hb::DataComponent&lt; b2Body * &gt;</a></td></tr>
+<tr class="memitem:a3e2dfb71ba1ce1b4f30dee48e74ec98d inherit pub_methods_classhb_1_1DataComponent"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e2dfb71ba1ce1b4f30dee48e74ec98d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DataComponent</b> (const b2Body *&amp;data)</td></tr>
+<tr class="separator:a3e2dfb71ba1ce1b4f30dee48e74ec98d inherit pub_methods_classhb_1_1DataComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b711af148b6091adc99e43d7e600ed inherit pub_methods_classhb_1_1DataComponent"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2b711af148b6091adc99e43d7e600ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setData</b> (const b2Body *&amp;data)</td></tr>
+<tr class="separator:ad2b711af148b6091adc99e43d7e600ed inherit pub_methods_classhb_1_1DataComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d60127a529f9d2d03fdad6e2bbfb44d inherit pub_methods_classhb_1_1DataComponent"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d60127a529f9d2d03fdad6e2bbfb44d"></a>
+b2Body *&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getData</b> ()</td></tr>
+<tr class="separator:a1d60127a529f9d2d03fdad6e2bbfb44d inherit pub_methods_classhb_1_1DataComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2143e00bbad6122d5bd3155b10afb089 inherit pub_methods_classhb_1_1DataComponent"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2143e00bbad6122d5bd3155b10afb089"></a>
+const b2Body *&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getData</b> () const</td></tr>
+<tr class="separator:a2143e00bbad6122d5bd3155b10afb089 inherit pub_methods_classhb_1_1DataComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -213,7 +253,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>executeCollisi
 <tr class="separator:a3c44a9b1125881b35d79adfd8cb4a329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>SFML/SFML/<a class="el" href="CollisionComponent_8h_source.html">CollisionComponent.h</a></li>
+<li>Box2d/<a class="el" href="Box2d_2CollisionComponent_8h_source.html">CollisionComponent.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -221,7 +261,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>executeCollisi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>hb</b></li><li class="navelem"><a class="el" href="classhb_1_1CollisionComponent.html">CollisionComponent</a></li>
-    <li class="footer">Generated on Thu Mar 26 2015 16:28:25 for Hummingbird Framework by
+    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

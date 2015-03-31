@@ -107,8 +107,8 @@ $(document).ready(function(){initNavTree('Camera_8h_source.html','');});
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef HB_CAMERA_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define HB_CAMERA_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../Core/Transform.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../Core/Transform.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../Core/Log.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehb.html">hb</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('Camera_8h_source.html','');});
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> setZNear(<span class="keywordtype">double</span> zn);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> setZFar(<span class="keywordtype">double</span> zf);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a> getPosition() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; getPosition() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; getAxisX() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; getAxisY() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; getAxisZ() <span class="keyword">const</span>;</div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('Camera_8h_source.html','');});
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; getInverseAxisZ() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">double</span> getZNear() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">double</span> getZFar() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a> ObjecspaceToDrawspace(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; v);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a> ObjectspaceToDrawspace(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; v);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a> DrawspaceToObjectspace(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; v);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">private</span>:</div>
@@ -146,14 +146,14 @@ $(document).ready(function(){initNavTree('Camera_8h_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classhb_1_1Camera_html"><div class="ttname"><a href="classhb_1_1Camera.html">hb::Camera</a></div><div class="ttdef"><b>Definition:</b> Camera.h:13</div></div>
 <div class="ttc" id="classhb_1_1Vector3d_html"><div class="ttname"><a href="classhb_1_1Vector3d.html">hb::Vector3d</a></div><div class="ttdef"><b>Definition:</b> Vector3d.h:14</div></div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Clock.h:6</div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c9d62fd513ce19bab3d7ef8db833e3f1.html">SFML</a></li><li class="navelem"><a class="el" href="dir_9e7812ef929956c40f0ec0fafa91b536.html">SFML</a></li><li class="navelem"><b>Camera.h</b></li>
-    <li class="footer">Generated on Thu Mar 26 2015 16:28:25 for Hummingbird Framework by
+    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

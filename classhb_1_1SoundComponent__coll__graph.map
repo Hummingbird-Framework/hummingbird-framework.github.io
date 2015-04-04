@@ -1,4 +1,4 @@
 <map id="hb::SoundComponent" name="hb::SoundComponent">
-<area shape="rect" id="node2" href="$classhb_1_1GameObject_1_1Component.html" title="hb::GameObject::Component" alt="" coords="5,5,197,32"/>
-<area shape="rect" id="node3" href="$classhb_1_1Transform.html" title="hb::Transform" alt="" coords="222,5,325,32"/>
+<area shape="rect" id="node2" href="$classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. " alt="" coords="5,5,197,32"/>
+<area shape="rect" id="node3" href="$classhb_1_1Transform.html" title="Object with a position, rotation and scale in a 3D space. " alt="" coords="222,5,325,32"/>
 </map>

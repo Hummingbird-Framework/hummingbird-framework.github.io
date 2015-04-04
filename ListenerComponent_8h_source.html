@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('ListenerComponent_8h_source.html','');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,23 +117,25 @@ $(document).ready(function(){initNavTree('ListenerComponent_8h_source.html','');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classhb_1_1ListenerComponent.html">ListenerComponent</a>();</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        ~<a class="code" href="classhb_1_1ListenerComponent.html">ListenerComponent</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> init() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">void</span> postUpdate() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhb_1_1ListenerComponent.html#aeddd94c824da9212fede619f801ed2a9">init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhb_1_1ListenerComponent.html#aefb0b0c5db7b368f8c1cd76357ff9f66">postUpdate</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">void</span> setDirection(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; direction) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    };</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classhb_1_1ListenerComponent_html_aeddd94c824da9212fede619f801ed2a9"><div class="ttname"><a href="classhb_1_1ListenerComponent.html#aeddd94c824da9212fede619f801ed2a9">hb::ListenerComponent::init</a></div><div class="ttdeci">void init() override</div><div class="ttdoc">Function called once after the Component has been added to a GameObject. </div></div>
 <div class="ttc" id="classhb_1_1ListenerComponent_html"><div class="ttname"><a href="classhb_1_1ListenerComponent.html">hb::ListenerComponent</a></div><div class="ttdef"><b>Definition:</b> ListenerComponent.h:13</div></div>
-<div class="ttc" id="classhb_1_1Vector3d_html"><div class="ttname"><a href="classhb_1_1Vector3d.html">hb::Vector3d</a></div><div class="ttdef"><b>Definition:</b> Vector3d.h:14</div></div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
-<div class="ttc" id="classhb_1_1GameObject_1_1Component_html"><div class="ttname"><a href="classhb_1_1GameObject_1_1Component.html">hb::GameObject::Component</a></div><div class="ttdef"><b>Definition:</b> GameObject.h:22</div></div>
+<div class="ttc" id="classhb_1_1Vector3d_html"><div class="ttname"><a href="classhb_1_1Vector3d.html">hb::Vector3d</a></div><div class="ttdoc">A 3D vector. </div><div class="ttdef"><b>Definition:</b> Vector3d.h:14</div></div>
+<div class="ttc" id="classhb_1_1ListenerComponent_html_aefb0b0c5db7b368f8c1cd76357ff9f66"><div class="ttname"><a href="classhb_1_1ListenerComponent.html#aefb0b0c5db7b368f8c1cd76357ff9f66">hb::ListenerComponent::postUpdate</a></div><div class="ttdeci">void postUpdate() override</div><div class="ttdoc">Function called in the post-update step. </div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Box2DPlugin.h:6</div></div>
+<div class="ttc" id="classhb_1_1GameObject_1_1Component_html"><div class="ttname"><a href="classhb_1_1GameObject_1_1Component.html">hb::GameObject::Component</a></div><div class="ttdoc">Base class for implementing custom Components. </div><div class="ttdef"><b>Definition:</b> GameObject.h:57</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c9d62fd513ce19bab3d7ef8db833e3f1.html">SFML</a></li><li class="navelem"><a class="el" href="dir_9e7812ef929956c40f0ec0fafa91b536.html">SFML</a></li><li class="navelem"><b>ListenerComponent.h</b></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classhb_1_1Game.html" title="hb::Game" alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node1" href="$classhb_1_1detail_1_1MessageManager.html" title="hb::detail::MessageManager\l\&lt; Types \&gt;" alt="" coords="5,71,192,112"/>
+<area shape="rect" id="node2" href="$classhb_1_1MessageManager.html" title="Generic message manager class.This class allows to define callbacks for a set of predefined events wi..." alt="" coords="278,5,425,47"/>
+<area shape="rect" id="node3" href="$classhb_1_1MessageManager.html" title="hb::MessageManager\l\&lt; DataRepository \&gt;" alt="" coords="278,71,425,112"/>
+<area shape="rect" id="node4" href="$classhb_1_1MessageManager.html" title="hb::MessageManager\l\&lt; MouseButtonWindow,\l MouseButtonWorld, KeyPressed,\l KeyReleased, JoyButtonPressed,\l JoyButtonReleased, JoyAxis,\l WindowResized \&gt;" alt="" coords="240,136,463,236"/>
+<area shape="rect" id="node5" href="$classhb_1_1InputManager.html" title="hb::InputManager" alt="" coords="511,173,633,199"/>
 </map>

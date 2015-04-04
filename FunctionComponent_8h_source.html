@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('FunctionComponent_8h_source.html','');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,37 +112,33 @@ $(document).ready(function(){initNavTree('FunctionComponent_8h_source.html','');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehb.html">hb</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classhb_1_1FunctionComponent.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhb_1_1FunctionComponent.html">FunctionComponent</a> : <span class="keyword">public</span> <a class="code" href="classhb_1_1GameObject_1_1Component.html">GameObject::Component</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classhb_1_1FunctionComponent.html">FunctionComponent</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classhb_1_1FunctionComponent.html">FunctionComponent</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> setPreUpdateFunction(std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">void</span>)&gt; pre_update);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">void</span> setUpdateFunction(std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">void</span>)&gt; update);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">void</span> setPostUpdateFunction(std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">void</span>)&gt; post_update);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> setDestroyFunction(std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">void</span>)&gt; destroy);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> preUpdate() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> update() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> postUpdate() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        std::function&lt;void(void)&gt; m_pre_update;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        std::function&lt;void(void)&gt; m_update;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        std::function&lt;void(void)&gt; m_post_update;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        std::function&lt;void(void)&gt; m_destroy;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classhb_1_1FunctionComponent_html"><div class="ttname"><a href="classhb_1_1FunctionComponent.html">hb::FunctionComponent</a></div><div class="ttdef"><b>Definition:</b> FunctionComponent.h:13</div></div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
-<div class="ttc" id="classhb_1_1GameObject_1_1Component_html"><div class="ttname"><a href="classhb_1_1GameObject_1_1Component.html">hb::GameObject::Component</a></div><div class="ttdef"><b>Definition:</b> GameObject.h:22</div></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classhb_1_1FunctionComponent.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhb_1_1FunctionComponent.html">FunctionComponent</a> : <span class="keyword">public</span> <a class="code" href="classhb_1_1GameObject_1_1Component.html">GameObject::Component</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classhb_1_1FunctionComponent.html#ac3fdf4b9ec51c99d84bfd2e03176c9cb">FunctionComponent</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classhb_1_1FunctionComponent.html#ac03af30fc399398cc8ce1cb5678a9cf4">~FunctionComponent</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhb_1_1FunctionComponent.html#aae55102e63d05fd566db5c308d7887c0">addListener</a>(<span class="keyword">const</span> std::string&amp; name, std::function&lt;<span class="keywordtype">void</span>(<a class="code" href="classhb_1_1DataRepository.html">DataRepository</a>&amp;)&gt;&amp;&amp; listener);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        std::vector&lt;GameObjectMessageManager::ListenerId&lt;DataRepository&gt;&gt; m_vector_of_listener_id;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classhb_1_1DataRepository_html"><div class="ttname"><a href="classhb_1_1DataRepository.html">hb::DataRepository</a></div><div class="ttdef"><b>Definition:</b> DataRepository.h:12</div></div>
+<div class="ttc" id="classhb_1_1FunctionComponent_html"><div class="ttname"><a href="classhb_1_1FunctionComponent.html">hb::FunctionComponent</a></div><div class="ttdoc">GameObject::Component with parametrized update function.This class allows you to set the functions th...</div><div class="ttdef"><b>Definition:</b> FunctionComponent.h:17</div></div>
+<div class="ttc" id="classhb_1_1FunctionComponent_html_ac3fdf4b9ec51c99d84bfd2e03176c9cb"><div class="ttname"><a href="classhb_1_1FunctionComponent.html#ac3fdf4b9ec51c99d84bfd2e03176c9cb">hb::FunctionComponent::FunctionComponent</a></div><div class="ttdeci">FunctionComponent()</div><div class="ttdoc">Class constructor. </div></div>
+<div class="ttc" id="classhb_1_1FunctionComponent_html_ac03af30fc399398cc8ce1cb5678a9cf4"><div class="ttname"><a href="classhb_1_1FunctionComponent.html#ac03af30fc399398cc8ce1cb5678a9cf4">hb::FunctionComponent::~FunctionComponent</a></div><div class="ttdeci">virtual ~FunctionComponent() override</div><div class="ttdoc">Class destructor. </div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Box2DPlugin.h:6</div></div>
+<div class="ttc" id="classhb_1_1GameObject_1_1Component_html"><div class="ttname"><a href="classhb_1_1GameObject_1_1Component.html">hb::GameObject::Component</a></div><div class="ttdoc">Base class for implementing custom Components. </div><div class="ttdef"><b>Definition:</b> GameObject.h:57</div></div>
+<div class="ttc" id="classhb_1_1FunctionComponent_html_aae55102e63d05fd566db5c308d7887c0"><div class="ttname"><a href="classhb_1_1FunctionComponent.html#aae55102e63d05fd566db5c308d7887c0">hb::FunctionComponent::addListener</a></div><div class="ttdeci">void addListener(const std::string &amp;name, std::function&lt; void(DataRepository &amp;)&gt; &amp;&amp;listener)</div><div class="ttdoc">Add listener to GameObject MessageManager. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_dedefa15ca1a139218af74091b4b5d5f.html">Core</a></li><li class="navelem"><b>FunctionComponent.h</b></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

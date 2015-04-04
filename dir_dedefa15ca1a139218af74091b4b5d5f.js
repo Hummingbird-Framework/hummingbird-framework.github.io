@@ -9,6 +9,8 @@ var dir_dedefa15ca1a139218af74091b4b5d5f =
     [ "Game.h", "Game_8h_source.html", null ],
     [ "GameObject.h", "GameObject_8h_source.html", null ],
     [ "Log.h", "Log_8h_source.html", null ],
+    [ "Math.h", "Math_8h_source.html", null ],
+    [ "MessageManager.h", "MessageManager_8h_source.html", null ],
     [ "Plugin.h", "Plugin_8h_source.html", null ],
     [ "Resource.h", "Resource_8h_source.html", null ],
     [ "ResourceManager.h", "ResourceManager_8h_source.html", null ],

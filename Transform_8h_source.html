@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('Transform_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,39 +110,47 @@ $(document).ready(function(){initNavTree('Transform_8h_source.html','');});
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehb.html">hb</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classhb_1_1Transform.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhb_1_1Transform.html">Transform</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="classhb_1_1Transform.html">Transform</a>();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="classhb_1_1Transform.html">Transform</a>(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; init_pos);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        ~<a class="code" href="classhb_1_1Transform.html">Transform</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; getPosition() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> setPosition(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; p);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">void</span> setPosition(<span class="keywordtype">double</span> p_x, <span class="keywordtype">double</span> p_y, <span class="keywordtype">double</span> p_z);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; getRotation() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> setRotation(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; rotation);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> setRotation(<span class="keywordtype">double</span> rotation_x, <span class="keywordtype">double</span> rotation_y, <span class="keywordtype">double</span> rotation_z);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; getScale() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> setScale(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; scale);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> setScale(<span class="keywordtype">double</span> scale_x, <span class="keywordtype">double</span> scale_y, <span class="keywordtype">double</span> scale_z);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a> m_position;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a> m_scale;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a> m_rotation_angle;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classhb_1_1Transform_html"><div class="ttname"><a href="classhb_1_1Transform.html">hb::Transform</a></div><div class="ttdef"><b>Definition:</b> Transform.h:11</div></div>
-<div class="ttc" id="classhb_1_1Vector3d_html"><div class="ttname"><a href="classhb_1_1Vector3d.html">hb::Vector3d</a></div><div class="ttdef"><b>Definition:</b> Vector3d.h:14</div></div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classhb_1_1Transform.html">   12</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhb_1_1Transform.html">Transform</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classhb_1_1Transform.html#a3b461935bded9331dbf2eb9249e14257">Transform</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classhb_1_1Transform.html#a3b461935bded9331dbf2eb9249e14257">Transform</a>(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; init_pos);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classhb_1_1Transform.html#a57dd199867fd333b704f2f29b656bc9f">~Transform</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; <a class="code" href="classhb_1_1Transform.html#a8047164164d2469eb8ebc243c5a619f6">getPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhb_1_1Transform.html#ac1404f883fde44a4099c548020bfe913">setPosition</a>(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; p);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhb_1_1Transform.html#ac1404f883fde44a4099c548020bfe913">setPosition</a>(<span class="keywordtype">double</span> p_x, <span class="keywordtype">double</span> p_y, <span class="keywordtype">double</span> p_z);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; <a class="code" href="classhb_1_1Transform.html#a4253de71ddce1f387fcf45576b05b21a">getRotation</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhb_1_1Transform.html#a6820feb34cf24fcb2604f2687723ccde">setRotation</a>(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; rotation);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhb_1_1Transform.html#a6820feb34cf24fcb2604f2687723ccde">setRotation</a>(<span class="keywordtype">double</span> rotation_x, <span class="keywordtype">double</span> rotation_y, <span class="keywordtype">double</span> rotation_z);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; <a class="code" href="classhb_1_1Transform.html#a8130216d3bc9d32411b46e2dfdbc671c">getScale</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhb_1_1Transform.html#a53c6dfebdd7e7b97113ae65fbe18a7b5">setScale</a>(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a>&amp; scale);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhb_1_1Transform.html#a53c6dfebdd7e7b97113ae65fbe18a7b5">setScale</a>(<span class="keywordtype">double</span> scale_x, <span class="keywordtype">double</span> scale_y, <span class="keywordtype">double</span> scale_z);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a> m_position;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a> m_scale;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a> m_rotation_angle;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    };</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classhb_1_1Transform_html"><div class="ttname"><a href="classhb_1_1Transform.html">hb::Transform</a></div><div class="ttdoc">Object with a position, rotation and scale in a 3D space. </div><div class="ttdef"><b>Definition:</b> Transform.h:12</div></div>
+<div class="ttc" id="classhb_1_1Transform_html_ac1404f883fde44a4099c548020bfe913"><div class="ttname"><a href="classhb_1_1Transform.html#ac1404f883fde44a4099c548020bfe913">hb::Transform::setPosition</a></div><div class="ttdeci">void setPosition(const Vector3d &amp;p)</div><div class="ttdoc">Set position from a Vector3d. </div></div>
+<div class="ttc" id="classhb_1_1Vector3d_html"><div class="ttname"><a href="classhb_1_1Vector3d.html">hb::Vector3d</a></div><div class="ttdoc">A 3D vector. </div><div class="ttdef"><b>Definition:</b> Vector3d.h:14</div></div>
+<div class="ttc" id="classhb_1_1Transform_html_a8130216d3bc9d32411b46e2dfdbc671c"><div class="ttname"><a href="classhb_1_1Transform.html#a8130216d3bc9d32411b46e2dfdbc671c">hb::Transform::getScale</a></div><div class="ttdeci">const Vector3d &amp; getScale() const </div><div class="ttdoc">Get Transform scale. </div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Box2DPlugin.h:6</div></div>
+<div class="ttc" id="classhb_1_1Transform_html_a8047164164d2469eb8ebc243c5a619f6"><div class="ttname"><a href="classhb_1_1Transform.html#a8047164164d2469eb8ebc243c5a619f6">hb::Transform::getPosition</a></div><div class="ttdeci">const Vector3d &amp; getPosition() const </div><div class="ttdoc">Get Transform position. </div></div>
+<div class="ttc" id="classhb_1_1Transform_html_a4253de71ddce1f387fcf45576b05b21a"><div class="ttname"><a href="classhb_1_1Transform.html#a4253de71ddce1f387fcf45576b05b21a">hb::Transform::getRotation</a></div><div class="ttdeci">const Vector3d &amp; getRotation() const </div><div class="ttdoc">Get Transform rotation. </div></div>
+<div class="ttc" id="classhb_1_1Transform_html_a53c6dfebdd7e7b97113ae65fbe18a7b5"><div class="ttname"><a href="classhb_1_1Transform.html#a53c6dfebdd7e7b97113ae65fbe18a7b5">hb::Transform::setScale</a></div><div class="ttdeci">void setScale(const Vector3d &amp;scale)</div><div class="ttdoc">Set scale from a Vector3d. </div></div>
+<div class="ttc" id="classhb_1_1Transform_html_a57dd199867fd333b704f2f29b656bc9f"><div class="ttname"><a href="classhb_1_1Transform.html#a57dd199867fd333b704f2f29b656bc9f">hb::Transform::~Transform</a></div><div class="ttdeci">~Transform()</div><div class="ttdoc">Class destructor. </div></div>
+<div class="ttc" id="classhb_1_1Transform_html_a3b461935bded9331dbf2eb9249e14257"><div class="ttname"><a href="classhb_1_1Transform.html#a3b461935bded9331dbf2eb9249e14257">hb::Transform::Transform</a></div><div class="ttdeci">Transform()</div><div class="ttdoc">Default constructor. </div></div>
+<div class="ttc" id="classhb_1_1Transform_html_a6820feb34cf24fcb2604f2687723ccde"><div class="ttname"><a href="classhb_1_1Transform.html#a6820feb34cf24fcb2604f2687723ccde">hb::Transform::setRotation</a></div><div class="ttdeci">void setRotation(const Vector3d &amp;rotation)</div><div class="ttdoc">Set rotation from a Vector3d. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_dedefa15ca1a139218af74091b4b5d5f.html">Core</a></li><li class="navelem"><b>Transform.h</b></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

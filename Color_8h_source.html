@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('Color_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,45 +110,52 @@ $(document).ready(function(){initNavTree('Color_8h_source.html','');});
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehb.html">hb</a></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
 <div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="structhb_1_1Color.html">    6</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structhb_1_1Color.html">Color</a> {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <span class="keywordtype">float</span> r;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="keywordtype">float</span> g;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keywordtype">float</span> b;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keywordtype">float</span> a;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="structhb_1_1Color.html#af35481925635a1373fcdcd775cfefd43">    7</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="structhb_1_1Color.html#af35481925635a1373fcdcd775cfefd43">r</a>; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structhb_1_1Color.html#a1ce90a7dbb3de969fdc84b22dffbd27b">    8</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="structhb_1_1Color.html#a1ce90a7dbb3de969fdc84b22dffbd27b">g</a>; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structhb_1_1Color.html#a1b7a2bf7d36532218320db6b2d43558a">    9</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="structhb_1_1Color.html#a1b7a2bf7d36532218320db6b2d43558a">b</a>; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structhb_1_1Color.html#a8932f55a7d14fed02438a78ba2aa9a13">   10</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="structhb_1_1Color.html#a8932f55a7d14fed02438a78ba2aa9a13">a</a>; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <a class="code" href="structhb_1_1Color.html">Color</a>() {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            this-&gt;r = 0.0f;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            this-&gt;g = 0.0f;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            this-&gt;b = 0.0f;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            this-&gt;a = 1.0f;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="structhb_1_1Color.html">Color</a>(<span class="keywordtype">float</span> r, <span class="keywordtype">float</span> g, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> a = 1.0f) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            this-&gt;r = r;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            this-&gt;g = g;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            this-&gt;b = b;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            this-&gt;a = a;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="structhb_1_1Color.html">Color</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> a = 255) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            this-&gt;r = (float)r/255.0f;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            this-&gt;g = (float)g/255.0f;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            this-&gt;b = (float)b/255.0f;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            this-&gt;a = (float)a/255.0f;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    };</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
-<div class="ttc" id="structhb_1_1Color_html"><div class="ttname"><a href="structhb_1_1Color.html">hb::Color</a></div><div class="ttdef"><b>Definition:</b> Color.h:6</div></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structhb_1_1Color.html#a1ec2bc3afb68b5f5dad80ac1eb1c026f">   15</a></span>&#160;        <a class="code" href="structhb_1_1Color.html#a1ec2bc3afb68b5f5dad80ac1eb1c026f">Color</a>() {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            this-&gt;r = 0.0f;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            this-&gt;g = 0.0f;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            this-&gt;b = 0.0f;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            this-&gt;a = 1.0f;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structhb_1_1Color.html#a63613d483d17b1ecc6f3f0e2081b3e7d">   29</a></span>&#160;        <a class="code" href="structhb_1_1Color.html#a63613d483d17b1ecc6f3f0e2081b3e7d">Color</a>(<span class="keywordtype">float</span> r, <span class="keywordtype">float</span> g, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> a = 1.0f) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            this-&gt;r = <a class="code" href="structhb_1_1Color.html#af35481925635a1373fcdcd775cfefd43">r</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            this-&gt;g = <a class="code" href="structhb_1_1Color.html#a1ce90a7dbb3de969fdc84b22dffbd27b">g</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            this-&gt;b = <a class="code" href="structhb_1_1Color.html#a1b7a2bf7d36532218320db6b2d43558a">b</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            this-&gt;a = <a class="code" href="structhb_1_1Color.html#a8932f55a7d14fed02438a78ba2aa9a13">a</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structhb_1_1Color.html#ad947583bad2111a7a92e9c60988fb2f7">   45</a></span>&#160;        <a class="code" href="structhb_1_1Color.html#ad947583bad2111a7a92e9c60988fb2f7">Color</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> a = 255) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            this-&gt;r = (float)r/255.0f;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            this-&gt;g = (float)g/255.0f;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            this-&gt;b = (float)b/255.0f;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            this-&gt;a = (float)a/255.0f;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="ttc" id="structhb_1_1Color_html_a1ce90a7dbb3de969fdc84b22dffbd27b"><div class="ttname"><a href="structhb_1_1Color.html#a1ce90a7dbb3de969fdc84b22dffbd27b">hb::Color::g</a></div><div class="ttdeci">float g</div><div class="ttdoc">Green component of the color. </div><div class="ttdef"><b>Definition:</b> Color.h:8</div></div>
+<div class="ttc" id="structhb_1_1Color_html_a8932f55a7d14fed02438a78ba2aa9a13"><div class="ttname"><a href="structhb_1_1Color.html#a8932f55a7d14fed02438a78ba2aa9a13">hb::Color::a</a></div><div class="ttdeci">float a</div><div class="ttdoc">Alpha component of the color (its opacity) </div><div class="ttdef"><b>Definition:</b> Color.h:10</div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Box2DPlugin.h:6</div></div>
+<div class="ttc" id="structhb_1_1Color_html_a63613d483d17b1ecc6f3f0e2081b3e7d"><div class="ttname"><a href="structhb_1_1Color.html#a63613d483d17b1ecc6f3f0e2081b3e7d">hb::Color::Color</a></div><div class="ttdeci">Color(float r, float g, float b, float a=1.0f)</div><div class="ttdoc">Floats contructor. </div><div class="ttdef"><b>Definition:</b> Color.h:29</div></div>
+<div class="ttc" id="structhb_1_1Color_html_af35481925635a1373fcdcd775cfefd43"><div class="ttname"><a href="structhb_1_1Color.html#af35481925635a1373fcdcd775cfefd43">hb::Color::r</a></div><div class="ttdeci">float r</div><div class="ttdoc">Red component of the color. </div><div class="ttdef"><b>Definition:</b> Color.h:7</div></div>
+<div class="ttc" id="structhb_1_1Color_html"><div class="ttname"><a href="structhb_1_1Color.html">hb::Color</a></div><div class="ttdoc">A color represented in the RGBA format. </div><div class="ttdef"><b>Definition:</b> Color.h:6</div></div>
+<div class="ttc" id="structhb_1_1Color_html_ad947583bad2111a7a92e9c60988fb2f7"><div class="ttname"><a href="structhb_1_1Color.html#ad947583bad2111a7a92e9c60988fb2f7">hb::Color::Color</a></div><div class="ttdeci">Color(int r, int g, int b, int a=255)</div><div class="ttdoc">Int contructor. </div><div class="ttdef"><b>Definition:</b> Color.h:45</div></div>
+<div class="ttc" id="structhb_1_1Color_html_a1ec2bc3afb68b5f5dad80ac1eb1c026f"><div class="ttname"><a href="structhb_1_1Color.html#a1ec2bc3afb68b5f5dad80ac1eb1c026f">hb::Color::Color</a></div><div class="ttdeci">Color()</div><div class="ttdoc">Default constructor. Initializes to color black. </div><div class="ttdef"><b>Definition:</b> Color.h:15</div></div>
+<div class="ttc" id="structhb_1_1Color_html_a1b7a2bf7d36532218320db6b2d43558a"><div class="ttname"><a href="structhb_1_1Color.html#a1b7a2bf7d36532218320db6b2d43558a">hb::Color::b</a></div><div class="ttdeci">float b</div><div class="ttdoc">Blue component of the color. </div><div class="ttdef"><b>Definition:</b> Color.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_dedefa15ca1a139218af74091b4b5d5f.html">Core</a></li><li class="navelem"><b>Color.h</b></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

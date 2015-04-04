@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('SFMLPlugin_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -122,24 +122,24 @@ $(document).ready(function(){initNavTree('SFMLPlugin_8h_source.html','');});
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classhb_1_1SFMLPlugin.html">SFMLPlugin</a>();</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classhb_1_1SFMLPlugin.html">SFMLPlugin</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">virtual</span> std::map&lt;std::string, Plugin::ComponentFactory&gt; getComponentFactory() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> preUpdate() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> postUpdate() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    };</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhb_1_1SFMLPlugin.html#a4f52c838193ba5c9b970536b9dc536f2">preUpdate</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhb_1_1SFMLPlugin.html#af286fae64c1dc88a82ca1fd80c4d5b4f">postUpdate</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classhb_1_1SFMLPlugin_html_af286fae64c1dc88a82ca1fd80c4d5b4f"><div class="ttname"><a href="classhb_1_1SFMLPlugin.html#af286fae64c1dc88a82ca1fd80c4d5b4f">hb::SFMLPlugin::postUpdate</a></div><div class="ttdeci">virtual void postUpdate() override</div><div class="ttdoc">Function executed after updating the GameObjects. </div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Box2DPlugin.h:6</div></div>
+<div class="ttc" id="classhb_1_1SFMLPlugin_html_a4f52c838193ba5c9b970536b9dc536f2"><div class="ttname"><a href="classhb_1_1SFMLPlugin.html#a4f52c838193ba5c9b970536b9dc536f2">hb::SFMLPlugin::preUpdate</a></div><div class="ttdeci">virtual void preUpdate() override</div><div class="ttdoc">Function executed before updating the GameObjects. </div></div>
 <div class="ttc" id="classhb_1_1SFMLPlugin_html"><div class="ttname"><a href="classhb_1_1SFMLPlugin.html">hb::SFMLPlugin</a></div><div class="ttdef"><b>Definition:</b> SFMLPlugin.h:17</div></div>
-<div class="ttc" id="classhb_1_1Plugin_html"><div class="ttname"><a href="classhb_1_1Plugin.html">hb::Plugin</a></div><div class="ttdef"><b>Definition:</b> Plugin.h:13</div></div>
+<div class="ttc" id="classhb_1_1Plugin_html"><div class="ttname"><a href="classhb_1_1Plugin.html">hb::Plugin</a></div><div class="ttdoc">Base class for implementing custom Plugins. </div><div class="ttdef"><b>Definition:</b> Plugin.h:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c9d62fd513ce19bab3d7ef8db833e3f1.html">SFML</a></li><li class="navelem"><a class="el" href="dir_9e7812ef929956c40f0ec0fafa91b536.html">SFML</a></li><li class="navelem"><b>SFMLPlugin.h</b></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

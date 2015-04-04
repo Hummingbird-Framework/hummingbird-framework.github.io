@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,145 +116,177 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 </td></tr>
 <tr><td><img src="inherit_graph_1.png" border="0" alt="" usemap="#hb_1_1Clock"/>
 <map name="hb_1_1Clock" id="hb_1_1Clock">
-<area shape="rect" id="node1" href="classhb_1_1Clock.html" title="hb::Clock" alt="" coords="5,5,84,32"/></map>
+<area shape="rect" id="node1" href="classhb_1_1Clock.html" title="A class for measuring Time intervals. " alt="" coords="5,5,84,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_2.png" border="0" alt="" usemap="#hb_1_1CollisionComponent_1_1Collision"/>
+<tr><td><img src="inherit_graph_2.png" border="0" alt="" usemap="#hb_1_1Collider2d"/>
+<map name="hb_1_1Collider2d" id="hb_1_1Collider2d">
+<area shape="rect" id="node1" href="classhb_1_1Collider2d.html" title="hb::Collider2d" alt="" coords="5,31,108,57"/><area shape="rect" id="node2" href="classhb_1_1BoxCollider2d.html" title="hb::BoxCollider2d" alt="" coords="161,5,287,32"/><area shape="rect" id="node3" href="classhb_1_1CircleCollider2d.html" title="hb::CircleCollider2d" alt="" coords="156,56,292,83"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_3.png" border="0" alt="" usemap="#hb_1_1CollisionComponent_1_1Collision"/>
 <map name="hb_1_1CollisionComponent_1_1Collision" id="hb_1_1CollisionComponent_1_1Collision">
 <area shape="rect" id="node1" href="structhb_1_1CollisionComponent_1_1Collision.html" title="hb::CollisionComponent\l::Collision" alt="" coords="5,5,167,47"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_3.png" border="0" alt="" usemap="#hb_1_1Color"/>
+<tr><td><img src="inherit_graph_4.png" border="0" alt="" usemap="#hb_1_1Color"/>
 <map name="hb_1_1Color" id="hb_1_1Color">
-<area shape="rect" id="node1" href="structhb_1_1Color.html" title="hb::Color" alt="" coords="5,5,80,32"/></map>
+<area shape="rect" id="node1" href="structhb_1_1Color.html" title="A color represented in the RGBA format. " alt="" coords="5,5,80,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_4.png" border="0" alt="" usemap="#hb_1_1DataRepository"/>
+<tr><td><img src="inherit_graph_5.png" border="0" alt="" usemap="#hb_1_1ContactListener2d"/>
+<map name="hb_1_1ContactListener2d" id="hb_1_1ContactListener2d">
+<area shape="rect" id="node2" href="classhb_1_1ContactListener2d.html" title="hb::ContactListener2d" alt="" coords="181,5,332,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_6.png" border="0" alt="" usemap="#hb_1_1DataRepository"/>
 <map name="hb_1_1DataRepository" id="hb_1_1DataRepository">
 <area shape="rect" id="node1" href="classhb_1_1DataRepository.html" title="hb::DataRepository" alt="" coords="5,5,140,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_5.png" border="0" alt="" usemap="#hb_1_1detail_1_1EventManager_3_01Event_01_4"/>
+<tr><td><img src="inherit_graph_7.png" border="0" alt="" usemap="#hb_1_1detail_1_1EventManager_3_01Event_01_4"/>
 <map name="hb_1_1detail_1_1EventManager_3_01Event_01_4" id="hb_1_1detail_1_1EventManager_3_01Event_01_4">
 <area shape="rect" id="node1" href="classhb_1_1detail_1_1EventManager.html" title="hb::detail::EventManager\l\&lt; Event \&gt;" alt="" coords="5,5,172,47"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_6.png" border="0" alt="" usemap="#hb_1_1detail_1_1EventManager_3_01Events_01_4"/>
+<tr><td><img src="inherit_graph_8.png" border="0" alt="" usemap="#hb_1_1detail_1_1EventManager_3_01Events_01_4"/>
 <map name="hb_1_1detail_1_1EventManager_3_01Events_01_4" id="hb_1_1detail_1_1EventManager_3_01Events_01_4">
-<area shape="rect" id="node1" href="classhb_1_1detail_1_1EventManager.html" title="hb::detail::EventManager\l\&lt; Events \&gt;" alt="" coords="5,67,172,109"/><area shape="rect" id="node2" href="classhb_1_1EventManager.html" title="hb::EventManager\&lt; MouseButton\lWindow, MouseButtonWorld,\l KeyPressed, KeyReleased,\l JoyButtonPressed, JoyButtonReleased,\l JoyAxis, WindowResized \&gt;" alt="" coords="220,5,479,91"/><area shape="rect" id="node4" href="classhb_1_1EventManager.html" title="hb::EventManager\&lt; Events \&gt;" alt="" coords="253,115,446,141"/><area shape="rect" id="node3" href="classhb_1_1InputManager.html" title="hb::InputManager" alt="" coords="527,35,649,61"/></map>
+<area shape="rect" id="node1" href="classhb_1_1detail_1_1EventManager.html" title="hb::detail::EventManager\l\&lt; Events \&gt;" alt="" coords="5,5,172,47"/><area shape="rect" id="node2" href="classhb_1_1EventManager.html" title="hb::EventManager\&lt; Events \&gt;" alt="" coords="220,13,413,39"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_7.png" border="0" alt="" usemap="#hb_1_1detail_1_1traits_3_01R_07C_1_1_5_08_07const_01A_01_6_08_01const_01_01_4"/>
+<tr><td><img src="inherit_graph_9.png" border="0" alt="" usemap="#hb_1_1detail_1_1MessageManager_3_01Type_01_4"/>
+<map name="hb_1_1detail_1_1MessageManager_3_01Type_01_4" id="hb_1_1detail_1_1MessageManager_3_01Type_01_4">
+<area shape="rect" id="node1" href="classhb_1_1detail_1_1MessageManager.html" title="hb::detail::MessageManager\l\&lt; Type \&gt;" alt="" coords="5,5,192,47"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_10.png" border="0" alt="" usemap="#hb_1_1detail_1_1MessageManager_3_01Types_01_4"/>
+<map name="hb_1_1detail_1_1MessageManager_3_01Types_01_4" id="hb_1_1detail_1_1MessageManager_3_01Types_01_4">
+<area shape="rect" id="node1" href="classhb_1_1detail_1_1MessageManager.html" title="hb::detail::MessageManager\l\&lt; Types \&gt;" alt="" coords="5,71,192,112"/><area shape="rect" id="node2" href="classhb_1_1MessageManager.html" title="Generic message manager class.This class allows to define callbacks for a set of predefined events wi..." alt="" coords="278,5,425,47"/><area shape="rect" id="node3" href="classhb_1_1MessageManager.html" title="hb::MessageManager\l\&lt; DataRepository \&gt;" alt="" coords="278,71,425,112"/><area shape="rect" id="node4" href="classhb_1_1MessageManager.html" title="hb::MessageManager\l\&lt; MouseButtonWindow,\l MouseButtonWorld, KeyPressed,\l KeyReleased, JoyButtonPressed,\l JoyButtonReleased, JoyAxis,\l WindowResized \&gt;" alt="" coords="240,136,463,236"/><area shape="rect" id="node5" href="classhb_1_1InputManager.html" title="hb::InputManager" alt="" coords="511,173,633,199"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_11.png" border="0" alt="" usemap="#hb_1_1detail_1_1traits_3_01R_07C_1_1_5_08_07A_01_6_08_01const_01_01_4"/>
+<map name="hb_1_1detail_1_1traits_3_01R_07C_1_1_5_08_07A_01_6_08_01const_01_01_4" id="hb_1_1detail_1_1traits_3_01R_07C_1_1_5_08_07A_01_6_08_01const_01_01_4">
+<area shape="rect" id="node1" href="structhb_1_1detail_1_1traits_3_01R_07C_1_1_5_08_07A_01_6_08_01const_01_01_4.html" title="hb::detail::traits\l\&lt; R(C::*)(A &amp;) const &#160;\&gt;" alt="" coords="5,5,159,47"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_12.png" border="0" alt="" usemap="#hb_1_1detail_1_1traits_3_01R_07C_1_1_5_08_07const_01A_01_6_08_01const_01_01_4"/>
 <map name="hb_1_1detail_1_1traits_3_01R_07C_1_1_5_08_07const_01A_01_6_08_01const_01_01_4" id="hb_1_1detail_1_1traits_3_01R_07C_1_1_5_08_07const_01A_01_6_08_01const_01_01_4">
 <area shape="rect" id="node1" href="structhb_1_1detail_1_1traits_3_01R_07C_1_1_5_08_07const_01A_01_6_08_01const_01_01_4.html" title="hb::detail::traits\l\&lt; R(C::*)(const A &amp;)\l const &#160;\&gt;" alt="" coords="5,5,147,61"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_8.png" border="0" alt="" usemap="#hb_1_1detail_1_1traits_3_01T_01_4"/>
+<tr><td><img src="inherit_graph_13.png" border="0" alt="" usemap="#hb_1_1detail_1_1traits_3_01T_01_4"/>
 <map name="hb_1_1detail_1_1traits_3_01T_01_4" id="hb_1_1detail_1_1traits_3_01T_01_4">
 <area shape="rect" id="node1" href="structhb_1_1detail_1_1traits.html" title="hb::detail::traits\&lt; T \&gt;" alt="" coords="5,5,149,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_9.png" border="0" alt="" usemap="#hb_1_1EventManager_3_01Events_01_4_1_1ListenerId_3_01Event_01_4"/>
+<tr><td><img src="inherit_graph_14.png" border="0" alt="" usemap="#hb_1_1EventManager_3_01Events_01_4_1_1ListenerId_3_01Event_01_4"/>
 <map name="hb_1_1EventManager_3_01Events_01_4_1_1ListenerId_3_01Event_01_4" id="hb_1_1EventManager_3_01Events_01_4_1_1ListenerId_3_01Event_01_4">
 <area shape="rect" id="node1" href="structhb_1_1EventManager_1_1ListenerId.html" title="hb::EventManager\&lt; Events\l \&gt;::ListenerId\&lt; Event \&gt;" alt="" coords="5,5,187,47"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_10.png" border="0" alt="" usemap="#hb_1_1Game"/>
+<tr><td><img src="inherit_graph_15.png" border="0" alt="" usemap="#hb_1_1Fixture2dData"/>
+<map name="hb_1_1Fixture2dData" id="hb_1_1Fixture2dData">
+<area shape="rect" id="node1" href="structhb_1_1Fixture2dData.html" title="hb::Fixture2dData" alt="" coords="5,5,132,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_16.png" border="0" alt="" usemap="#hb_1_1Game"/>
 <map name="hb_1_1Game" id="hb_1_1Game">
-<area shape="rect" id="node1" href="classhb_1_1Game.html" title="hb::Game" alt="" coords="5,5,84,32"/></map>
+<area shape="rect" id="node1" href="classhb_1_1Game.html" title="Game class. " alt="" coords="5,5,84,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_11.png" border="0" alt="" usemap="#hb_1_1Game_1_1Scene"/>
+<tr><td><img src="inherit_graph_17.png" border="0" alt="" usemap="#hb_1_1Game_1_1Scene"/>
 <map name="hb_1_1Game_1_1Scene" id="hb_1_1Game_1_1Scene">
-<area shape="rect" id="node1" href="classhb_1_1Game_1_1Scene.html" title="hb::Game::Scene" alt="" coords="5,5,129,32"/><area shape="rect" id="node2" href="classhb_1_1TmxScene.html" title="hb::TmxScene" alt="" coords="177,5,284,32"/></map>
+<area shape="rect" id="node1" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. " alt="" coords="5,5,129,32"/><area shape="rect" id="node2" href="classhb_1_1TmxScene.html" title="hb::TmxScene" alt="" coords="177,5,284,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_12.png" border="0" alt="" usemap="#hb_1_1JoyAxis"/>
+<tr><td><img src="inherit_graph_18.png" border="0" alt="" usemap="#hb_1_1JoyAxis"/>
 <map name="hb_1_1JoyAxis" id="hb_1_1JoyAxis">
 <area shape="rect" id="node1" href="structhb_1_1JoyAxis.html" title="hb::JoyAxis" alt="" coords="5,5,96,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_13.png" border="0" alt="" usemap="#hb_1_1JoyButtonPressed"/>
+<tr><td><img src="inherit_graph_19.png" border="0" alt="" usemap="#hb_1_1JoyButtonPressed"/>
 <map name="hb_1_1JoyButtonPressed" id="hb_1_1JoyButtonPressed">
 <area shape="rect" id="node1" href="structhb_1_1JoyButtonPressed.html" title="hb::JoyButtonPressed" alt="" coords="5,5,156,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_14.png" border="0" alt="" usemap="#hb_1_1JoyButtonReleased"/>
+<tr><td><img src="inherit_graph_20.png" border="0" alt="" usemap="#hb_1_1JoyButtonReleased"/>
 <map name="hb_1_1JoyButtonReleased" id="hb_1_1JoyButtonReleased">
 <area shape="rect" id="node1" href="structhb_1_1JoyButtonReleased.html" title="hb::JoyButtonReleased" alt="" coords="5,5,164,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_15.png" border="0" alt="" usemap="#hb_1_1KeyPressed"/>
+<tr><td><img src="inherit_graph_21.png" border="0" alt="" usemap="#hb_1_1KeyPressed"/>
 <map name="hb_1_1KeyPressed" id="hb_1_1KeyPressed">
 <area shape="rect" id="node1" href="structhb_1_1KeyPressed.html" title="hb::KeyPressed" alt="" coords="5,5,120,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_16.png" border="0" alt="" usemap="#hb_1_1KeyReleased"/>
+<tr><td><img src="inherit_graph_22.png" border="0" alt="" usemap="#hb_1_1KeyReleased"/>
 <map name="hb_1_1KeyReleased" id="hb_1_1KeyReleased">
 <area shape="rect" id="node1" href="structhb_1_1KeyReleased.html" title="hb::KeyReleased" alt="" coords="5,5,128,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_17.png" border="0" alt="" usemap="#hb_1_1MouseButtonWindow"/>
+<tr><td><img src="inherit_graph_23.png" border="0" alt="" usemap="#hb_1_1Material2d"/>
+<map name="hb_1_1Material2d" id="hb_1_1Material2d">
+<area shape="rect" id="node1" href="structhb_1_1Material2d.html" title="hb::Material2d" alt="" coords="5,5,109,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_24.png" border="0" alt="" usemap="#hb_1_1MessageManager_3_01Types_01_4_1_1ListenerId_3_01Type_01_4"/>
+<map name="hb_1_1MessageManager_3_01Types_01_4_1_1ListenerId_3_01Type_01_4" id="hb_1_1MessageManager_3_01Types_01_4_1_1ListenerId_3_01Type_01_4">
+<area shape="rect" id="node1" href="structhb_1_1MessageManager_1_1ListenerId.html" title="Identifier of a registered listener. " alt="" coords="5,5,152,61"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_25.png" border="0" alt="" usemap="#hb_1_1MouseButtonWindow"/>
 <map name="hb_1_1MouseButtonWindow" id="hb_1_1MouseButtonWindow">
 <area shape="rect" id="node1" href="structhb_1_1MouseButtonWindow.html" title="hb::MouseButtonWindow" alt="" coords="5,5,173,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_18.png" border="0" alt="" usemap="#hb_1_1MouseButtonWorld"/>
+<tr><td><img src="inherit_graph_26.png" border="0" alt="" usemap="#hb_1_1MouseButtonWorld"/>
 <map name="hb_1_1MouseButtonWorld" id="hb_1_1MouseButtonWorld">
 <area shape="rect" id="node1" href="structhb_1_1MouseButtonWorld.html" title="hb::MouseButtonWorld" alt="" coords="5,5,160,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_19.png" border="0" alt="" usemap="#hb_1_1PhysicsWorld"/>
-<map name="hb_1_1PhysicsWorld" id="hb_1_1PhysicsWorld">
-<area shape="rect" id="node2" href="classhb_1_1PhysicsWorld.html" title="hb::PhysicsWorld" alt="" coords="181,5,307,32"/></map>
+<tr><td><img src="inherit_graph_27.png" border="0" alt="" usemap="#hb_1_1Physics2d"/>
+<map name="hb_1_1Physics2d" id="hb_1_1Physics2d">
+<area shape="rect" id="node1" href="classhb_1_1Physics2d.html" title="hb::Physics2d" alt="" coords="5,5,111,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_20.png" border="0" alt="" usemap="#hb_1_1Plugin"/>
+<tr><td><img src="inherit_graph_28.png" border="0" alt="" usemap="#hb_1_1Plugin"/>
 <map name="hb_1_1Plugin" id="hb_1_1Plugin">
-<area shape="rect" id="node1" href="classhb_1_1Plugin.html" title="hb::Plugin" alt="" coords="5,5,85,32"/><area shape="rect" id="node2" href="classhb_1_1SFMLPlugin.html" title="hb::SFMLPlugin" alt="" coords="133,5,248,32"/></map>
+<area shape="rect" id="node1" href="classhb_1_1Plugin.html" title="Base class for implementing custom Plugins. " alt="" coords="5,31,85,57"/><area shape="rect" id="node2" href="classhb_1_1Box2DPlugin.html" title="hb::Box2DPlugin" alt="" coords="133,5,253,32"/><area shape="rect" id="node3" href="classhb_1_1SFMLPlugin.html" title="hb::SFMLPlugin" alt="" coords="136,56,251,83"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_21.png" border="0" alt="" usemap="#hb_1_1Rect"/>
+<tr><td><img src="inherit_graph_29.png" border="0" alt="" usemap="#hb_1_1Rect"/>
 <map name="hb_1_1Rect" id="hb_1_1Rect">
 <area shape="rect" id="node2" href="classhb_1_1Rect.html" title="hb::Rect" alt="" coords="104,5,176,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_22.png" border="0" alt="" usemap="#hb_1_1Renderer"/>
+<tr><td><img src="inherit_graph_30.png" border="0" alt="" usemap="#hb_1_1Renderer"/>
 <map name="hb_1_1Renderer" id="hb_1_1Renderer">
 <area shape="rect" id="node1" href="classhb_1_1Renderer.html" title="hb::Renderer" alt="" coords="5,5,103,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_23.png" border="0" alt="" usemap="#hb_1_1Resource_3_01ResourceType_00_01ResourceId_00_01ResourceManager_01_4"/>
+<tr><td><img src="inherit_graph_31.png" border="0" alt="" usemap="#hb_1_1Resource_3_01ResourceType_00_01ResourceId_00_01ResourceManager_01_4"/>
 <map name="hb_1_1Resource_3_01ResourceType_00_01ResourceId_00_01ResourceManager_01_4" id="hb_1_1Resource_3_01ResourceType_00_01ResourceId_00_01ResourceManager_01_4">
-<area shape="rect" id="node1" href="classhb_1_1Resource.html" title="hb::Resource\&lt; ResourceType,\l ResourceId, ResourceManager \&gt;" alt="" coords="5,5,224,47"/></map>
+<area shape="rect" id="node1" href="classhb_1_1Resource.html" title="Class representing a loaded resource. " alt="" coords="5,5,224,47"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_24.png" border="0" alt="" usemap="#hb_1_1Resource_3_01sf_1_1SoundBuffer_00_01std_1_1string_00_01SoundManager_01_4"/>
+<tr><td><img src="inherit_graph_32.png" border="0" alt="" usemap="#hb_1_1Resource_3_01sf_1_1SoundBuffer_00_01std_1_1string_00_01SoundManager_01_4"/>
 <map name="hb_1_1Resource_3_01sf_1_1SoundBuffer_00_01std_1_1string_00_01SoundManager_01_4" id="hb_1_1Resource_3_01sf_1_1SoundBuffer_00_01std_1_1string_00_01SoundManager_01_4">
 <area shape="rect" id="node1" href="classhb_1_1Resource.html" title="hb::Resource\&lt; sf::SoundBuffer,\l std::string, SoundManager \&gt;" alt="" coords="5,5,212,47"/><area shape="rect" id="node2" href="classhb_1_1SoundBuffer.html" title="hb::SoundBuffer" alt="" coords="260,13,376,39"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_25.png" border="0" alt="" usemap="#hb_1_1Resource_3_01sf_1_1Texture_00_01detail_1_1tex__id_00_01TextureManager_01_4"/>
+<tr><td><img src="inherit_graph_33.png" border="0" alt="" usemap="#hb_1_1Resource_3_01sf_1_1Texture_00_01detail_1_1tex__id_00_01TextureManager_01_4"/>
 <map name="hb_1_1Resource_3_01sf_1_1Texture_00_01detail_1_1tex__id_00_01TextureManager_01_4" id="hb_1_1Resource_3_01sf_1_1Texture_00_01detail_1_1tex__id_00_01TextureManager_01_4">
 <area shape="rect" id="node1" href="classhb_1_1Resource.html" title="hb::Resource\&lt; sf::Texture,\l detail::tex_id, TextureManager \&gt;" alt="" coords="5,5,220,47"/><area shape="rect" id="node2" href="classhb_1_1Texture.html" title="hb::Texture" alt="" coords="268,13,356,39"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_26.png" border="0" alt="" usemap="#hb_1_1ResourceManager_3_01ManagerType_00_01Resource_00_01ResourceId_00_01Hash_01_4"/>
-<map name="hb_1_1ResourceManager_3_01ManagerType_00_01Resource_00_01ResourceId_00_01Hash_01_4" id="hb_1_1ResourceManager_3_01ManagerType_00_01Resource_00_01ResourceId_00_01Hash_01_4">
-<area shape="rect" id="node1" href="classhb_1_1ResourceManager.html" title="hb::ResourceManager\l\&lt; ManagerType, Resource,\l ResourceId, Hash \&gt;" alt="" coords="5,5,187,61"/></map>
+<tr><td><img src="inherit_graph_34.png" border="0" alt="" usemap="#hb_1_1ResourceManager_3_01ManagerType_00_01ResourceType_00_01ResourceId_00_01Hash_01_4"/>
+<map name="hb_1_1ResourceManager_3_01ManagerType_00_01ResourceType_00_01ResourceId_00_01Hash_01_4" id="hb_1_1ResourceManager_3_01ManagerType_00_01ResourceType_00_01ResourceId_00_01Hash_01_4">
+<area shape="rect" id="node1" href="classhb_1_1ResourceManager.html" title="Class for efficiently managing loaded resources. " alt="" coords="5,5,216,61"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_27.png" border="0" alt="" usemap="#hb_1_1ResourceManager_3_01SoundManager_00_01sf_1_1SoundBuffer_00_01std_1_1string_01_4"/>
+<tr><td><img src="inherit_graph_35.png" border="0" alt="" usemap="#hb_1_1ResourceManager_3_01SoundManager_00_01sf_1_1SoundBuffer_00_01std_1_1string_01_4"/>
 <map name="hb_1_1ResourceManager_3_01SoundManager_00_01sf_1_1SoundBuffer_00_01std_1_1string_01_4" id="hb_1_1ResourceManager_3_01SoundManager_00_01sf_1_1SoundBuffer_00_01std_1_1string_01_4">
 <area shape="rect" id="node1" href="classhb_1_1ResourceManager.html" title="hb::ResourceManager\l\&lt; SoundManager, sf::\lSoundBuffer, std::string \&gt;" alt="" coords="5,5,177,61"/><area shape="rect" id="node2" href="classhb_1_1SoundManager.html" title="hb::SoundManager" alt="" coords="225,20,356,47"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_28.png" border="0" alt="" usemap="#hb_1_1ResourceManager_3_01TextureManager_00_01sf_1_1Texture_00_01detail_1_1tex__id_01_4"/>
+<tr><td><img src="inherit_graph_36.png" border="0" alt="" usemap="#hb_1_1ResourceManager_3_01TextureManager_00_01sf_1_1Texture_00_01detail_1_1tex__id_01_4"/>
 <map name="hb_1_1ResourceManager_3_01TextureManager_00_01sf_1_1Texture_00_01detail_1_1tex__id_01_4" id="hb_1_1ResourceManager_3_01TextureManager_00_01sf_1_1Texture_00_01detail_1_1tex__id_01_4">
 <area shape="rect" id="node1" href="classhb_1_1ResourceManager.html" title="hb::ResourceManager\l\&lt; TextureManager, sf\l::Texture, detail::tex_id \&gt;" alt="" coords="5,5,173,61"/><area shape="rect" id="node2" href="classhb_1_1TextureManager.html" title="hb::TextureManager" alt="" coords="221,20,360,47"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_29.png" border="0" alt="" usemap="#hb_1_1Sprite"/>
+<tr><td><img src="inherit_graph_37.png" border="0" alt="" usemap="#hb_1_1Sprite"/>
 <map name="hb_1_1Sprite" id="hb_1_1Sprite">
 <area shape="rect" id="node1" href="classhb_1_1Sprite.html" title="hb::Sprite" alt="" coords="5,5,84,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_30.png" border="0" alt="" usemap="#hb_1_1Time"/>
+<tr><td><img src="inherit_graph_38.png" border="0" alt="" usemap="#hb_1_1Time"/>
 <map name="hb_1_1Time" id="hb_1_1Time">
-<area shape="rect" id="node1" href="classhb_1_1Time.html" title="hb::Time" alt="" coords="5,5,79,32"/></map>
+<area shape="rect" id="node1" href="classhb_1_1Time.html" title="Class for representing intervals of time. " alt="" coords="5,5,79,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_31.png" border="0" alt="" usemap="#hb_1_1TmxObjectTypeFactory"/>
+<tr><td><img src="inherit_graph_39.png" border="0" alt="" usemap="#hb_1_1TmxObjectTypeFactory"/>
 <map name="hb_1_1TmxObjectTypeFactory" id="hb_1_1TmxObjectTypeFactory">
 <area shape="rect" id="node1" href="classhb_1_1TmxObjectTypeFactory.html" title="hb::TmxObjectTypeFactory" alt="" coords="5,5,187,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_32.png" border="0" alt="" usemap="#hb_1_1Transform"/>
+<tr><td><img src="inherit_graph_40.png" border="0" alt="" usemap="#hb_1_1Transform"/>
 <map name="hb_1_1Transform" id="hb_1_1Transform">
-<area shape="rect" id="node1" href="classhb_1_1GameObject_1_1Component.html" title="hb::GameObject::Component" alt="" coords="5,296,197,323"/><area shape="rect" id="node2" href="classhb_1_1DataComponent.html" title="hb::DataComponent\&lt;\l b2Body * \&gt;" alt="" coords="257,259,404,301"/><area shape="rect" id="node3" href="classhb_1_1CollisionComponent.html" title="hb::CollisionComponent" alt="" coords="464,267,625,293"/><area shape="rect" id="node4" href="classhb_1_1ClickableComponent.html" title="hb::ClickableComponent" alt="" coords="248,107,413,133"/><area shape="rect" id="node5" href="classhb_1_1DataComponent.html" title="hb::DataComponent\&lt; T \&gt;" alt="" coords="245,376,416,403"/><area shape="rect" id="node6" href="classhb_1_1FunctionComponent.html" title="hb::FunctionComponent" alt="" coords="250,427,411,453"/><area shape="rect" id="node7" href="classhb_1_1ListenerComponent.html" title="hb::ListenerComponent" alt="" coords="252,477,409,504"/><area shape="rect" id="node8" href="classhb_1_1SoundComponent.html" title="hb::SoundComponent" alt="" coords="257,157,405,184"/><area shape="rect" id="node9" href="classhb_1_1SpriteComponent.html" title="hb::SpriteComponent" alt="" coords="258,208,403,235"/><area shape="rect" id="node10" href="classhb_1_1Transform.html" title="hb::Transform" alt="" coords="50,107,153,133"/><area shape="rect" id="node11" href="classhb_1_1GameObject.html" title="hb::GameObject" alt="" coords="272,5,389,32"/></map>
+<area shape="rect" id="node1" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. " alt="" coords="5,259,197,285"/><area shape="rect" id="node2" href="classhb_1_1ClickableComponent.html" title="hb::ClickableComponent" alt="" coords="255,56,421,83"/><area shape="rect" id="node3" href="classhb_1_1CollisionComponent.html" title="hb::CollisionComponent" alt="" coords="257,107,419,133"/><area shape="rect" id="node4" href="classhb_1_1DataComponent.html" title="A GameObject::Component for storing an instance of T into a GameObject. " alt="" coords="253,259,423,285"/><area shape="rect" id="node5" href="classhb_1_1DataComponent_3_01T_01_5_01_4.html" title="(Class template specialization) A GameObject::Component for storing a pointer to an instance of T int..." alt="" coords="265,310,411,351"/><area shape="rect" id="node6" href="classhb_1_1FunctionComponent.html" title="GameObject::Component with parametrized update function.This class allows you to set the functions th..." alt="" coords="257,376,419,403"/><area shape="rect" id="node7" href="classhb_1_1ListenerComponent.html" title="hb::ListenerComponent" alt="" coords="259,427,417,453"/><area shape="rect" id="node8" href="classhb_1_1RigidBody2dComponent.html" title="hb::RigidBody2dComponent" alt="" coords="245,477,431,504"/><area shape="rect" id="node9" href="classhb_1_1SoundComponent.html" title="hb::SoundComponent" alt="" coords="264,157,412,184"/><area shape="rect" id="node10" href="classhb_1_1SpriteComponent.html" title="hb::SpriteComponent" alt="" coords="265,208,411,235"/><area shape="rect" id="node11" href="classhb_1_1Transform.html" title="Object with a position, rotation and scale in a 3D space. " alt="" coords="50,107,153,133"/><area shape="rect" id="node12" href="classhb_1_1GameObject.html" title="GameObject (also known as Actor). " alt="" coords="279,5,397,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_33.png" border="0" alt="" usemap="#hb_1_1Vector2d"/>
+<tr><td><img src="inherit_graph_41.png" border="0" alt="" usemap="#hb_1_1Vector2d"/>
 <map name="hb_1_1Vector2d" id="hb_1_1Vector2d">
-<area shape="rect" id="node1" href="classhb_1_1Vector2d.html" title="hb::Vector2d" alt="" coords="5,5,101,32"/></map>
+<area shape="rect" id="node1" href="classhb_1_1Vector2d.html" title="A 2D vector. " alt="" coords="5,5,101,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_34.png" border="0" alt="" usemap="#hb_1_1Vector3d"/>
+<tr><td><img src="inherit_graph_42.png" border="0" alt="" usemap="#hb_1_1Vector3d"/>
 <map name="hb_1_1Vector3d" id="hb_1_1Vector3d">
-<area shape="rect" id="node1" href="classhb_1_1Vector3d.html" title="hb::Vector3d" alt="" coords="5,5,101,32"/></map>
+<area shape="rect" id="node1" href="classhb_1_1Vector3d.html" title="A 3D vector. " alt="" coords="5,5,101,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_35.png" border="0" alt="" usemap="#hb_1_1WindowResized"/>
+<tr><td><img src="inherit_graph_43.png" border="0" alt="" usemap="#hb_1_1WindowResized"/>
 <map name="hb_1_1WindowResized" id="hb_1_1WindowResized">
 <area shape="rect" id="node1" href="structhb_1_1WindowResized.html" title="hb::WindowResized" alt="" coords="5,5,144,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_36.png" border="0" alt="" usemap="#std_1_1hash_3_01pair_3_01S_00_01T_01_4_01_4"/>
+<tr><td><img src="inherit_graph_44.png" border="0" alt="" usemap="#std_1_1hash_3_01pair_3_01S_00_01T_01_4_01_4"/>
 <map name="std_1_1hash_3_01pair_3_01S_00_01T_01_4_01_4" id="std_1_1hash_3_01pair_3_01S_00_01T_01_4_01_4">
 <area shape="rect" id="node1" href="structstd_1_1hash_3_01pair_3_01S_00_01T_01_4_01_4.html" title="std::hash\&lt; pair\&lt; S,\l T \&gt; \&gt;" alt="" coords="5,5,140,47"/></map>
 </td></tr>
@@ -264,7 +296,7 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:54 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:47 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

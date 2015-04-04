@@ -1,10 +1,11 @@
 <map id="hb::GameObject::Component" name="hb::GameObject::Component">
-<area shape="rect" id="node2" href="$classhb_1_1DataComponent.html" title="hb::DataComponent\&lt;\l b2Body * \&gt;" alt="" coords="257,5,404,47"/>
-<area shape="rect" id="node3" href="$classhb_1_1CollisionComponent.html" title="hb::CollisionComponent" alt="" coords="464,42,625,69"/>
-<area shape="rect" id="node4" href="$classhb_1_1ClickableComponent.html" title="hb::ClickableComponent" alt="" coords="248,122,413,149"/>
-<area shape="rect" id="node5" href="$classhb_1_1DataComponent.html" title="hb::DataComponent\&lt; T \&gt;" alt="" coords="245,173,416,199"/>
-<area shape="rect" id="node6" href="$classhb_1_1FunctionComponent.html" title="hb::FunctionComponent" alt="" coords="250,223,411,250"/>
-<area shape="rect" id="node7" href="$classhb_1_1ListenerComponent.html" title="hb::ListenerComponent" alt="" coords="252,274,409,301"/>
-<area shape="rect" id="node8" href="$classhb_1_1SoundComponent.html" title="hb::SoundComponent" alt="" coords="257,325,405,351"/>
-<area shape="rect" id="node9" href="$classhb_1_1SpriteComponent.html" title="hb::SpriteComponent" alt="" coords="258,375,403,402"/>
+<area shape="rect" id="node2" href="$classhb_1_1ClickableComponent.html" title="hb::ClickableComponent" alt="" coords="255,5,421,32"/>
+<area shape="rect" id="node3" href="$classhb_1_1CollisionComponent.html" title="hb::CollisionComponent" alt="" coords="257,56,419,83"/>
+<area shape="rect" id="node4" href="$classhb_1_1DataComponent.html" title="A GameObject::Component for storing an instance of T into a GameObject. " alt="" coords="253,107,423,133"/>
+<area shape="rect" id="node5" href="$classhb_1_1DataComponent_3_01T_01_5_01_4.html" title="(Class template specialization) A GameObject::Component for storing a pointer to an instance of T int..." alt="" coords="265,158,411,199"/>
+<area shape="rect" id="node6" href="$classhb_1_1FunctionComponent.html" title="GameObject::Component with parametrized update function.This class allows you to set the functions th..." alt="" coords="257,224,419,251"/>
+<area shape="rect" id="node7" href="$classhb_1_1ListenerComponent.html" title="hb::ListenerComponent" alt="" coords="259,275,417,301"/>
+<area shape="rect" id="node8" href="$classhb_1_1RigidBody2dComponent.html" title="hb::RigidBody2dComponent" alt="" coords="245,325,431,352"/>
+<area shape="rect" id="node9" href="$classhb_1_1SoundComponent.html" title="hb::SoundComponent" alt="" coords="264,376,412,403"/>
+<area shape="rect" id="node10" href="$classhb_1_1SpriteComponent.html" title="hb::SpriteComponent" alt="" coords="265,427,411,453"/>
 </map>

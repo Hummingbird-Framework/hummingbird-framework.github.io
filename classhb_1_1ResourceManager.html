@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Hummingbird Framework: hb::ResourceManager&lt; ManagerType, Resource, ResourceId, Hash &gt; Class Template Reference</title>
+<title>Hummingbird Framework: hb::ResourceManager&lt; ManagerType, ResourceType, ResourceId, Hash &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classhb_1_1ResourceManager.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,55 +109,545 @@ $(document).ready(function(){initNavTree('classhb_1_1ResourceManager.html','');}
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classhb_1_1ResourceManager-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">hb::ResourceManager&lt; ManagerType, Resource, ResourceId, Hash &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__core.html">Hummingbird Core</a></div></div>  </div>
+<div class="title">hb::ResourceManager&lt; ManagerType, ResourceType, ResourceId, Hash &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__core.html">Hummingbird Core</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class for efficiently managing loaded resources.  
+ <a href="classhb_1_1ResourceManager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ResourceManager_8h_source.html">ResourceManager.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acb3d33905744eea3bf6fe83fff60b137"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb3d33905744eea3bf6fe83fff60b137"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>addResource</b> (const ResourceId &amp;resource_id, const <a class="el" href="classhb_1_1Resource.html">Resource</a> &amp;resource)</td></tr>
-<tr class="separator:acb3d33905744eea3bf6fe83fff60b137"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeb0f57593c9034442ac6c96da9c68f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeeb0f57593c9034442ac6c96da9c68f6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (int id)</td></tr>
-<tr class="separator:aeeb0f57593c9034442ac6c96da9c68f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5da95d0a43992f43cda6a42c10259550"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5da95d0a43992f43cda6a42c10259550"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseAll</b> (int id)</td></tr>
-<tr class="separator:a5da95d0a43992f43cda6a42c10259550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67ed72e4033d084e8d5a9a77310f59e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67ed72e4033d084e8d5a9a77310f59e5"></a>
-const <a class="el" href="classhb_1_1Resource.html">Resource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (int id) const </td></tr>
-<tr class="separator:a67ed72e4033d084e8d5a9a77310f59e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9207ab1162b3a0360100638137a649d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9207ab1162b3a0360100638137a649d"></a>
-<a class="el" href="classhb_1_1Resource.html">Resource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (int id)</td></tr>
-<tr class="separator:aa9207ab1162b3a0360100638137a649d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2782c12f35371bc5c8e715628fde4e3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2782c12f35371bc5c8e715628fde4e3d"></a>
-const ResourceId &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getId</b> (int id) const </td></tr>
-<tr class="separator:a2782c12f35371bc5c8e715628fde4e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addd9ad162455526469caa2197a1adab5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addd9ad162455526469caa2197a1adab5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isLoaded</b> (int id) const </td></tr>
-<tr class="separator:addd9ad162455526469caa2197a1adab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad41629311ff3f14285468e977d372805"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad41629311ff3f14285468e977d372805"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isLoaded</b> (const ResourceId &amp;resource_id) const </td></tr>
-<tr class="separator:ad41629311ff3f14285468e977d372805"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d8d55603fdd8ec80c1944c32290a1c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d8d55603fdd8ec80c1944c32290a1c6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>countResourceUsage</b> (int id) const </td></tr>
-<tr class="separator:a4d8d55603fdd8ec80c1944c32290a1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd9e9c76f5b28f3f536f6fba1adcf56e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd9e9c76f5b28f3f536f6fba1adcf56e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const </td></tr>
-<tr class="separator:abd9e9c76f5b28f3f536f6fba1adcf56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af83e73794a89df18b6a95acd4647738d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af83e73794a89df18b6a95acd4647738d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>resourceCount</b> () const </td></tr>
-<tr class="separator:af83e73794a89df18b6a95acd4647738d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10a4912ee3f29b0d3d24165973f223b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10a4912ee3f29b0d3d24165973f223b8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
-<tr class="separator:a10a4912ee3f29b0d3d24165973f223b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3def257002cb429ec4feedd46c9303b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3def257002cb429ec4feedd46c9303b5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#a3def257002cb429ec4feedd46c9303b5">ResourceManager</a> ()</td></tr>
+<tr class="memdesc:a3def257002cb429ec4feedd46c9303b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor. <br /></td></tr>
+<tr class="separator:a3def257002cb429ec4feedd46c9303b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58bd86424762f7783b7b2fc15b6db470"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58bd86424762f7783b7b2fc15b6db470"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#a58bd86424762f7783b7b2fc15b6db470">~ResourceManager</a> ()</td></tr>
+<tr class="memdesc:a58bd86424762f7783b7b2fc15b6db470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor. <br /></td></tr>
+<tr class="separator:a58bd86424762f7783b7b2fc15b6db470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3493a9f4880e0faa6e583b0cf010c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#a4a3493a9f4880e0faa6e583b0cf010c8">addResource</a> (const ResourceId &amp;resource_id, const ResourceType &amp;resource)</td></tr>
+<tr class="memdesc:a4a3493a9f4880e0faa6e583b0cf010c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add resource to manager.  <a href="#a4a3493a9f4880e0faa6e583b0cf010c8">More...</a><br /></td></tr>
+<tr class="separator:a4a3493a9f4880e0faa6e583b0cf010c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4830746d68888364b61dfdbe5ee95d49"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#a4830746d68888364b61dfdbe5ee95d49">release</a> (int id)</td></tr>
+<tr class="memdesc:a4830746d68888364b61dfdbe5ee95d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a resource with identifier id.  <a href="#a4830746d68888364b61dfdbe5ee95d49">More...</a><br /></td></tr>
+<tr class="separator:a4830746d68888364b61dfdbe5ee95d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e36d27624a7b3c8a7ef09bbb73bbd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#a06e36d27624a7b3c8a7ef09bbb73bbd0">releaseAll</a> (int id)</td></tr>
+<tr class="memdesc:a06e36d27624a7b3c8a7ef09bbb73bbd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all resources with identifier id.  <a href="#a06e36d27624a7b3c8a7ef09bbb73bbd0">More...</a><br /></td></tr>
+<tr class="separator:a06e36d27624a7b3c8a7ef09bbb73bbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a064582fd0f1aef17c7338362caab23a9"><td class="memItemLeft" align="right" valign="top">const ResourceType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#a064582fd0f1aef17c7338362caab23a9">get</a> (int id) const </td></tr>
+<tr class="memdesc:a064582fd0f1aef17c7338362caab23a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get resource with identifier id.  <a href="#a064582fd0f1aef17c7338362caab23a9">More...</a><br /></td></tr>
+<tr class="separator:a064582fd0f1aef17c7338362caab23a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d88e204f37fe30b77a804cbe1101254"><td class="memItemLeft" align="right" valign="top">ResourceType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#a1d88e204f37fe30b77a804cbe1101254">get</a> (int id)</td></tr>
+<tr class="memdesc:a1d88e204f37fe30b77a804cbe1101254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get resource with identifier id.  <a href="#a1d88e204f37fe30b77a804cbe1101254">More...</a><br /></td></tr>
+<tr class="separator:a1d88e204f37fe30b77a804cbe1101254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe5b248e0bab9c8e82b9227a6a70d92c"><td class="memItemLeft" align="right" valign="top">const ResourceId &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#abe5b248e0bab9c8e82b9227a6a70d92c">getId</a> (int id) const </td></tr>
+<tr class="memdesc:abe5b248e0bab9c8e82b9227a6a70d92c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ResourceId of resource with identifier id.  <a href="#abe5b248e0bab9c8e82b9227a6a70d92c">More...</a><br /></td></tr>
+<tr class="separator:abe5b248e0bab9c8e82b9227a6a70d92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23041fe8a59563c4c8d0bfdb4a830ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#ad23041fe8a59563c4c8d0bfdb4a830ad">isLoaded</a> (int id) const </td></tr>
+<tr class="memdesc:ad23041fe8a59563c4c8d0bfdb4a830ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns wether the resource with identifier id is loaded.  <a href="#ad23041fe8a59563c4c8d0bfdb4a830ad">More...</a><br /></td></tr>
+<tr class="separator:ad23041fe8a59563c4c8d0bfdb4a830ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe75903dbd597119f9e77f305403ac2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#afe75903dbd597119f9e77f305403ac2b">isLoaded</a> (const ResourceId &amp;resource_id) const </td></tr>
+<tr class="memdesc:afe75903dbd597119f9e77f305403ac2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns wether the resource with ResourceId <em>resource_id</em> is loaded.  <a href="#afe75903dbd597119f9e77f305403ac2b">More...</a><br /></td></tr>
+<tr class="separator:afe75903dbd597119f9e77f305403ac2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e29dbd993c298f1bdfbc219b0c8e579"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#a4e29dbd993c298f1bdfbc219b0c8e579">isLoaded</a> (const ResourceId &amp;resource_id, int &amp;id) const </td></tr>
+<tr class="memdesc:a4e29dbd993c298f1bdfbc219b0c8e579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns wether the resource with ResourceId <em>resource_id</em> is loaded and if it is loaded, puts the <a class="el" href="classhb_1_1ResourceManager.html" title="Class for efficiently managing loaded resources. ">ResourceManager</a> id in <em>id</em>.  <a href="#a4e29dbd993c298f1bdfbc219b0c8e579">More...</a><br /></td></tr>
+<tr class="separator:a4e29dbd993c298f1bdfbc219b0c8e579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e704d50f897a529caefe561952e1471"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#a0e704d50f897a529caefe561952e1471">countResourceUsage</a> (int id) const </td></tr>
+<tr class="memdesc:a0e704d50f897a529caefe561952e1471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of active requests for resource id.  <a href="#a0e704d50f897a529caefe561952e1471">More...</a><br /></td></tr>
+<tr class="separator:a0e704d50f897a529caefe561952e1471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e407b6ca1d0d5723b6816a8d1012a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#a95e407b6ca1d0d5723b6816a8d1012a2">size</a> () const </td></tr>
+<tr class="memdesc:a95e407b6ca1d0d5723b6816a8d1012a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of resources currently loaded.  <a href="#a95e407b6ca1d0d5723b6816a8d1012a2">More...</a><br /></td></tr>
+<tr class="separator:a95e407b6ca1d0d5723b6816a8d1012a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae30a9aee45f73fc136c41f81a8949d64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#ae30a9aee45f73fc136c41f81a8949d64">resourceCount</a> () const </td></tr>
+<tr class="memdesc:ae30a9aee45f73fc136c41f81a8949d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of all resources ever loaded.  <a href="#ae30a9aee45f73fc136c41f81a8949d64">More...</a><br /></td></tr>
+<tr class="separator:ae30a9aee45f73fc136c41f81a8949d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e02b5a74bd8a8a4a06bc7fa4ed4d8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2e02b5a74bd8a8a4a06bc7fa4ed4d8c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#ac2e02b5a74bd8a8a4a06bc7fa4ed4d8c">clear</a> ()</td></tr>
+<tr class="memdesc:ac2e02b5a74bd8a8a4a06bc7fa4ed4d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all resources. <br /></td></tr>
+<tr class="separator:ac2e02b5a74bd8a8a4a06bc7fa4ed4d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a290b6585fb9ad859cb6e526206cd4fdd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a290b6585fb9ad859cb6e526206cd4fdd"></a>
-static ManagerType *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> ()</td></tr>
-<tr class="separator:a290b6585fb9ad859cb6e526206cd4fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a24b8dc1cc5b9e2eb14be68a3c1f9c"><td class="memItemLeft" align="right" valign="top">static ManagerType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1ResourceManager.html#a08a24b8dc1cc5b9e2eb14be68a3c1f9c">instance</a> ()</td></tr>
+<tr class="memdesc:a08a24b8dc1cc5b9e2eb14be68a3c1f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the singleton instance.  <a href="#a08a24b8dc1cc5b9e2eb14be68a3c1f9c">More...</a><br /></td></tr>
+<tr class="separator:a08a24b8dc1cc5b9e2eb14be68a3c1f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename ManagerType, typename ResourceType, typename ResourceId, typename Hash = std::hash&lt;ResourceId&gt;&gt;<br />
+class hb::ResourceManager&lt; ManagerType, ResourceType, ResourceId, Hash &gt;</h3>
+
+<p>Class for efficiently managing loaded resources. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ManagerType</td><td>Type of the <a class="el" href="classhb_1_1ResourceManager.html" title="Class for efficiently managing loaded resources. ">ResourceManager</a>. </td></tr>
+    <tr><td class="paramname">ResourceType</td><td>Type of the resource being managed. </td></tr>
+    <tr><td class="paramname">ResourceId</td><td>Type of the unique id of the resource being managed. </td></tr>
+    <tr><td class="paramname">Hash</td><td>Hash method for the ResourceId. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4a3493a9f4880e0faa6e583b0cf010c8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ManagerType, typename ResourceType, typename ResourceId, typename Hash  = std::hash&lt;ResourceId&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classhb_1_1ResourceManager.html">hb::ResourceManager</a>&lt; ManagerType, ResourceType, ResourceId, Hash &gt;::addResource </td>
+          <td>(</td>
+          <td class="paramtype">const ResourceId &amp;&#160;</td>
+          <td class="paramname"><em>resource_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ResourceType &amp;&#160;</td>
+          <td class="paramname"><em>resource</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add resource to manager. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resource_id</td><td>Unique id of the resource being added. </td></tr>
+    <tr><td class="paramname">resource</td><td>The resource being added. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classhb_1_1ResourceManager.html" title="Class for efficiently managing loaded resources. ">ResourceManager</a> identifier for the resource.</dd></dl>
+<p>If a resource with the same <em>resource_id</em> is already registered, its usage count will be incremented and the resource won't be stored again. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0e704d50f897a529caefe561952e1471"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ManagerType, typename ResourceType, typename ResourceId, typename Hash  = std::hash&lt;ResourceId&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classhb_1_1ResourceManager.html">hb::ResourceManager</a>&lt; ManagerType, ResourceType, ResourceId, Hash &gt;::countResourceUsage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns number of active requests for resource id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Identifier of the resource in the <a class="el" href="classhb_1_1ResourceManager.html" title="Class for efficiently managing loaded resources. ">ResourceManager</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Usage count of the resource. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a064582fd0f1aef17c7338362caab23a9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ManagerType, typename ResourceType, typename ResourceId, typename Hash  = std::hash&lt;ResourceId&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ResourceType&amp; <a class="el" href="classhb_1_1ResourceManager.html">hb::ResourceManager</a>&lt; ManagerType, ResourceType, ResourceId, Hash &gt;::get </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get resource with identifier id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Identifier of the resource in the <a class="el" href="classhb_1_1ResourceManager.html" title="Class for efficiently managing loaded resources. ">ResourceManager</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Constant reference to the resource. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1d88e204f37fe30b77a804cbe1101254"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ManagerType, typename ResourceType, typename ResourceId, typename Hash  = std::hash&lt;ResourceId&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResourceType&amp; <a class="el" href="classhb_1_1ResourceManager.html">hb::ResourceManager</a>&lt; ManagerType, ResourceType, ResourceId, Hash &gt;::get </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get resource with identifier id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Identifier of the resource in the <a class="el" href="classhb_1_1ResourceManager.html" title="Class for efficiently managing loaded resources. ">ResourceManager</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the resource. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abe5b248e0bab9c8e82b9227a6a70d92c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ManagerType, typename ResourceType, typename ResourceId, typename Hash  = std::hash&lt;ResourceId&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ResourceId&amp; <a class="el" href="classhb_1_1ResourceManager.html">hb::ResourceManager</a>&lt; ManagerType, ResourceType, ResourceId, Hash &gt;::getId </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get ResourceId of resource with identifier id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Identifier of the resource in the <a class="el" href="classhb_1_1ResourceManager.html" title="Class for efficiently managing loaded resources. ">ResourceManager</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ResourceId of the resource with identifier <em>id</em>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a08a24b8dc1cc5b9e2eb14be68a3c1f9c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ManagerType, typename ResourceType, typename ResourceId, typename Hash  = std::hash&lt;ResourceId&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ManagerType* <a class="el" href="classhb_1_1ResourceManager.html">hb::ResourceManager</a>&lt; ManagerType, ResourceType, ResourceId, Hash &gt;::instance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the singleton instance. </p>
+<dl class="section return"><dt>Returns</dt><dd><b>ManagerType</b> singleton instance. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad23041fe8a59563c4c8d0bfdb4a830ad"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ManagerType, typename ResourceType, typename ResourceId, typename Hash  = std::hash&lt;ResourceId&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classhb_1_1ResourceManager.html">hb::ResourceManager</a>&lt; ManagerType, ResourceType, ResourceId, Hash &gt;::isLoaded </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns wether the resource with identifier id is loaded. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Identifier of the resource in the <a class="el" href="classhb_1_1ResourceManager.html" title="Class for efficiently managing loaded resources. ">ResourceManager</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Is resource with identifier <em>id</em> loaded. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afe75903dbd597119f9e77f305403ac2b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ManagerType, typename ResourceType, typename ResourceId, typename Hash  = std::hash&lt;ResourceId&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classhb_1_1ResourceManager.html">hb::ResourceManager</a>&lt; ManagerType, ResourceType, ResourceId, Hash &gt;::isLoaded </td>
+          <td>(</td>
+          <td class="paramtype">const ResourceId &amp;&#160;</td>
+          <td class="paramname"><em>resource_id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns wether the resource with ResourceId <em>resource_id</em> is loaded. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resource_id</td><td>Unique id of the resource. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Is resource with ResourceId <em>resource_id</em> loaded. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4e29dbd993c298f1bdfbc219b0c8e579"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ManagerType, typename ResourceType, typename ResourceId, typename Hash  = std::hash&lt;ResourceId&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classhb_1_1ResourceManager.html">hb::ResourceManager</a>&lt; ManagerType, ResourceType, ResourceId, Hash &gt;::isLoaded </td>
+          <td>(</td>
+          <td class="paramtype">const ResourceId &amp;&#160;</td>
+          <td class="paramname"><em>resource_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns wether the resource with ResourceId <em>resource_id</em> is loaded and if it is loaded, puts the <a class="el" href="classhb_1_1ResourceManager.html" title="Class for efficiently managing loaded resources. ">ResourceManager</a> id in <em>id</em>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resource_id</td><td>Unique id of the resource. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Is resource with ResourceId <em>resource_id</em> loaded. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4830746d68888364b61dfdbe5ee95d49"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ManagerType, typename ResourceType, typename ResourceId, typename Hash  = std::hash&lt;ResourceId&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classhb_1_1ResourceManager.html">hb::ResourceManager</a>&lt; ManagerType, ResourceType, ResourceId, Hash &gt;::release </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Release a resource with identifier id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Identifier of the resource in the <a class="el" href="classhb_1_1ResourceManager.html" title="Class for efficiently managing loaded resources. ">ResourceManager</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If there is registered more than one usage of the resource, its counter will be decresed and the resource won't be deleted until its usage count reaches 0. </p>
+
+<p>Reimplemented in <a class="el" href="classhb_1_1TextureManager.html#aa8f811a1eed709eef8a92cfbc9dc928b">hb::TextureManager</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a06e36d27624a7b3c8a7ef09bbb73bbd0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ManagerType, typename ResourceType, typename ResourceId, typename Hash  = std::hash&lt;ResourceId&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classhb_1_1ResourceManager.html">hb::ResourceManager</a>&lt; ManagerType, ResourceType, ResourceId, Hash &gt;::releaseAll </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Release all resources with identifier id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Identifier of the resource in the <a class="el" href="classhb_1_1ResourceManager.html" title="Class for efficiently managing loaded resources. ">ResourceManager</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Removes the resource with identifier <em>id</em>, ignoring if it has more usages. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae30a9aee45f73fc136c41f81a8949d64"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ManagerType, typename ResourceType, typename ResourceId, typename Hash  = std::hash&lt;ResourceId&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classhb_1_1ResourceManager.html">hb::ResourceManager</a>&lt; ManagerType, ResourceType, ResourceId, Hash &gt;::resourceCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns number of all resources ever loaded. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of all resources ever loaded (Not counting usages). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a95e407b6ca1d0d5723b6816a8d1012a2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ManagerType, typename ResourceType, typename ResourceId, typename Hash  = std::hash&lt;ResourceId&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classhb_1_1ResourceManager.html">hb::ResourceManager</a>&lt; ManagerType, ResourceType, ResourceId, Hash &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns number of resources currently loaded. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of resources currently loaded (Not counting usages). </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Core/Core/<a class="el" href="ResourceManager_8h_source.html">ResourceManager.h</a></li>
 </ul>
@@ -167,7 +657,7 @@ static ManagerType *&#160;</td><td class="memItemRight" valign="bottom"><b>insta
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>hb</b></li><li class="navelem"><a class="el" href="classhb_1_1ResourceManager.html">ResourceManager</a></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:54 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

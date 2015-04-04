@@ -88,12 +88,12 @@ var group__SFML =
     [ "SFMLPlugin", "classhb_1_1SFMLPlugin.html", [
       [ "SFMLPlugin", "classhb_1_1SFMLPlugin.html#a913fa4a2a025cbd25fe78c074b5cb9bc", null ],
       [ "~SFMLPlugin", "classhb_1_1SFMLPlugin.html#a5e5fc3461df74ac986420c2dad194333", null ],
-      [ "getComponentFactory", "classhb_1_1SFMLPlugin.html#ad537de3bc564b5f569e98e1e6a8c308c", null ],
       [ "postUpdate", "classhb_1_1SFMLPlugin.html#af286fae64c1dc88a82ca1fd80c4d5b4f", null ],
       [ "preUpdate", "classhb_1_1SFMLPlugin.html#a4f52c838193ba5c9b970536b9dc536f2", null ]
     ] ],
     [ "SoundBuffer", "classhb_1_1SoundBuffer.html", [
       [ "SoundBuffer", "classhb_1_1SoundBuffer.html#a3918a5a12a5a19f2ab4fb3c27dc65ff4", null ],
+      [ "SoundBuffer", "classhb_1_1SoundBuffer.html#a690521c2f01c0d8bb7780f1603820326", null ],
       [ "SoundBuffer", "classhb_1_1SoundBuffer.html#a20ed3f09ef7a31bd480e22bfe2e1c01f", null ],
       [ "~SoundBuffer", "classhb_1_1SoundBuffer.html#a4945f4e1e1207fdc9f2fc44d9cdc2c7b", null ],
       [ "getDuration", "classhb_1_1SoundBuffer.html#ae5ee64b1e417fbc317786f100572a29f", null ]
@@ -118,6 +118,7 @@ var group__SFML =
     ] ],
     [ "Texture", "classhb_1_1Texture.html", [
       [ "Texture", "classhb_1_1Texture.html#ac3ab3e15265d35704fdfe66729be4b77", null ],
+      [ "Texture", "classhb_1_1Texture.html#a81b43198171c568017d45debdce25190", null ],
       [ "~Texture", "classhb_1_1Texture.html#aa2dd6c7c72d798ac688481da0e31db32", null ],
       [ "fill", "classhb_1_1Texture.html#a001bf03af5f264d1f7c7b650c9cad1f6", null ],
       [ "repeat", "classhb_1_1Texture.html#ad5908c54ac805c1b35d541e8ea4bdd5a", null ],

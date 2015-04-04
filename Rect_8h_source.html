@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('Rect_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,34 +107,33 @@ $(document).ready(function(){initNavTree('Rect_8h_source.html','');});
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef HB_RECT_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define HB_RECT_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;regex&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../Core/Vector2d.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehb.html">hb</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classhb_1_1Rect.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhb_1_1Rect.html">Rect</a> : <span class="keyword">public</span> sf::Rect&lt;double&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classhb_1_1Rect.html">Rect</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classhb_1_1Rect.html">Rect</a>(<span class="keywordtype">double</span> rectLeft, <span class="keywordtype">double</span> rectTop, <span class="keywordtype">double</span> rectWidth, <span class="keywordtype">double</span> rectHeight);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="classhb_1_1Rect.html">Rect</a>(<span class="keyword">const</span> std::string&amp; str);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classhb_1_1Rect.html">Rect</a>(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector2d.html">Vector2d</a> &amp;position, <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector2d.html">Vector2d</a> &amp;size);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        ~<a class="code" href="classhb_1_1Rect.html">Rect</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    };</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classhb_1_1Rect_html"><div class="ttname"><a href="classhb_1_1Rect.html">hb::Rect</a></div><div class="ttdef"><b>Definition:</b> Rect.h:14</div></div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
-<div class="ttc" id="classhb_1_1Vector2d_html"><div class="ttname"><a href="classhb_1_1Vector2d.html">hb::Vector2d</a></div><div class="ttdef"><b>Definition:</b> Vector2d.h:10</div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../Core/Vector2d.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehb.html">hb</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classhb_1_1Rect.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhb_1_1Rect.html">Rect</a> : <span class="keyword">public</span> sf::Rect&lt;double&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classhb_1_1Rect.html">Rect</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classhb_1_1Rect.html">Rect</a>(<span class="keywordtype">double</span> rectLeft, <span class="keywordtype">double</span> rectTop, <span class="keywordtype">double</span> rectWidth, <span class="keywordtype">double</span> rectHeight);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classhb_1_1Rect.html">Rect</a>(<span class="keyword">const</span> std::string&amp; str);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="classhb_1_1Rect.html">Rect</a>(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector2d.html">Vector2d</a> &amp;position, <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector2d.html">Vector2d</a> &amp;size);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        ~<a class="code" href="classhb_1_1Rect.html">Rect</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    };</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classhb_1_1Rect_html"><div class="ttname"><a href="classhb_1_1Rect.html">hb::Rect</a></div><div class="ttdef"><b>Definition:</b> Rect.h:13</div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Box2DPlugin.h:6</div></div>
+<div class="ttc" id="classhb_1_1Vector2d_html"><div class="ttname"><a href="classhb_1_1Vector2d.html">hb::Vector2d</a></div><div class="ttdoc">A 2D vector. </div><div class="ttdef"><b>Definition:</b> Vector2d.h:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c9d62fd513ce19bab3d7ef8db833e3f1.html">SFML</a></li><li class="navelem"><a class="el" href="dir_9e7812ef929956c40f0ec0fafa91b536.html">SFML</a></li><li class="navelem"><b>Rect.h</b></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

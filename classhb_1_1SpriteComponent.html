@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classhb_1_1SpriteComponent.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,10 +105,8 @@ $(document).ready(function(){initNavTree('classhb_1_1SpriteComponent.html','');}
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classhb_1_1SpriteComponent-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">hb::SpriteComponent Class Reference<div class="ingroups"><a class="el" href="group__SFML.html">Hummingbird-SFML</a> &raquo; <a class="el" href="group__SFML-components.html">Components</a></div></div>  </div>
@@ -119,23 +117,24 @@ Inheritance diagram for hb::SpriteComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhb_1_1SpriteComponent__inherit__graph.png" border="0" usemap="#hb_1_1SpriteComponent_inherit__map" alt="Inheritance graph"/></div>
 <map name="hb_1_1SpriteComponent_inherit__map" id="hb_1_1SpriteComponent_inherit__map">
-<area shape="rect" id="node2" href="classhb_1_1GameObject_1_1Component.html" title="hb::GameObject::Component" alt="" coords="5,5,197,32"/><area shape="rect" id="node3" href="classhb_1_1Transform.html" title="hb::Transform" alt="" coords="222,5,325,32"/></map>
+<area shape="rect" id="node2" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. " alt="" coords="5,5,197,32"/><area shape="rect" id="node3" href="classhb_1_1Transform.html" title="Object with a position, rotation and scale in a 3D space. " alt="" coords="222,5,325,32"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for hb::SpriteComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhb_1_1SpriteComponent__coll__graph.png" border="0" usemap="#hb_1_1SpriteComponent_coll__map" alt="Collaboration graph"/></div>
 <map name="hb_1_1SpriteComponent_coll__map" id="hb_1_1SpriteComponent_coll__map">
-<area shape="rect" id="node2" href="classhb_1_1GameObject_1_1Component.html" title="hb::GameObject::Component" alt="" coords="5,5,197,32"/><area shape="rect" id="node3" href="classhb_1_1Transform.html" title="hb::Transform" alt="" coords="222,5,325,32"/><area shape="rect" id="node4" href="classhb_1_1Sprite.html" title="hb::Sprite" alt="" coords="349,5,427,32"/><area shape="rect" id="node5" href="classhb_1_1Time.html" title="hb::Time" alt="" coords="455,5,529,32"/></map>
+<area shape="rect" id="node2" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. " alt="" coords="5,5,197,32"/><area shape="rect" id="node3" href="classhb_1_1Transform.html" title="Object with a position, rotation and scale in a 3D space. " alt="" coords="222,5,325,32"/><area shape="rect" id="node4" href="structhb_1_1Color.html" title="A color represented in the RGBA format. " alt="" coords="349,5,424,32"/><area shape="rect" id="node5" href="classhb_1_1Sprite.html" title="hb::Sprite" alt="" coords="449,5,527,32"/><area shape="rect" id="node6" href="classhb_1_1Time.html" title="Class for representing intervals of time. " alt="" coords="555,5,629,32"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab4851572b9c417a881bbf6785df66790"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4851572b9c417a881bbf6785df66790"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SpriteComponent</b> (const <a class="el" href="classhb_1_1Sprite.html">Sprite</a> &amp;sprite=<a class="el" href="classhb_1_1Sprite.html">Sprite</a>(), const std::vector&lt; int &gt; &amp;frame_order=std::vector&lt; int &gt;(1, 0), const <a class="el" href="classhb_1_1Time.html">Time</a> &amp;frame_time=Time::seconds(0))</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SpriteComponent</b> (const <a class="el" href="classhb_1_1Sprite.html">Sprite</a> &amp;sprite=<a class="el" href="classhb_1_1Sprite.html">Sprite</a>(), const std::vector&lt; int &gt; &amp;frame_order=std::vector&lt; int &gt;(1, 0), const <a class="el" href="classhb_1_1Time.html">Time</a> &amp;frame_time=<a class="el" href="classhb_1_1Time.html#a0ad46933068ef78876e223c2bb07bc67">Time::seconds</a>(0))</td></tr>
 <tr class="separator:ab4851572b9c417a881bbf6785df66790"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca3fab4b6049b1932f8ec460cdb0a71a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca3fab4b6049b1932f8ec460cdb0a71a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>postUpdate</b> () override</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1SpriteComponent.html#aca3fab4b6049b1932f8ec460cdb0a71a">postUpdate</a> () override</td></tr>
+<tr class="memdesc:aca3fab4b6049b1932f8ec460cdb0a71a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called in the post-update step. <br /></td></tr>
 <tr class="separator:aca3fab4b6049b1932f8ec460cdb0a71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9161185514fcb407d51ba6758a16d30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9161185514fcb407d51ba6758a16d30"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setSprite</b> (const <a class="el" href="classhb_1_1Sprite.html">Sprite</a> &amp;sprite)</td></tr>
@@ -182,65 +181,92 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>play</b> ()</td></tr>
 <tr class="memitem:a8855cd4c66f8728be9b85dc365ed2e8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8855cd4c66f8728be9b85dc365ed2e8b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
 <tr class="separator:a8855cd4c66f8728be9b85dc365ed2e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fafa88e531d2ad022941f085d51e206"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5fafa88e531d2ad022941f085d51e206"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setColor</b> (const <a class="el" href="structhb_1_1Color.html">Color</a> &amp;color)</td></tr>
+<tr class="separator:a5fafa88e531d2ad022941f085d51e206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255b5462f62e55e581d18588a15d4e8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a255b5462f62e55e581d18588a15d4e8a"></a>
+const <a class="el" href="structhb_1_1Color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getColor</b> () const </td></tr>
+<tr class="separator:a255b5462f62e55e581d18588a15d4e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classhb_1_1GameObject_1_1Component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhb_1_1GameObject_1_1Component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhb_1_1GameObject_1_1Component.html">hb::GameObject::Component</a></td></tr>
-<tr class="memitem:aa8015b12c5a5ae0c1eb36c510655d7c2 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8015b12c5a5ae0c1eb36c510655d7c2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
+<tr class="memitem:afec101ed4e9056dfba1dde5df6f788ab inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#afec101ed4e9056dfba1dde5df6f788ab">Component</a> ()</td></tr>
+<tr class="memdesc:afec101ed4e9056dfba1dde5df6f788ab inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#afec101ed4e9056dfba1dde5df6f788ab">More...</a><br /></td></tr>
+<tr class="separator:afec101ed4e9056dfba1dde5df6f788ab inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1c8bd83fba582eae1f53eb8b052327 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f1c8bd83fba582eae1f53eb8b052327"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#a6f1c8bd83fba582eae1f53eb8b052327">~Component</a> ()</td></tr>
+<tr class="memdesc:a6f1c8bd83fba582eae1f53eb8b052327 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
+<tr class="separator:a6f1c8bd83fba582eae1f53eb8b052327 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8015b12c5a5ae0c1eb36c510655d7c2 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#aa8015b12c5a5ae0c1eb36c510655d7c2">init</a> ()</td></tr>
+<tr class="memdesc:aa8015b12c5a5ae0c1eb36c510655d7c2 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called once after the <a class="el" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. ">Component</a> has been added to a <a class="el" href="classhb_1_1GameObject.html" title="GameObject (also known as Actor). ">GameObject</a>.  <a href="#aa8015b12c5a5ae0c1eb36c510655d7c2">More...</a><br /></td></tr>
 <tr class="separator:aa8015b12c5a5ae0c1eb36c510655d7c2 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a681bf0cc2a08c59c346334ac62a515e1 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a681bf0cc2a08c59c346334ac62a515e1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>preUpdate</b> ()</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#a681bf0cc2a08c59c346334ac62a515e1">preUpdate</a> ()</td></tr>
+<tr class="memdesc:a681bf0cc2a08c59c346334ac62a515e1 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called in the pre-update step. <br /></td></tr>
 <tr class="separator:a681bf0cc2a08c59c346334ac62a515e1 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0672845dbeb31c8e6ca00435de3c4bd inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0672845dbeb31c8e6ca00435de3c4bd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#ad0672845dbeb31c8e6ca00435de3c4bd">update</a> ()</td></tr>
+<tr class="memdesc:ad0672845dbeb31c8e6ca00435de3c4bd inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called in the update step. <br /></td></tr>
 <tr class="separator:ad0672845dbeb31c8e6ca00435de3c4bd inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a021c3f1e222601e407c07d5dc3043d10 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a021c3f1e222601e407c07d5dc3043d10"></a>
-<a class="el" href="classhb_1_1GameObject.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getGameObject</b> () const </td></tr>
+<tr class="memitem:a021c3f1e222601e407c07d5dc3043d10 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhb_1_1GameObject.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#a021c3f1e222601e407c07d5dc3043d10">getGameObject</a> () const </td></tr>
+<tr class="memdesc:a021c3f1e222601e407c07d5dc3043d10 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classhb_1_1GameObject.html" title="GameObject (also known as Actor). ">GameObject</a> instance composed by this <a class="el" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. ">Component</a>.  <a href="#a021c3f1e222601e407c07d5dc3043d10">More...</a><br /></td></tr>
 <tr class="separator:a021c3f1e222601e407c07d5dc3043d10 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb0b97ebe2d0f8e72d249e7c7fccba5 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#a3cb0b97ebe2d0f8e72d249e7c7fccba5">setActive</a> (bool active)</td></tr>
+<tr class="memdesc:a3cb0b97ebe2d0f8e72d249e7c7fccba5 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if <a class="el" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. ">Component</a> is active.  <a href="#a3cb0b97ebe2d0f8e72d249e7c7fccba5">More...</a><br /></td></tr>
+<tr class="separator:a3cb0b97ebe2d0f8e72d249e7c7fccba5 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47678813529b1051d42e4f4116f2ffe0 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#a47678813529b1051d42e4f4116f2ffe0">isActive</a> () const </td></tr>
+<tr class="memdesc:a47678813529b1051d42e4f4116f2ffe0 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get if <a class="el" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. ">Component</a> is active.  <a href="#a47678813529b1051d42e4f4116f2ffe0">More...</a><br /></td></tr>
+<tr class="separator:a47678813529b1051d42e4f4116f2ffe0 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classhb_1_1Transform"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhb_1_1Transform')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhb_1_1Transform.html">hb::Transform</a></td></tr>
+<tr class="memitem:a3b461935bded9331dbf2eb9249e14257 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Transform.html#a3b461935bded9331dbf2eb9249e14257">Transform</a> ()</td></tr>
+<tr class="memdesc:a3b461935bded9331dbf2eb9249e14257 inherit pub_methods_classhb_1_1Transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a3b461935bded9331dbf2eb9249e14257">More...</a><br /></td></tr>
+<tr class="separator:a3b461935bded9331dbf2eb9249e14257 inherit pub_methods_classhb_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d6e4038876870661b6fe09e2f6f2347 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d6e4038876870661b6fe09e2f6f2347"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Transform</b> (const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a> &amp;init_pos)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Transform.html#a5d6e4038876870661b6fe09e2f6f2347">Transform</a> (const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a> &amp;init_pos)</td></tr>
+<tr class="memdesc:a5d6e4038876870661b6fe09e2f6f2347 inherit pub_methods_classhb_1_1Transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with initial position. <br /></td></tr>
 <tr class="separator:a5d6e4038876870661b6fe09e2f6f2347 inherit pub_methods_classhb_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8047164164d2469eb8ebc243c5a619f6 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8047164164d2469eb8ebc243c5a619f6"></a>
-const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getPosition</b> () const </td></tr>
+<tr class="memitem:a57dd199867fd333b704f2f29b656bc9f inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57dd199867fd333b704f2f29b656bc9f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Transform.html#a57dd199867fd333b704f2f29b656bc9f">~Transform</a> ()</td></tr>
+<tr class="memdesc:a57dd199867fd333b704f2f29b656bc9f inherit pub_methods_classhb_1_1Transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor. <br /></td></tr>
+<tr class="separator:a57dd199867fd333b704f2f29b656bc9f inherit pub_methods_classhb_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8047164164d2469eb8ebc243c5a619f6 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Transform.html#a8047164164d2469eb8ebc243c5a619f6">getPosition</a> () const </td></tr>
+<tr class="memdesc:a8047164164d2469eb8ebc243c5a619f6 inherit pub_methods_classhb_1_1Transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classhb_1_1Transform.html" title="Object with a position, rotation and scale in a 3D space. ">Transform</a> position.  <a href="#a8047164164d2469eb8ebc243c5a619f6">More...</a><br /></td></tr>
 <tr class="separator:a8047164164d2469eb8ebc243c5a619f6 inherit pub_methods_classhb_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1404f883fde44a4099c548020bfe913 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1404f883fde44a4099c548020bfe913"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPosition</b> (const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a> &amp;p)</td></tr>
+<tr class="memitem:ac1404f883fde44a4099c548020bfe913 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Transform.html#ac1404f883fde44a4099c548020bfe913">setPosition</a> (const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a> &amp;p)</td></tr>
+<tr class="memdesc:ac1404f883fde44a4099c548020bfe913 inherit pub_methods_classhb_1_1Transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position from a <a class="el" href="classhb_1_1Vector3d.html" title="A 3D vector. ">Vector3d</a>.  <a href="#ac1404f883fde44a4099c548020bfe913">More...</a><br /></td></tr>
 <tr class="separator:ac1404f883fde44a4099c548020bfe913 inherit pub_methods_classhb_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d98dbcbcf7115b8090a49ef7046cda3 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d98dbcbcf7115b8090a49ef7046cda3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPosition</b> (double p_x, double p_y, double p_z)</td></tr>
+<tr class="memitem:a9d98dbcbcf7115b8090a49ef7046cda3 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Transform.html#a9d98dbcbcf7115b8090a49ef7046cda3">setPosition</a> (double p_x, double p_y, double p_z)</td></tr>
+<tr class="memdesc:a9d98dbcbcf7115b8090a49ef7046cda3 inherit pub_methods_classhb_1_1Transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position from doubles.  <a href="#a9d98dbcbcf7115b8090a49ef7046cda3">More...</a><br /></td></tr>
 <tr class="separator:a9d98dbcbcf7115b8090a49ef7046cda3 inherit pub_methods_classhb_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4253de71ddce1f387fcf45576b05b21a inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4253de71ddce1f387fcf45576b05b21a"></a>
-const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getRotation</b> () const </td></tr>
+<tr class="memitem:a4253de71ddce1f387fcf45576b05b21a inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Transform.html#a4253de71ddce1f387fcf45576b05b21a">getRotation</a> () const </td></tr>
+<tr class="memdesc:a4253de71ddce1f387fcf45576b05b21a inherit pub_methods_classhb_1_1Transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classhb_1_1Transform.html" title="Object with a position, rotation and scale in a 3D space. ">Transform</a> rotation.  <a href="#a4253de71ddce1f387fcf45576b05b21a">More...</a><br /></td></tr>
 <tr class="separator:a4253de71ddce1f387fcf45576b05b21a inherit pub_methods_classhb_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6820feb34cf24fcb2604f2687723ccde inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6820feb34cf24fcb2604f2687723ccde"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRotation</b> (const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a> &amp;rotation)</td></tr>
+<tr class="memitem:a6820feb34cf24fcb2604f2687723ccde inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Transform.html#a6820feb34cf24fcb2604f2687723ccde">setRotation</a> (const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a> &amp;rotation)</td></tr>
+<tr class="memdesc:a6820feb34cf24fcb2604f2687723ccde inherit pub_methods_classhb_1_1Transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rotation from a <a class="el" href="classhb_1_1Vector3d.html" title="A 3D vector. ">Vector3d</a>.  <a href="#a6820feb34cf24fcb2604f2687723ccde">More...</a><br /></td></tr>
 <tr class="separator:a6820feb34cf24fcb2604f2687723ccde inherit pub_methods_classhb_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a929f6385fabf0252d265fed3bb65f7d9 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a929f6385fabf0252d265fed3bb65f7d9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRotation</b> (double rotation_x, double rotation_y, double rotation_z)</td></tr>
+<tr class="memitem:a929f6385fabf0252d265fed3bb65f7d9 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Transform.html#a929f6385fabf0252d265fed3bb65f7d9">setRotation</a> (double rotation_x, double rotation_y, double rotation_z)</td></tr>
+<tr class="memdesc:a929f6385fabf0252d265fed3bb65f7d9 inherit pub_methods_classhb_1_1Transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rotation from doubles.  <a href="#a929f6385fabf0252d265fed3bb65f7d9">More...</a><br /></td></tr>
 <tr class="separator:a929f6385fabf0252d265fed3bb65f7d9 inherit pub_methods_classhb_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8130216d3bc9d32411b46e2dfdbc671c inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8130216d3bc9d32411b46e2dfdbc671c"></a>
-const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getScale</b> () const </td></tr>
+<tr class="memitem:a8130216d3bc9d32411b46e2dfdbc671c inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Transform.html#a8130216d3bc9d32411b46e2dfdbc671c">getScale</a> () const </td></tr>
+<tr class="memdesc:a8130216d3bc9d32411b46e2dfdbc671c inherit pub_methods_classhb_1_1Transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classhb_1_1Transform.html" title="Object with a position, rotation and scale in a 3D space. ">Transform</a> scale.  <a href="#a8130216d3bc9d32411b46e2dfdbc671c">More...</a><br /></td></tr>
 <tr class="separator:a8130216d3bc9d32411b46e2dfdbc671c inherit pub_methods_classhb_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53c6dfebdd7e7b97113ae65fbe18a7b5 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53c6dfebdd7e7b97113ae65fbe18a7b5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setScale</b> (const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a> &amp;scale)</td></tr>
+<tr class="memitem:a53c6dfebdd7e7b97113ae65fbe18a7b5 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Transform.html#a53c6dfebdd7e7b97113ae65fbe18a7b5">setScale</a> (const <a class="el" href="classhb_1_1Vector3d.html">Vector3d</a> &amp;scale)</td></tr>
+<tr class="memdesc:a53c6dfebdd7e7b97113ae65fbe18a7b5 inherit pub_methods_classhb_1_1Transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scale from a <a class="el" href="classhb_1_1Vector3d.html" title="A 3D vector. ">Vector3d</a>.  <a href="#a53c6dfebdd7e7b97113ae65fbe18a7b5">More...</a><br /></td></tr>
 <tr class="separator:a53c6dfebdd7e7b97113ae65fbe18a7b5 inherit pub_methods_classhb_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad00e4822c5465e090740555df63c11d0 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad00e4822c5465e090740555df63c11d0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setScale</b> (double scale_x, double scale_y, double scale_z)</td></tr>
+<tr class="memitem:ad00e4822c5465e090740555df63c11d0 inherit pub_methods_classhb_1_1Transform"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Transform.html#ad00e4822c5465e090740555df63c11d0">setScale</a> (double scale_x, double scale_y, double scale_z)</td></tr>
+<tr class="memdesc:ad00e4822c5465e090740555df63c11d0 inherit pub_methods_classhb_1_1Transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position from doubles.  <a href="#ad00e4822c5465e090740555df63c11d0">More...</a><br /></td></tr>
 <tr class="separator:ad00e4822c5465e090740555df63c11d0 inherit pub_methods_classhb_1_1Transform"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a75face3acd82aa573353d12b76d024a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75face3acd82aa573353d12b76d024a7"></a>
-static <a class="el" href="classhb_1_1GameObject_1_1Component.html">GameObject::Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>factory</b> (std::map&lt; std::string, std::string &gt; &amp;properties, int i)</td></tr>
-<tr class="separator:a75face3acd82aa573353d12b76d024a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15dfdcb752a1f43dc31558af8bf08ad3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15dfdcb752a1f43dc31558af8bf08ad3"></a>
-static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getFootprint</b> ()</td></tr>
-<tr class="separator:a15dfdcb752a1f43dc31558af8bf08ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9b02bf1a1416b3bf64366c302ee641d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b02bf1a1416b3bf64366c302ee641d2"></a>
 <a class="el" href="classhb_1_1Vector2d.html">Vector2d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getCoords</b> ()</td></tr>
 <tr class="separator:a9b02bf1a1416b3bf64366c302ee641d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classhb_1_1GameObject_1_1Component"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classhb_1_1GameObject_1_1Component')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classhb_1_1GameObject_1_1Component.html">hb::GameObject::Component</a></td></tr>
+<tr class="memitem:a57346d560a359e17a73abc5374fd246f inherit pro_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57346d560a359e17a73abc5374fd246f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addListenerToGameObject</b> (const std::string &amp;name, std::function&lt; void(<a class="el" href="classhb_1_1DataRepository.html">DataRepository</a> &amp;)&gt; &amp;&amp;listener)</td></tr>
+<tr class="separator:a57346d560a359e17a73abc5374fd246f inherit pro_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4772613d4bc20b5e7de29fa1486645a7 inherit pro_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4772613d4bc20b5e7de29fa1486645a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ignoreToGameObject</b> (const GameObjectMessageManager::ListenerId&lt; <a class="el" href="classhb_1_1DataRepository.html">DataRepository</a> &gt; &amp;listener_id)</td></tr>
+<tr class="separator:a4772613d4bc20b5e7de29fa1486645a7 inherit pro_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -271,12 +297,9 @@ sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>m_sprite</b></t
 <tr class="memitem:a69a05595c477173d767418cd3b8e5eda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69a05595c477173d767418cd3b8e5eda"></a>
 std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_frame_order</b></td></tr>
 <tr class="separator:a69a05595c477173d767418cd3b8e5eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:ace24b674ee23271e1e90a20528023600"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace24b674ee23271e1e90a20528023600"></a>
-static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>s_footprint</b></td></tr>
-<tr class="separator:ace24b674ee23271e1e90a20528023600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed20680880d804b9617398834869474"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ed20680880d804b9617398834869474"></a>
+<a class="el" href="structhb_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_color</b></td></tr>
+<tr class="separator:a8ed20680880d804b9617398834869474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>SFML/SFML/<a class="el" href="SpriteComponent_8h_source.html">SpriteComponent.h</a></li>
@@ -287,7 +310,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>s_footp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>hb</b></li><li class="navelem"><a class="el" href="classhb_1_1SpriteComponent.html">SpriteComponent</a></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:54 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

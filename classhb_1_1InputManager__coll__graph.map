@@ -1,4 +1,4 @@
 <map id="hb::InputManager" name="hb::InputManager">
-<area shape="rect" id="node2" href="$classhb_1_1EventManager.html" title="hb::EventManager\&lt; MouseButton\lWindow, MouseButtonWorld,\l KeyPressed, KeyReleased,\l JoyButtonPressed, JoyButtonReleased,\l JoyAxis, WindowResized \&gt;" alt="" coords="220,5,479,91"/>
-<area shape="rect" id="node3" href="$classhb_1_1detail_1_1EventManager.html" title="hb::detail::EventManager\l\&lt; Events \&gt;" alt="" coords="5,27,172,69"/>
+<area shape="rect" id="node2" href="$classhb_1_1MessageManager.html" title="hb::MessageManager\l\&lt; MouseButtonWindow,\l MouseButtonWorld, KeyPressed,\l KeyReleased, JoyButtonPressed,\l JoyButtonReleased, JoyAxis,\l WindowResized \&gt;" alt="" coords="240,5,463,105"/>
+<area shape="rect" id="node3" href="$classhb_1_1detail_1_1MessageManager.html" title="hb::detail::MessageManager\l\&lt; Types \&gt;" alt="" coords="5,35,192,76"/>
 </map>

@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('Texture_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -119,31 +119,32 @@ $(document).ready(function(){initNavTree('Texture_8h_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="classhb_1_1Texture.html">Texture</a>(<span class="keyword">const</span> sf::Texture&amp; texture, <span class="keyword">const</span> detail::tex_id&amp; <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        ~<a class="code" href="classhb_1_1Texture.html">Texture</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">static</span> <a class="code" href="classhb_1_1Texture.html">Texture</a> t404();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">static</span> <a class="code" href="classhb_1_1Texture.html">Texture</a> loadFromFile(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> <a class="code" href="classhb_1_1Rect.html">Rect</a>&amp; area = <a class="code" href="classhb_1_1Rect.html">Rect</a>());</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">static</span> <a class="code" href="classhb_1_1Texture.html">Texture</a> makeTexture(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector2d.html">Vector2d</a>&amp; size);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> fill(<span class="keyword">const</span> <a class="code" href="classhb_1_1Rect.html">Rect</a>&amp; area, <span class="keyword">const</span> <a class="code" href="structhb_1_1Color.html">Color</a>&amp; color);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> stroke(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector2d.html">Vector2d</a>&amp; start, <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector2d.html">Vector2d</a>&amp; end, <span class="keyword">const</span> <a class="code" href="structhb_1_1Color.html">Color</a>&amp; color);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classhb_1_1Vector2d.html">Vector2d</a> size() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">void</span> smooth(<span class="keywordtype">bool</span> smooth);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> repeat(<span class="keywordtype">bool</span> repeat);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    };</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classhb_1_1Resource_html"><div class="ttname"><a href="classhb_1_1Resource.html">hb::Resource</a></div><div class="ttdef"><b>Definition:</b> Resource.h:12</div></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classhb_1_1Texture.html">Texture</a>(<span class="keyword">const</span> detail::tex_id&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        ~<a class="code" href="classhb_1_1Texture.html">Texture</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">static</span> <a class="code" href="classhb_1_1Texture.html">Texture</a> t404();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">static</span> <a class="code" href="classhb_1_1Texture.html">Texture</a> loadFromFile(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> <a class="code" href="classhb_1_1Rect.html">Rect</a>&amp; area = <a class="code" href="classhb_1_1Rect.html">Rect</a>());</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">static</span> <a class="code" href="classhb_1_1Texture.html">Texture</a> makeTexture(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector2d.html">Vector2d</a>&amp; size);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> fill(<span class="keyword">const</span> <a class="code" href="classhb_1_1Rect.html">Rect</a>&amp; area, <span class="keyword">const</span> <a class="code" href="structhb_1_1Color.html">Color</a>&amp; color);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">void</span> stroke(<span class="keyword">const</span> <a class="code" href="classhb_1_1Vector2d.html">Vector2d</a>&amp; start, <span class="keyword">const</span> <a class="code" href="classhb_1_1Vector2d.html">Vector2d</a>&amp; end, <span class="keyword">const</span> <a class="code" href="structhb_1_1Color.html">Color</a>&amp; color);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classhb_1_1Vector2d.html">Vector2d</a> size() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> smooth(<span class="keywordtype">bool</span> smooth);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span> repeat(<span class="keywordtype">bool</span> repeat);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classhb_1_1Resource_html"><div class="ttname"><a href="classhb_1_1Resource.html">hb::Resource</a></div><div class="ttdoc">Class representing a loaded resource. </div><div class="ttdef"><b>Definition:</b> Resource.h:16</div></div>
 <div class="ttc" id="classhb_1_1Texture_html"><div class="ttname"><a href="classhb_1_1Texture.html">hb::Texture</a></div><div class="ttdef"><b>Definition:</b> Texture.h:16</div></div>
-<div class="ttc" id="classhb_1_1Rect_html"><div class="ttname"><a href="classhb_1_1Rect.html">hb::Rect</a></div><div class="ttdef"><b>Definition:</b> Rect.h:14</div></div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
-<div class="ttc" id="structhb_1_1Color_html"><div class="ttname"><a href="structhb_1_1Color.html">hb::Color</a></div><div class="ttdef"><b>Definition:</b> Color.h:6</div></div>
-<div class="ttc" id="classhb_1_1Vector2d_html"><div class="ttname"><a href="classhb_1_1Vector2d.html">hb::Vector2d</a></div><div class="ttdef"><b>Definition:</b> Vector2d.h:10</div></div>
+<div class="ttc" id="classhb_1_1Rect_html"><div class="ttname"><a href="classhb_1_1Rect.html">hb::Rect</a></div><div class="ttdef"><b>Definition:</b> Rect.h:13</div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Box2DPlugin.h:6</div></div>
+<div class="ttc" id="structhb_1_1Color_html"><div class="ttname"><a href="structhb_1_1Color.html">hb::Color</a></div><div class="ttdoc">A color represented in the RGBA format. </div><div class="ttdef"><b>Definition:</b> Color.h:6</div></div>
+<div class="ttc" id="classhb_1_1Vector2d_html"><div class="ttname"><a href="classhb_1_1Vector2d.html">hb::Vector2d</a></div><div class="ttdoc">A 2D vector. </div><div class="ttdef"><b>Definition:</b> Vector2d.h:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c9d62fd513ce19bab3d7ef8db833e3f1.html">SFML</a></li><li class="navelem"><a class="el" href="dir_9e7812ef929956c40f0ec0fafa91b536.html">SFML</a></li><li class="navelem"><b>Texture.h</b></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

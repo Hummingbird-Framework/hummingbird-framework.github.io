@@ -1,7 +1,7 @@
 <map id="hb::Transform" name="hb::Transform">
 <area shape="rect" id="node2" href="$classhb_1_1ClickableComponent.html" title="hb::ClickableComponent" alt="" coords="156,5,321,32"/>
 <area shape="rect" id="node3" href="$classhb_1_1CollisionComponent.html" title="hb::CollisionComponent" alt="" coords="158,56,319,83"/>
-<area shape="rect" id="node4" href="$classhb_1_1GameObject.html" title="hb::GameObject" alt="" coords="180,107,297,133"/>
+<area shape="rect" id="node4" href="$classhb_1_1GameObject.html" title="GameObject (also known as Actor). " alt="" coords="180,107,297,133"/>
 <area shape="rect" id="node5" href="$classhb_1_1SoundComponent.html" title="hb::SoundComponent" alt="" coords="165,157,313,184"/>
 <area shape="rect" id="node6" href="$classhb_1_1SpriteComponent.html" title="hb::SpriteComponent" alt="" coords="166,208,311,235"/>
 </map>

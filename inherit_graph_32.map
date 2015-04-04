@@ -1,13 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classhb_1_1GameObject_1_1Component.html" title="hb::GameObject::Component" alt="" coords="5,296,197,323"/>
-<area shape="rect" id="node2" href="$classhb_1_1DataComponent.html" title="hb::DataComponent\&lt;\l b2Body * \&gt;" alt="" coords="257,259,404,301"/>
-<area shape="rect" id="node3" href="$classhb_1_1CollisionComponent.html" title="hb::CollisionComponent" alt="" coords="464,267,625,293"/>
-<area shape="rect" id="node4" href="$classhb_1_1ClickableComponent.html" title="hb::ClickableComponent" alt="" coords="248,107,413,133"/>
-<area shape="rect" id="node5" href="$classhb_1_1DataComponent.html" title="hb::DataComponent\&lt; T \&gt;" alt="" coords="245,376,416,403"/>
-<area shape="rect" id="node6" href="$classhb_1_1FunctionComponent.html" title="hb::FunctionComponent" alt="" coords="250,427,411,453"/>
-<area shape="rect" id="node7" href="$classhb_1_1ListenerComponent.html" title="hb::ListenerComponent" alt="" coords="252,477,409,504"/>
-<area shape="rect" id="node8" href="$classhb_1_1SoundComponent.html" title="hb::SoundComponent" alt="" coords="257,157,405,184"/>
-<area shape="rect" id="node9" href="$classhb_1_1SpriteComponent.html" title="hb::SpriteComponent" alt="" coords="258,208,403,235"/>
-<area shape="rect" id="node10" href="$classhb_1_1Transform.html" title="hb::Transform" alt="" coords="50,107,153,133"/>
-<area shape="rect" id="node11" href="$classhb_1_1GameObject.html" title="hb::GameObject" alt="" coords="272,5,389,32"/>
+<area shape="rect" id="node1" href="$classhb_1_1Resource.html" title="hb::Resource\&lt; sf::SoundBuffer,\l std::string, SoundManager \&gt;" alt="" coords="5,5,212,47"/>
+<area shape="rect" id="node2" href="$classhb_1_1SoundBuffer.html" title="hb::SoundBuffer" alt="" coords="260,13,376,39"/>
 </map>

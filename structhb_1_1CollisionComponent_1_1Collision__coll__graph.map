@@ -1,5 +1,5 @@
 <map id="hb::CollisionComponent::Collision" name="hb::CollisionComponent::Collision">
-<area shape="rect" id="node2" href="$classhb_1_1GameObject.html" title="hb::GameObject" alt="" coords="5,81,123,108"/>
-<area shape="rect" id="node3" href="$classhb_1_1Transform.html" title="hb::Transform" alt="" coords="6,5,109,32"/>
+<area shape="rect" id="node2" href="$classhb_1_1GameObject.html" title="GameObject (also known as Actor). " alt="" coords="5,81,123,108"/>
+<area shape="rect" id="node3" href="$classhb_1_1Transform.html" title="Object with a position, rotation and scale in a 3D space. " alt="" coords="6,5,109,32"/>
 <area shape="rect" id="node4" href="$classhb_1_1Rect.html" title="hb::Rect" alt="" coords="157,81,229,108"/>
 </map>

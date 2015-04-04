@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('structhb_1_1Color.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,35 +112,163 @@ $(document).ready(function(){initNavTree('structhb_1_1Color.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>A color represented in the RGBA format.  
+ <a href="structhb_1_1Color.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Color_8h_source.html">Color.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a63613d483d17b1ecc6f3f0e2081b3e7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63613d483d17b1ecc6f3f0e2081b3e7d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Color</b> (float r, float g, float b, float a=1.0f)</td></tr>
+<tr class="memitem:a1ec2bc3afb68b5f5dad80ac1eb1c026f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ec2bc3afb68b5f5dad80ac1eb1c026f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhb_1_1Color.html#a1ec2bc3afb68b5f5dad80ac1eb1c026f">Color</a> ()</td></tr>
+<tr class="memdesc:a1ec2bc3afb68b5f5dad80ac1eb1c026f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. Initializes to color black. <br /></td></tr>
+<tr class="separator:a1ec2bc3afb68b5f5dad80ac1eb1c026f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63613d483d17b1ecc6f3f0e2081b3e7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhb_1_1Color.html#a63613d483d17b1ecc6f3f0e2081b3e7d">Color</a> (float <a class="el" href="structhb_1_1Color.html#af35481925635a1373fcdcd775cfefd43">r</a>, float <a class="el" href="structhb_1_1Color.html#a1ce90a7dbb3de969fdc84b22dffbd27b">g</a>, float <a class="el" href="structhb_1_1Color.html#a1b7a2bf7d36532218320db6b2d43558a">b</a>, float <a class="el" href="structhb_1_1Color.html#a8932f55a7d14fed02438a78ba2aa9a13">a</a>=1.0f)</td></tr>
+<tr class="memdesc:a63613d483d17b1ecc6f3f0e2081b3e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Floats contructor.  <a href="#a63613d483d17b1ecc6f3f0e2081b3e7d">More...</a><br /></td></tr>
 <tr class="separator:a63613d483d17b1ecc6f3f0e2081b3e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad947583bad2111a7a92e9c60988fb2f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad947583bad2111a7a92e9c60988fb2f7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Color</b> (int r, int g, int b, int a=255)</td></tr>
+<tr class="memitem:ad947583bad2111a7a92e9c60988fb2f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhb_1_1Color.html#ad947583bad2111a7a92e9c60988fb2f7">Color</a> (int <a class="el" href="structhb_1_1Color.html#af35481925635a1373fcdcd775cfefd43">r</a>, int <a class="el" href="structhb_1_1Color.html#a1ce90a7dbb3de969fdc84b22dffbd27b">g</a>, int <a class="el" href="structhb_1_1Color.html#a1b7a2bf7d36532218320db6b2d43558a">b</a>, int <a class="el" href="structhb_1_1Color.html#a8932f55a7d14fed02438a78ba2aa9a13">a</a>=255)</td></tr>
+<tr class="memdesc:ad947583bad2111a7a92e9c60988fb2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int contructor.  <a href="#ad947583bad2111a7a92e9c60988fb2f7">More...</a><br /></td></tr>
 <tr class="separator:ad947583bad2111a7a92e9c60988fb2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af35481925635a1373fcdcd775cfefd43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af35481925635a1373fcdcd775cfefd43"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>r</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhb_1_1Color.html#af35481925635a1373fcdcd775cfefd43">r</a></td></tr>
+<tr class="memdesc:af35481925635a1373fcdcd775cfefd43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Red component of the color. <br /></td></tr>
 <tr class="separator:af35481925635a1373fcdcd775cfefd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ce90a7dbb3de969fdc84b22dffbd27b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ce90a7dbb3de969fdc84b22dffbd27b"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>g</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhb_1_1Color.html#a1ce90a7dbb3de969fdc84b22dffbd27b">g</a></td></tr>
+<tr class="memdesc:a1ce90a7dbb3de969fdc84b22dffbd27b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Green component of the color. <br /></td></tr>
 <tr class="separator:a1ce90a7dbb3de969fdc84b22dffbd27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b7a2bf7d36532218320db6b2d43558a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b7a2bf7d36532218320db6b2d43558a"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>b</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhb_1_1Color.html#a1b7a2bf7d36532218320db6b2d43558a">b</a></td></tr>
+<tr class="memdesc:a1b7a2bf7d36532218320db6b2d43558a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blue component of the color. <br /></td></tr>
 <tr class="separator:a1b7a2bf7d36532218320db6b2d43558a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8932f55a7d14fed02438a78ba2aa9a13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8932f55a7d14fed02438a78ba2aa9a13"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>a</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhb_1_1Color.html#a8932f55a7d14fed02438a78ba2aa9a13">a</a></td></tr>
+<tr class="memdesc:a8932f55a7d14fed02438a78ba2aa9a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alpha component of the color (its opacity) <br /></td></tr>
 <tr class="separator:a8932f55a7d14fed02438a78ba2aa9a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Struct representing a color RGBA of floats [0, 1] </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>A color represented in the RGBA format. </p>
+<p>The values of its components should be between 0.0 and 1.0. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a63613d483d17b1ecc6f3f0e2081b3e7d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hb::Color::Color </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em> = <code>1.0f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Floats contructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Red component of the color </td></tr>
+    <tr><td class="paramname">g</td><td>Green component of the color </td></tr>
+    <tr><td class="paramname">b</td><td>Blue component of the color </td></tr>
+    <tr><td class="paramname">a</td><td>(optional) Alpha component of the color (its opacity). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad947583bad2111a7a92e9c60988fb2f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hb::Color::Color </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em> = <code>255</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Int contructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Red component of the color </td></tr>
+    <tr><td class="paramname">g</td><td>Green component of the color </td></tr>
+    <tr><td class="paramname">b</td><td>Blue component of the color </td></tr>
+    <tr><td class="paramname">a</td><td>(optional) Alpha component of the color (its opacity).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Values should be between 0 and 255. They will be divided by 255.0f. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Core/Core/<a class="el" href="Color_8h_source.html">Color.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -149,7 +277,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>a</b></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>hb</b></li><li class="navelem"><a class="el" href="structhb_1_1Color.html">Color</a></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

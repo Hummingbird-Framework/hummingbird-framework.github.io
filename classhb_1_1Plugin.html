@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classhb_1_1Plugin.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,47 +104,55 @@ $(document).ready(function(){initNavTree('classhb_1_1Plugin.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classhb_1_1Plugin-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">hb::Plugin Class Reference<div class="ingroups"><a class="el" href="group__core.html">Hummingbird Core</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base class for implementing custom <a class="el" href="classhb_1_1Plugin.html" title="Base class for implementing custom Plugins. ">Plugin</a>s.  
+ <a href="classhb_1_1Plugin.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Plugin_8h_source.html">Plugin.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for hb::Plugin:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhb_1_1Plugin__inherit__graph.png" border="0" usemap="#hb_1_1Plugin_inherit__map" alt="Inheritance graph"/></div>
 <map name="hb_1_1Plugin_inherit__map" id="hb_1_1Plugin_inherit__map">
-<area shape="rect" id="node2" href="classhb_1_1SFMLPlugin.html" title="hb::SFMLPlugin" alt="" coords="5,80,120,107"/></map>
+<area shape="rect" id="node2" href="classhb_1_1Box2DPlugin.html" title="hb::Box2DPlugin" alt="" coords="5,80,125,107"/><area shape="rect" id="node3" href="classhb_1_1SFMLPlugin.html" title="hb::SFMLPlugin" alt="" coords="149,80,264,107"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ab9d209242bca50e30c79fe7bcf701c58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9d209242bca50e30c79fe7bcf701c58"></a>
-typedef <a class="el" href="classhb_1_1GameObject_1_1Component.html">GameObject::Component</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentFactory</b> )(std::map&lt; std::string, std::string &gt; &amp;, int)</td></tr>
-<tr class="separator:ab9d209242bca50e30c79fe7bcf701c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adcbe0fd0e2ae28812b75e670920761e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcbe0fd0e2ae28812b75e670920761e2"></a>
-virtual std::map&lt; std::string, <br class="typebreak" />
-ComponentFactory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getComponentFactory</b> () const </td></tr>
-<tr class="separator:adcbe0fd0e2ae28812b75e670920761e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b831c869fef08c1717c2c55c7b4dfd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7b831c869fef08c1717c2c55c7b4dfd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Plugin.html#ab7b831c869fef08c1717c2c55c7b4dfd">Plugin</a> ()</td></tr>
+<tr class="memdesc:ab7b831c869fef08c1717c2c55c7b4dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor. <br /></td></tr>
+<tr class="separator:ab7b831c869fef08c1717c2c55c7b4dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa28c3a588399d4225bfa88af5446b192"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa28c3a588399d4225bfa88af5446b192"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Plugin.html#aa28c3a588399d4225bfa88af5446b192">~Plugin</a> ()</td></tr>
+<tr class="memdesc:aa28c3a588399d4225bfa88af5446b192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor. <br /></td></tr>
+<tr class="separator:aa28c3a588399d4225bfa88af5446b192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc73d8b72ad12047aa287d7667fcdfa6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc73d8b72ad12047aa287d7667fcdfa6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>gameStart</b> ()</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Plugin.html#adc73d8b72ad12047aa287d7667fcdfa6">gameStart</a> ()</td></tr>
+<tr class="memdesc:adc73d8b72ad12047aa287d7667fcdfa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function executed just before entering the gameloop. <br /></td></tr>
 <tr class="separator:adc73d8b72ad12047aa287d7667fcdfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3f4efcc4f93db5aae18a7f8cf22c145"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3f4efcc4f93db5aae18a7f8cf22c145"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>preUpdate</b> ()</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Plugin.html#ad3f4efcc4f93db5aae18a7f8cf22c145">preUpdate</a> ()</td></tr>
+<tr class="memdesc:ad3f4efcc4f93db5aae18a7f8cf22c145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function executed before updating the <a class="el" href="classhb_1_1GameObject.html" title="GameObject (also known as Actor). ">GameObject</a>s. <br /></td></tr>
 <tr class="separator:ad3f4efcc4f93db5aae18a7f8cf22c145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2bac682d7b94adc65312741db703d92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2bac682d7b94adc65312741db703d92"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>postUpdate</b> ()</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Plugin.html#aa2bac682d7b94adc65312741db703d92">postUpdate</a> ()</td></tr>
+<tr class="memdesc:aa2bac682d7b94adc65312741db703d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function executed after updating the <a class="el" href="classhb_1_1GameObject.html" title="GameObject (also known as Actor). ">GameObject</a>s. <br /></td></tr>
 <tr class="separator:aa2bac682d7b94adc65312741db703d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe9be4cb388e7d69d7deb7709581be9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe9be4cb388e7d69d7deb7709581be9f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>gameEnd</b> ()</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Plugin.html#afe9be4cb388e7d69d7deb7709581be9f">gameEnd</a> ()</td></tr>
+<tr class="memdesc:afe9be4cb388e7d69d7deb7709581be9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function executed after exiting the gameloop. <br /></td></tr>
 <tr class="separator:afe9be4cb388e7d69d7deb7709581be9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for implementing custom <a class="el" href="classhb_1_1Plugin.html" title="Base class for implementing custom Plugins. ">Plugin</a>s. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Core/Core/<a class="el" href="Plugin_8h_source.html">Plugin.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -153,7 +161,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>gameEnd</b> (
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>hb</b></li><li class="navelem"><a class="el" href="classhb_1_1Plugin.html">Plugin</a></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

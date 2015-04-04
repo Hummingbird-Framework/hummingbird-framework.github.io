@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classhb_1_1SFMLPlugin.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -115,42 +115,43 @@ Inheritance diagram for hb::SFMLPlugin:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhb_1_1SFMLPlugin__inherit__graph.png" border="0" usemap="#hb_1_1SFMLPlugin_inherit__map" alt="Inheritance graph"/></div>
 <map name="hb_1_1SFMLPlugin_inherit__map" id="hb_1_1SFMLPlugin_inherit__map">
-<area shape="rect" id="node2" href="classhb_1_1Plugin.html" title="hb::Plugin" alt="" coords="23,5,103,32"/></map>
+<area shape="rect" id="node2" href="classhb_1_1Plugin.html" title="Base class for implementing custom Plugins. " alt="" coords="23,5,103,32"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for hb::SFMLPlugin:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhb_1_1SFMLPlugin__coll__graph.png" border="0" usemap="#hb_1_1SFMLPlugin_coll__map" alt="Collaboration graph"/></div>
 <map name="hb_1_1SFMLPlugin_coll__map" id="hb_1_1SFMLPlugin_coll__map">
-<area shape="rect" id="node2" href="classhb_1_1Plugin.html" title="hb::Plugin" alt="" coords="23,5,103,32"/></map>
+<area shape="rect" id="node2" href="classhb_1_1Plugin.html" title="Base class for implementing custom Plugins. " alt="" coords="23,5,103,32"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad537de3bc564b5f569e98e1e6a8c308c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad537de3bc564b5f569e98e1e6a8c308c"></a>
-virtual std::map&lt; std::string, <br class="typebreak" />
-Plugin::ComponentFactory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getComponentFactory</b> () const </td></tr>
-<tr class="separator:ad537de3bc564b5f569e98e1e6a8c308c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f52c838193ba5c9b970536b9dc536f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f52c838193ba5c9b970536b9dc536f2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>preUpdate</b> () override</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1SFMLPlugin.html#a4f52c838193ba5c9b970536b9dc536f2">preUpdate</a> () override</td></tr>
+<tr class="memdesc:a4f52c838193ba5c9b970536b9dc536f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function executed before updating the <a class="el" href="classhb_1_1GameObject.html" title="GameObject (also known as Actor). ">GameObject</a>s. <br /></td></tr>
 <tr class="separator:a4f52c838193ba5c9b970536b9dc536f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af286fae64c1dc88a82ca1fd80c4d5b4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af286fae64c1dc88a82ca1fd80c4d5b4f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>postUpdate</b> () override</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1SFMLPlugin.html#af286fae64c1dc88a82ca1fd80c4d5b4f">postUpdate</a> () override</td></tr>
+<tr class="memdesc:af286fae64c1dc88a82ca1fd80c4d5b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function executed after updating the <a class="el" href="classhb_1_1GameObject.html" title="GameObject (also known as Actor). ">GameObject</a>s. <br /></td></tr>
 <tr class="separator:af286fae64c1dc88a82ca1fd80c4d5b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classhb_1_1Plugin"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhb_1_1Plugin')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhb_1_1Plugin.html">hb::Plugin</a></td></tr>
+<tr class="memitem:ab7b831c869fef08c1717c2c55c7b4dfd inherit pub_methods_classhb_1_1Plugin"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7b831c869fef08c1717c2c55c7b4dfd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Plugin.html#ab7b831c869fef08c1717c2c55c7b4dfd">Plugin</a> ()</td></tr>
+<tr class="memdesc:ab7b831c869fef08c1717c2c55c7b4dfd inherit pub_methods_classhb_1_1Plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor. <br /></td></tr>
+<tr class="separator:ab7b831c869fef08c1717c2c55c7b4dfd inherit pub_methods_classhb_1_1Plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa28c3a588399d4225bfa88af5446b192 inherit pub_methods_classhb_1_1Plugin"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa28c3a588399d4225bfa88af5446b192"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Plugin.html#aa28c3a588399d4225bfa88af5446b192">~Plugin</a> ()</td></tr>
+<tr class="memdesc:aa28c3a588399d4225bfa88af5446b192 inherit pub_methods_classhb_1_1Plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor. <br /></td></tr>
+<tr class="separator:aa28c3a588399d4225bfa88af5446b192 inherit pub_methods_classhb_1_1Plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc73d8b72ad12047aa287d7667fcdfa6 inherit pub_methods_classhb_1_1Plugin"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc73d8b72ad12047aa287d7667fcdfa6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>gameStart</b> ()</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Plugin.html#adc73d8b72ad12047aa287d7667fcdfa6">gameStart</a> ()</td></tr>
+<tr class="memdesc:adc73d8b72ad12047aa287d7667fcdfa6 inherit pub_methods_classhb_1_1Plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function executed just before entering the gameloop. <br /></td></tr>
 <tr class="separator:adc73d8b72ad12047aa287d7667fcdfa6 inherit pub_methods_classhb_1_1Plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe9be4cb388e7d69d7deb7709581be9f inherit pub_methods_classhb_1_1Plugin"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe9be4cb388e7d69d7deb7709581be9f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>gameEnd</b> ()</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Plugin.html#afe9be4cb388e7d69d7deb7709581be9f">gameEnd</a> ()</td></tr>
+<tr class="memdesc:afe9be4cb388e7d69d7deb7709581be9f inherit pub_methods_classhb_1_1Plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function executed after exiting the gameloop. <br /></td></tr>
 <tr class="separator:afe9be4cb388e7d69d7deb7709581be9f inherit pub_methods_classhb_1_1Plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classhb_1_1Plugin"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classhb_1_1Plugin')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classhb_1_1Plugin.html">hb::Plugin</a></td></tr>
-<tr class="memitem:ab9d209242bca50e30c79fe7bcf701c58 inherit pub_types_classhb_1_1Plugin"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9d209242bca50e30c79fe7bcf701c58"></a>
-typedef <a class="el" href="classhb_1_1GameObject_1_1Component.html">GameObject::Component</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentFactory</b> )(std::map&lt; std::string, std::string &gt; &amp;, int)</td></tr>
-<tr class="separator:ab9d209242bca50e30c79fe7bcf701c58 inherit pub_types_classhb_1_1Plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>SFML/SFML/<a class="el" href="SFMLPlugin_8h_source.html">SFMLPlugin.h</a></li>
@@ -161,7 +162,7 @@ typedef <a class="el" href="classhb_1_1GameObject_1_1Component.html">GameObject:
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>hb</b></li><li class="navelem"><a class="el" href="classhb_1_1SFMLPlugin.html">SFMLPlugin</a></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:54 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('SoundComponent_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -129,45 +129,42 @@ $(document).ready(function(){initNavTree('SoundComponent_8h_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classhb_1_1SoundComponent.html">SoundComponent</a>(<span class="keyword">const</span> <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>&amp; buffer);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classhb_1_1SoundComponent.html">SoundComponent</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">static</span> <a class="code" href="classhb_1_1GameObject_1_1Component.html">GameObject::Component</a>* factory(std::map&lt;std::string, std::string&gt;&amp; properties, <span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string&amp; getFootprint();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> update() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">void</span> setBuffer(<span class="keyword">const</span> <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>&amp; buffer);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>&amp; getBuffer();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">const</span> <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>&amp; getBuffer() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">void</span> play();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">void</span> pause();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">void</span> stop();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        Status getStatus() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classhb_1_1Time.html">Time</a> getPlayingOffset() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> setPlayingOffset(<span class="keyword">const</span> <a class="code" href="classhb_1_1Time.html">Time</a>&amp; offset);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">void</span> loop(<span class="keywordtype">bool</span> loop);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">bool</span> isLooping() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> setPitch(<span class="keywordtype">double</span> pitch);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">double</span> getPitch() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> setVolume(<span class="keywordtype">double</span> volume);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">double</span> getVolume() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> setRelativeToListener(<span class="keywordtype">bool</span> relative);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">bool</span> isRelativeToListener() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span> setMinDistance(<span class="keywordtype">double</span> distance);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">double</span> getMinDistance() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">void</span> setAttenuation(<span class="keywordtype">double</span> attenuation);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">double</span> getAttenuation() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">static</span> std::string s_footprint;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        sf::Sound m_sound;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a> m_buffer;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    };</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classhb_1_1Transform_html"><div class="ttname"><a href="classhb_1_1Transform.html">hb::Transform</a></div><div class="ttdef"><b>Definition:</b> Transform.h:11</div></div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
-<div class="ttc" id="classhb_1_1GameObject_1_1Component_html"><div class="ttname"><a href="classhb_1_1GameObject_1_1Component.html">hb::GameObject::Component</a></div><div class="ttdef"><b>Definition:</b> GameObject.h:22</div></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhb_1_1SoundComponent.html#ac1fe43fce5830a9ba2827573e241814c">update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> setBuffer(<span class="keyword">const</span> <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>&amp; buffer);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>&amp; getBuffer();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">const</span> <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>&amp; getBuffer() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">void</span> play();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span> pause();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> stop();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        Status getStatus() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classhb_1_1Time.html">Time</a> getPlayingOffset() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">void</span> setPlayingOffset(<span class="keyword">const</span> <a class="code" href="classhb_1_1Time.html">Time</a>&amp; offset);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span> loop(<span class="keywordtype">bool</span> loop);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">bool</span> isLooping() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> setPitch(<span class="keywordtype">double</span> pitch);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">double</span> getPitch() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> setVolume(<span class="keywordtype">double</span> volume);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">double</span> getVolume() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> setRelativeToListener(<span class="keywordtype">bool</span> relative);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">bool</span> isRelativeToListener() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> setMinDistance(<span class="keywordtype">double</span> distance);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">double</span> getMinDistance() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> setAttenuation(<span class="keywordtype">double</span> attenuation);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">double</span> getAttenuation() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        sf::Sound m_sound;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a> m_buffer;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classhb_1_1SoundComponent_html_ac1fe43fce5830a9ba2827573e241814c"><div class="ttname"><a href="classhb_1_1SoundComponent.html#ac1fe43fce5830a9ba2827573e241814c">hb::SoundComponent::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">Function called in the update step. </div></div>
+<div class="ttc" id="classhb_1_1Transform_html"><div class="ttname"><a href="classhb_1_1Transform.html">hb::Transform</a></div><div class="ttdoc">Object with a position, rotation and scale in a 3D space. </div><div class="ttdef"><b>Definition:</b> Transform.h:12</div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Box2DPlugin.h:6</div></div>
+<div class="ttc" id="classhb_1_1GameObject_1_1Component_html"><div class="ttname"><a href="classhb_1_1GameObject_1_1Component.html">hb::GameObject::Component</a></div><div class="ttdoc">Base class for implementing custom Components. </div><div class="ttdef"><b>Definition:</b> GameObject.h:57</div></div>
 <div class="ttc" id="classhb_1_1SoundBuffer_html"><div class="ttname"><a href="classhb_1_1SoundBuffer.html">hb::SoundBuffer</a></div><div class="ttdef"><b>Definition:</b> SoundBuffer.h:13</div></div>
-<div class="ttc" id="classhb_1_1Time_html"><div class="ttname"><a href="classhb_1_1Time.html">hb::Time</a></div><div class="ttdef"><b>Definition:</b> Time.h:10</div></div>
+<div class="ttc" id="classhb_1_1Time_html"><div class="ttname"><a href="classhb_1_1Time.html">hb::Time</a></div><div class="ttdoc">Class for representing intervals of time. </div><div class="ttdef"><b>Definition:</b> Time.h:13</div></div>
 <div class="ttc" id="classhb_1_1SoundComponent_html"><div class="ttname"><a href="classhb_1_1SoundComponent.html">hb::SoundComponent</a></div><div class="ttdef"><b>Definition:</b> SoundComponent.h:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -175,7 +172,7 @@ $(document).ready(function(){initNavTree('SoundComponent_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c9d62fd513ce19bab3d7ef8db833e3f1.html">SFML</a></li><li class="navelem"><a class="el" href="dir_9e7812ef929956c40f0ec0fafa91b536.html">SFML</a></li><li class="navelem"><b>SoundComponent.h</b></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

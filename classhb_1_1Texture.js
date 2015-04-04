@@ -1,6 +1,7 @@
 var classhb_1_1Texture =
 [
     [ "Texture", "classhb_1_1Texture.html#ac3ab3e15265d35704fdfe66729be4b77", null ],
+    [ "Texture", "classhb_1_1Texture.html#a81b43198171c568017d45debdce25190", null ],
     [ "~Texture", "classhb_1_1Texture.html#aa2dd6c7c72d798ac688481da0e31db32", null ],
     [ "fill", "classhb_1_1Texture.html#a001bf03af5f264d1f7c7b650c9cad1f6", null ],
     [ "repeat", "classhb_1_1Texture.html#ad5908c54ac805c1b35d541e8ea4bdd5a", null ],

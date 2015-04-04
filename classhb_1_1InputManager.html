@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classhb_1_1InputManager.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,14 +116,14 @@ Inheritance diagram for hb::InputManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhb_1_1InputManager__inherit__graph.png" border="0" usemap="#hb_1_1InputManager_inherit__map" alt="Inheritance graph"/></div>
 <map name="hb_1_1InputManager_inherit__map" id="hb_1_1InputManager_inherit__map">
-<area shape="rect" id="node2" href="classhb_1_1EventManager.html" title="hb::EventManager\&lt; MouseButton\lWindow, MouseButtonWorld,\l KeyPressed, KeyReleased,\l JoyButtonPressed, JoyButtonReleased,\l JoyAxis, WindowResized \&gt;" alt="" coords="220,5,479,91"/><area shape="rect" id="node3" href="classhb_1_1detail_1_1EventManager.html" title="hb::detail::EventManager\l\&lt; Events \&gt;" alt="" coords="5,27,172,69"/></map>
+<area shape="rect" id="node2" href="classhb_1_1MessageManager.html" title="hb::MessageManager\l\&lt; MouseButtonWindow,\l MouseButtonWorld, KeyPressed,\l KeyReleased, JoyButtonPressed,\l JoyButtonReleased, JoyAxis,\l WindowResized \&gt;" alt="" coords="240,5,463,105"/><area shape="rect" id="node3" href="classhb_1_1detail_1_1MessageManager.html" title="hb::detail::MessageManager\l\&lt; Types \&gt;" alt="" coords="5,35,192,76"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for hb::InputManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhb_1_1InputManager__coll__graph.png" border="0" usemap="#hb_1_1InputManager_coll__map" alt="Collaboration graph"/></div>
 <map name="hb_1_1InputManager_coll__map" id="hb_1_1InputManager_coll__map">
-<area shape="rect" id="node2" href="classhb_1_1EventManager.html" title="hb::EventManager\&lt; MouseButton\lWindow, MouseButtonWorld,\l KeyPressed, KeyReleased,\l JoyButtonPressed, JoyButtonReleased,\l JoyAxis, WindowResized \&gt;" alt="" coords="220,5,479,91"/><area shape="rect" id="node3" href="classhb_1_1detail_1_1EventManager.html" title="hb::detail::EventManager\l\&lt; Events \&gt;" alt="" coords="5,27,172,69"/></map>
+<area shape="rect" id="node2" href="classhb_1_1MessageManager.html" title="hb::MessageManager\l\&lt; MouseButtonWindow,\l MouseButtonWorld, KeyPressed,\l KeyReleased, JoyButtonPressed,\l JoyButtonReleased, JoyAxis,\l WindowResized \&gt;" alt="" coords="240,5,463,105"/><area shape="rect" id="node3" href="classhb_1_1detail_1_1MessageManager.html" title="hb::detail::MessageManager\l\&lt; Types \&gt;" alt="" coords="5,35,192,76"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -131,18 +131,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a874b023083add87b92a1c8795963fa1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a874b023083add87b92a1c8795963fa1a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
 <tr class="separator:a874b023083add87b92a1c8795963fa1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classhb_1_1EventManager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhb_1_1EventManager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhb_1_1EventManager.html">hb::EventManager&lt; MouseButtonWindow, MouseButtonWorld, KeyPressed, KeyReleased, JoyButtonPressed, JoyButtonReleased, JoyAxis, WindowResized &gt;</a></td></tr>
-<tr class="memitem:a23cfc27d271ecadfe193a228629e8cfa inherit pub_methods_classhb_1_1EventManager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23cfc27d271ecadfe193a228629e8cfa"></a>
-ListenerId&lt; typename <br class="typebreak" />
+<tr class="inherit_header pub_methods_classhb_1_1MessageManager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhb_1_1MessageManager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhb_1_1MessageManager.html">hb::MessageManager&lt; MouseButtonWindow, MouseButtonWorld, KeyPressed, KeyReleased, JoyButtonPressed, JoyButtonReleased, JoyAxis, WindowResized &gt;</a></td></tr>
+<tr class="memitem:a9906432f15d3970c8245f640ea3226ae inherit pub_methods_classhb_1_1MessageManager"><td class="memItemLeft" align="right" valign="top">ListenerId&lt; typename <br class="typebreak" />
 <a class="el" href="structhb_1_1detail_1_1traits.html">detail::traits</a>&lt; Listener &gt;<br class="typebreak" />
-::type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>listen</b> (Listener &amp;&amp;listener)</td></tr>
-<tr class="separator:a23cfc27d271ecadfe193a228629e8cfa inherit pub_methods_classhb_1_1EventManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b51311dab870e5853f10fc9bca628a1 inherit pub_methods_classhb_1_1EventManager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b51311dab870e5853f10fc9bca628a1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>message</b> (const Event &amp;event)</td></tr>
-<tr class="separator:a2b51311dab870e5853f10fc9bca628a1 inherit pub_methods_classhb_1_1EventManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84c79cd584d165f6392b141abaaee4c7 inherit pub_methods_classhb_1_1EventManager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84c79cd584d165f6392b141abaaee4c7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ignore</b> (const ListenerId&lt; Event &gt; &amp;id)</td></tr>
-<tr class="separator:a84c79cd584d165f6392b141abaaee4c7 inherit pub_methods_classhb_1_1EventManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+::type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1MessageManager.html#a9906432f15d3970c8245f640ea3226ae">listen</a> (Listener &amp;&amp;listener)</td></tr>
+<tr class="memdesc:a9906432f15d3970c8245f640ea3226ae inherit pub_methods_classhb_1_1MessageManager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects a listener to all messages of a type (no name filtering).  <a href="#a9906432f15d3970c8245f640ea3226ae">More...</a><br /></td></tr>
+<tr class="separator:a9906432f15d3970c8245f640ea3226ae inherit pub_methods_classhb_1_1MessageManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66952bc59d8abe587e1895346b46746 inherit pub_methods_classhb_1_1MessageManager"><td class="memItemLeft" align="right" valign="top">ListenerId&lt; typename <br class="typebreak" />
+<a class="el" href="structhb_1_1detail_1_1traits.html">detail::traits</a>&lt; Listener &gt;<br class="typebreak" />
+::type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1MessageManager.html#ac66952bc59d8abe587e1895346b46746">listen</a> (const std::string &amp;name, Listener &amp;&amp;listener)</td></tr>
+<tr class="memdesc:ac66952bc59d8abe587e1895346b46746 inherit pub_methods_classhb_1_1MessageManager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects a listener to all messages of a type with name <em>name</em>.  <a href="#ac66952bc59d8abe587e1895346b46746">More...</a><br /></td></tr>
+<tr class="separator:ac66952bc59d8abe587e1895346b46746 inherit pub_methods_classhb_1_1MessageManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f250c0fa06465aa962ee03843cc7d3 inherit pub_methods_classhb_1_1MessageManager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1MessageManager.html#a63f250c0fa06465aa962ee03843cc7d3">message</a> (Type &amp;event)</td></tr>
+<tr class="memdesc:a63f250c0fa06465aa962ee03843cc7d3 inherit pub_methods_classhb_1_1MessageManager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to all listeners of a type (no name filtering)  <a href="#a63f250c0fa06465aa962ee03843cc7d3">More...</a><br /></td></tr>
+<tr class="separator:a63f250c0fa06465aa962ee03843cc7d3 inherit pub_methods_classhb_1_1MessageManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31787e150feac2912c48a8830c600a3c inherit pub_methods_classhb_1_1MessageManager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1MessageManager.html#a31787e150feac2912c48a8830c600a3c">message</a> (const std::string &amp;name, Type &amp;event)</td></tr>
+<tr class="memdesc:a31787e150feac2912c48a8830c600a3c inherit pub_methods_classhb_1_1MessageManager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to all listeners of a type with name <em>name</em>  <a href="#a31787e150feac2912c48a8830c600a3c">More...</a><br /></td></tr>
+<tr class="separator:a31787e150feac2912c48a8830c600a3c inherit pub_methods_classhb_1_1MessageManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8a75b2da8f7a6cfc023c7d5640f512 inherit pub_methods_classhb_1_1MessageManager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1MessageManager.html#aee8a75b2da8f7a6cfc023c7d5640f512">ignore</a> (const ListenerId&lt; Type &gt; &amp;id)</td></tr>
+<tr class="memdesc:aee8a75b2da8f7a6cfc023c7d5640f512 inherit pub_methods_classhb_1_1MessageManager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the listener identified by id.  <a href="#aee8a75b2da8f7a6cfc023c7d5640f512">More...</a><br /></td></tr>
+<tr class="separator:aee8a75b2da8f7a6cfc023c7d5640f512 inherit pub_methods_classhb_1_1MessageManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -159,7 +167,7 @@ static <a class="el" href="classhb_1_1InputManager.html">InputManager</a> *&#160
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>hb</b></li><li class="navelem"><a class="el" href="classhb_1_1InputManager.html">InputManager</a></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

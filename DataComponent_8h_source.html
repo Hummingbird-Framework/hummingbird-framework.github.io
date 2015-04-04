@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('DataComponent_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,48 +110,96 @@ $(document).ready(function(){initNavTree('DataComponent_8h_source.html','');});
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehb.html">hb</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent.html">   12</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhb_1_1DataComponent.html">DataComponent</a> : <span class="keyword">public</span> <a class="code" href="classhb_1_1GameObject_1_1Component.html">GameObject::Component</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="classhb_1_1DataComponent.html">DataComponent</a>():</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        Component()</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classhb_1_1DataComponent.html">DataComponent</a>()<span class="keyword"> override</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">        </span>{}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classhb_1_1DataComponent.html">DataComponent</a>(<span class="keyword">const</span> T&amp; data):</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        Component()</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            m_data = data;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> setData(<span class="keyword">const</span> T&amp; data)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            m_data = data;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        T&amp; getData()</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhb_1_1DataComponent.html">DataComponent</a> : <span class="keyword">public</span> <a class="code" href="classhb_1_1GameObject_1_1Component.html">GameObject::Component</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent.html#a80d632802ac94dd81f1088e499ec266d">   19</a></span>&#160;        <a class="code" href="classhb_1_1DataComponent.html#a80d632802ac94dd81f1088e499ec266d">DataComponent</a>():</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classhb_1_1GameObject_1_1Component.html#afec101ed4e9056dfba1dde5df6f788ab">Component</a>()</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {}</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent.html#a3e2dfb71ba1ce1b4f30dee48e74ec98d">   28</a></span>&#160;        <a class="code" href="classhb_1_1DataComponent.html#a3e2dfb71ba1ce1b4f30dee48e74ec98d">DataComponent</a>(<span class="keyword">const</span> T&amp; data):</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classhb_1_1GameObject_1_1Component.html#afec101ed4e9056dfba1dde5df6f788ab">Component</a>()</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">return</span> m_data;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            m_data = data;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">const</span> T&amp; getData()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">return</span> m_data;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        T m_data;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classhb_1_1DataComponent_html"><div class="ttname"><a href="classhb_1_1DataComponent.html">hb::DataComponent</a></div><div class="ttdef"><b>Definition:</b> DataComponent.h:12</div></div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
-<div class="ttc" id="classhb_1_1GameObject_1_1Component_html"><div class="ttname"><a href="classhb_1_1GameObject_1_1Component.html">hb::GameObject::Component</a></div><div class="ttdef"><b>Definition:</b> GameObject.h:22</div></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent.html#a4b14505bd95615af4da01e55ee5654bb">   36</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classhb_1_1DataComponent.html#a4b14505bd95615af4da01e55ee5654bb">~DataComponent</a>()<span class="keyword"> override</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">        </span>{}</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent.html#ad2b711af148b6091adc99e43d7e600ed">   44</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhb_1_1DataComponent.html#ad2b711af148b6091adc99e43d7e600ed">setData</a>(<span class="keyword">const</span> T&amp; data)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            m_data = data;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent.html#a1d60127a529f9d2d03fdad6e2bbfb44d">   53</a></span>&#160;        T&amp; <a class="code" href="classhb_1_1DataComponent.html#a1d60127a529f9d2d03fdad6e2bbfb44d">getData</a>()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">return</span> m_data;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent.html#a2143e00bbad6122d5bd3155b10afb089">   62</a></span>&#160;        <span class="keyword">const</span> T&amp; <a class="code" href="classhb_1_1DataComponent.html#a2143e00bbad6122d5bd3155b10afb089">getData</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> m_data;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        T m_data;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    };</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent_3_01T_01_5_01_4.html">   77</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhb_1_1DataComponent.html">DataComponent</a>&lt;T*&gt; : <span class="keyword">public</span> <a class="code" href="classhb_1_1GameObject_1_1Component.html">GameObject::Component</a></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a068ebc6987283998d94533de1dababc5">   83</a></span>&#160;        <a class="code" href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a068ebc6987283998d94533de1dababc5">DataComponent</a>():</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        Component()</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            m_data = <span class="keyword">new</span> T();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a4ceeeb8ae86c468aff25d86501ea0c19">   94</a></span>&#160;        <a class="code" href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a4ceeeb8ae86c468aff25d86501ea0c19">DataComponent</a>(T* data):</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        Component()</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            m_data = data;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a12d5bfafc4401827743c556ab9ded04b">  104</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a12d5bfafc4401827743c556ab9ded04b">~DataComponent</a>()<span class="keyword"> override</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keyword">delete</span> m_data;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#abe8a0c2e56fd0f6918abad7a3cc00354">  114</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#abe8a0c2e56fd0f6918abad7a3cc00354">setData</a>(T* data)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            m_data = data;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a8af16b5016087976445152b01e1fc49a">  122</a></span>&#160;        T* <a class="code" href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a8af16b5016087976445152b01e1fc49a">getData</a>()</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">return</span> m_data;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a1eaca52193f2f22ff8da6404bfca8cd6">  130</a></span>&#160;        <span class="keyword">const</span> T* <a class="code" href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a1eaca52193f2f22ff8da6404bfca8cd6">getData</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">return</span> m_data;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        T* m_data;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    };</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classhb_1_1DataComponent_html"><div class="ttname"><a href="classhb_1_1DataComponent.html">hb::DataComponent</a></div><div class="ttdoc">A GameObject::Component for storing an instance of T into a GameObject. </div><div class="ttdef"><b>Definition:</b> DataComponent.h:13</div></div>
+<div class="ttc" id="classhb_1_1DataComponent_3_01T_01_5_01_4_html_a12d5bfafc4401827743c556ab9ded04b"><div class="ttname"><a href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a12d5bfafc4401827743c556ab9ded04b">hb::DataComponent&lt; T * &gt;::~DataComponent</a></div><div class="ttdeci">virtual ~DataComponent() override</div><div class="ttdoc">Class destructor. </div><div class="ttdef"><b>Definition:</b> DataComponent.h:104</div></div>
+<div class="ttc" id="classhb_1_1DataComponent_html_a2143e00bbad6122d5bd3155b10afb089"><div class="ttname"><a href="classhb_1_1DataComponent.html#a2143e00bbad6122d5bd3155b10afb089">hb::DataComponent::getData</a></div><div class="ttdeci">const T &amp; getData() const </div><div class="ttdoc">Data getter. </div><div class="ttdef"><b>Definition:</b> DataComponent.h:62</div></div>
+<div class="ttc" id="classhb_1_1DataComponent_3_01T_01_5_01_4_html_abe8a0c2e56fd0f6918abad7a3cc00354"><div class="ttname"><a href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#abe8a0c2e56fd0f6918abad7a3cc00354">hb::DataComponent&lt; T * &gt;::setData</a></div><div class="ttdeci">void setData(T *data)</div><div class="ttdoc">Data setter. </div><div class="ttdef"><b>Definition:</b> DataComponent.h:114</div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Box2DPlugin.h:6</div></div>
+<div class="ttc" id="classhb_1_1GameObject_1_1Component_html"><div class="ttname"><a href="classhb_1_1GameObject_1_1Component.html">hb::GameObject::Component</a></div><div class="ttdoc">Base class for implementing custom Components. </div><div class="ttdef"><b>Definition:</b> GameObject.h:57</div></div>
+<div class="ttc" id="classhb_1_1GameObject_1_1Component_html_afec101ed4e9056dfba1dde5df6f788ab"><div class="ttname"><a href="classhb_1_1GameObject_1_1Component.html#afec101ed4e9056dfba1dde5df6f788ab">hb::GameObject::Component::Component</a></div><div class="ttdeci">Component()</div><div class="ttdoc">Default constructor. </div><div class="ttdef"><b>Definition:</b> GameObject.h:66</div></div>
+<div class="ttc" id="classhb_1_1DataComponent_3_01T_01_5_01_4_html_a4ceeeb8ae86c468aff25d86501ea0c19"><div class="ttname"><a href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a4ceeeb8ae86c468aff25d86501ea0c19">hb::DataComponent&lt; T * &gt;::DataComponent</a></div><div class="ttdeci">DataComponent(T *data)</div><div class="ttdoc">Class constructor. </div><div class="ttdef"><b>Definition:</b> DataComponent.h:94</div></div>
+<div class="ttc" id="classhb_1_1DataComponent_html_a1d60127a529f9d2d03fdad6e2bbfb44d"><div class="ttname"><a href="classhb_1_1DataComponent.html#a1d60127a529f9d2d03fdad6e2bbfb44d">hb::DataComponent::getData</a></div><div class="ttdeci">T &amp; getData()</div><div class="ttdoc">Data getter. </div><div class="ttdef"><b>Definition:</b> DataComponent.h:53</div></div>
+<div class="ttc" id="classhb_1_1DataComponent_3_01T_01_5_01_4_html_a1eaca52193f2f22ff8da6404bfca8cd6"><div class="ttname"><a href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a1eaca52193f2f22ff8da6404bfca8cd6">hb::DataComponent&lt; T * &gt;::getData</a></div><div class="ttdeci">const T * getData() const </div><div class="ttdoc">Data getter. </div><div class="ttdef"><b>Definition:</b> DataComponent.h:130</div></div>
+<div class="ttc" id="classhb_1_1DataComponent_html_ad2b711af148b6091adc99e43d7e600ed"><div class="ttname"><a href="classhb_1_1DataComponent.html#ad2b711af148b6091adc99e43d7e600ed">hb::DataComponent::setData</a></div><div class="ttdeci">void setData(const T &amp;data)</div><div class="ttdoc">Data setter. </div><div class="ttdef"><b>Definition:</b> DataComponent.h:44</div></div>
+<div class="ttc" id="classhb_1_1DataComponent_html_a4b14505bd95615af4da01e55ee5654bb"><div class="ttname"><a href="classhb_1_1DataComponent.html#a4b14505bd95615af4da01e55ee5654bb">hb::DataComponent::~DataComponent</a></div><div class="ttdeci">virtual ~DataComponent() override</div><div class="ttdoc">Class destructor. </div><div class="ttdef"><b>Definition:</b> DataComponent.h:36</div></div>
+<div class="ttc" id="classhb_1_1DataComponent_html_a80d632802ac94dd81f1088e499ec266d"><div class="ttname"><a href="classhb_1_1DataComponent.html#a80d632802ac94dd81f1088e499ec266d">hb::DataComponent::DataComponent</a></div><div class="ttdeci">DataComponent()</div><div class="ttdoc">Class default constructor. </div><div class="ttdef"><b>Definition:</b> DataComponent.h:19</div></div>
+<div class="ttc" id="classhb_1_1DataComponent_html_a3e2dfb71ba1ce1b4f30dee48e74ec98d"><div class="ttname"><a href="classhb_1_1DataComponent.html#a3e2dfb71ba1ce1b4f30dee48e74ec98d">hb::DataComponent::DataComponent</a></div><div class="ttdeci">DataComponent(const T &amp;data)</div><div class="ttdoc">Class constructor. </div><div class="ttdef"><b>Definition:</b> DataComponent.h:28</div></div>
+<div class="ttc" id="classhb_1_1DataComponent_3_01T_01_5_01_4_html_a8af16b5016087976445152b01e1fc49a"><div class="ttname"><a href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a8af16b5016087976445152b01e1fc49a">hb::DataComponent&lt; T * &gt;::getData</a></div><div class="ttdeci">T * getData()</div><div class="ttdoc">Data getter. </div><div class="ttdef"><b>Definition:</b> DataComponent.h:122</div></div>
+<div class="ttc" id="classhb_1_1DataComponent_3_01T_01_5_01_4_html_a068ebc6987283998d94533de1dababc5"><div class="ttname"><a href="classhb_1_1DataComponent_3_01T_01_5_01_4.html#a068ebc6987283998d94533de1dababc5">hb::DataComponent&lt; T * &gt;::DataComponent</a></div><div class="ttdeci">DataComponent()</div><div class="ttdoc">Class default constructor. </div><div class="ttdef"><b>Definition:</b> DataComponent.h:83</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_dedefa15ca1a139218af74091b4b5d5f.html">Core</a></li><li class="navelem"><b>DataComponent.h</b></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

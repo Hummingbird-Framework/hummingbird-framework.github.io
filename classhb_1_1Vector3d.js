@@ -5,7 +5,6 @@ var classhb_1_1Vector3d =
     [ "Vector3d", "classhb_1_1Vector3d.html#af3ab7439e8af169b6244201fb4c57622", null ],
     [ "Vector3d", "classhb_1_1Vector3d.html#ac4329eb3590fe3a8ee8878d88bf86dc6", null ],
     [ "Vector3d", "classhb_1_1Vector3d.html#af975d9baca12e3c6ba7a7ba9ccc89279", null ],
-    [ "Vector3d", "classhb_1_1Vector3d.html#a428995455fc5602c2ed8607a624e31e0", null ],
     [ "module", "classhb_1_1Vector3d.html#ae18a0221d4b205aa0d6e3023774bc114", null ],
     [ "multiply", "classhb_1_1Vector3d.html#a34a77ca7fbd0abed8c3875694e5375f2", null ],
     [ "normalized", "classhb_1_1Vector3d.html#a36e21ac2545bbc97b47aca34835bc21d", null ],

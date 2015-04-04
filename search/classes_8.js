@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['keypressed',['KeyPressed',['../structhb_1_1KeyPressed.html',1,'hb']]],
-  ['keyreleased',['KeyReleased',['../structhb_1_1KeyReleased.html',1,'hb']]]
+  ['joyaxis',['JoyAxis',['../structhb_1_1JoyAxis.html',1,'hb']]],
+  ['joybuttonpressed',['JoyButtonPressed',['../structhb_1_1JoyButtonPressed.html',1,'hb']]],
+  ['joybuttonreleased',['JoyButtonReleased',['../structhb_1_1JoyButtonReleased.html',1,'hb']]]
 ];

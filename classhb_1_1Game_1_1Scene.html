@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classhb_1_1Game_1_1Scene.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,9 +108,14 @@ $(document).ready(function(){initNavTree('classhb_1_1Game_1_1Scene.html','');});
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classhb_1_1Game_1_1Scene-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">hb::Game::Scene Class Reference</div>  </div>
+<div class="title">hb::Game::Scene Class Reference<div class="ingroups"><a class="el" href="group__core.html">Hummingbird Core</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a> of a <a class="el" href="classhb_1_1Game.html" title="Game class. ">Game</a>.  
+ <a href="classhb_1_1Game_1_1Scene.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Game_8h_source.html">Game.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for hb::Game::Scene:</div>
 <div class="dyncontent">
@@ -121,26 +126,34 @@ Inheritance diagram for hb::Game::Scene:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aba398e1a0bcfbd8805a5393702055c20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba398e1a0bcfbd8805a5393702055c20"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b> (const std::string &amp;name, std::function&lt; void(void)&gt; &amp;&amp;init)</td></tr>
+<tr class="memitem:aba398e1a0bcfbd8805a5393702055c20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#aba398e1a0bcfbd8805a5393702055c20">Scene</a> (const std::string &amp;name, std::function&lt; void(void)&gt; &amp;&amp;<a class="el" href="classhb_1_1Game_1_1Scene.html#ad7f057198ee1ea192114067396997b9d">init</a>)</td></tr>
+<tr class="memdesc:aba398e1a0bcfbd8805a5393702055c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#aba398e1a0bcfbd8805a5393702055c20">More...</a><br /></td></tr>
 <tr class="separator:aba398e1a0bcfbd8805a5393702055c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee844c9f01763098394daf6b6f30a50d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee844c9f01763098394daf6b6f30a50d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b> (const <a class="el" href="classhb_1_1Game_1_1Scene.html">Scene</a> &amp;other)</td></tr>
+<tr class="memitem:aee844c9f01763098394daf6b6f30a50d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#aee844c9f01763098394daf6b6f30a50d">Scene</a> (const <a class="el" href="classhb_1_1Game_1_1Scene.html">Scene</a> &amp;other)</td></tr>
+<tr class="memdesc:aee844c9f01763098394daf6b6f30a50d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor of <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a>.  <a href="#aee844c9f01763098394daf6b6f30a50d">More...</a><br /></td></tr>
 <tr class="separator:aee844c9f01763098394daf6b6f30a50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedec21f7572037f9a816feb41dd7b436"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedec21f7572037f9a816feb41dd7b436"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b> (<a class="el" href="classhb_1_1Game_1_1Scene.html">Scene</a> &amp;&amp;other)</td></tr>
+<tr class="memitem:aedec21f7572037f9a816feb41dd7b436"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#aedec21f7572037f9a816feb41dd7b436">Scene</a> (<a class="el" href="classhb_1_1Game_1_1Scene.html">Scene</a> &amp;&amp;other)</td></tr>
+<tr class="memdesc:aedec21f7572037f9a816feb41dd7b436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor of <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a>.  <a href="#aedec21f7572037f9a816feb41dd7b436">More...</a><br /></td></tr>
 <tr class="separator:aedec21f7572037f9a816feb41dd7b436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605cb9df4c9bc1cd8c742605b3b4f345"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a605cb9df4c9bc1cd8c742605b3b4f345"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#a605cb9df4c9bc1cd8c742605b3b4f345">~Scene</a> ()</td></tr>
+<tr class="memdesc:a605cb9df4c9bc1cd8c742605b3b4f345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor. <br /></td></tr>
+<tr class="separator:a605cb9df4c9bc1cd8c742605b3b4f345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7f057198ee1ea192114067396997b9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7f057198ee1ea192114067396997b9d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#ad7f057198ee1ea192114067396997b9d">init</a> ()</td></tr>
+<tr class="memdesc:ad7f057198ee1ea192114067396997b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a> is being set. <br /></td></tr>
 <tr class="separator:ad7f057198ee1ea192114067396997b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1a72c4b3e000aa8f80fa0548b199596"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1a72c4b3e000aa8f80fa0548b199596"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>exit</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#ad1a72c4b3e000aa8f80fa0548b199596">exit</a> ()</td></tr>
+<tr class="memdesc:ad1a72c4b3e000aa8f80fa0548b199596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a> is being unset (<a class="el" href="classhb_1_1Game.html" title="Game class. ">Game</a> is changing the current <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a> or <a class="el" href="classhb_1_1Game.html" title="Game class. ">Game</a> is ending). <br /></td></tr>
 <tr class="separator:ad1a72c4b3e000aa8f80fa0548b199596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab576103a79570273a236488211fe0225"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab576103a79570273a236488211fe0225"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> () const </td></tr>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#ab576103a79570273a236488211fe0225">getName</a> () const </td></tr>
+<tr class="memdesc:ab576103a79570273a236488211fe0225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a>'s name. <br /></td></tr>
 <tr class="separator:ab576103a79570273a236488211fe0225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f681eb0b64fd5775b91dde290af0609"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f681eb0b64fd5775b91dde290af0609"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setExit</b> (std::function&lt; void(void)&gt; &amp;&amp;exit)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#a2f681eb0b64fd5775b91dde290af0609">setExit</a> (std::function&lt; void(void)&gt; &amp;&amp;<a class="el" href="classhb_1_1Game_1_1Scene.html#ad1a72c4b3e000aa8f80fa0548b199596">exit</a>)</td></tr>
+<tr class="memdesc:a2f681eb0b64fd5775b91dde290af0609"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a>'s exit function. <br /></td></tr>
 <tr class="separator:a2f681eb0b64fd5775b91dde290af0609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -155,6 +168,93 @@ std::function&lt; void(void)&gt;&#160;</td><td class="memItemRight" valign="bott
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
 <tr class="separator:aa883f0ada65b735c653f8a5bc29013a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a> of a <a class="el" href="classhb_1_1Game.html" title="Game class. ">Game</a>. </p>
+<p>This class should initialize the <a class="el" href="classhb_1_1GameObject.html" title="GameObject (also known as Actor). ">GameObject</a>s that participate in this <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a>, set global values, etc. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aba398e1a0bcfbd8805a5393702055c20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hb::Game::Scene::Scene </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(void)&gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>init</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Class constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a>. It must be unique per <a class="el" href="classhb_1_1Game.html" title="Game class. ">Game</a>. </td></tr>
+    <tr><td class="paramname">init</td><td>Function to be executed when the <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a> is set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aee844c9f01763098394daf6b6f30a50d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hb::Game::Scene::Scene </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classhb_1_1Game_1_1Scene.html">Scene</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy constructor of <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Original <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aedec21f7572037f9a816feb41dd7b436"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hb::Game::Scene::Scene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classhb_1_1Game_1_1Scene.html">Scene</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move constructor of <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Original <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Core/Core/<a class="el" href="Game_8h_source.html">Game.h</a></li>
 </ul>
@@ -164,7 +264,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>hb</b></li><li class="navelem"><a class="el" href="classhb_1_1Game.html">Game</a></li><li class="navelem"><a class="el" href="classhb_1_1Game_1_1Scene.html">Scene</a></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classhb_1_1Time.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,6 +112,11 @@ $(document).ready(function(){initNavTree('classhb_1_1Time.html','');});
 <div class="title">hb::Time Class Reference<div class="ingroups"><a class="el" href="group__core.html">Hummingbird Core</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class for representing intervals of time.  
+ <a href="classhb_1_1Time.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Time_8h_source.html">Time.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for hb::Time:</div>
 <div class="dyncontent">
@@ -120,34 +125,104 @@ Collaboration diagram for hb::Time:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4fdb4d52c83d8baebef441362de263ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fdb4d52c83d8baebef441362de263ab"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>asSeconds</b> () const </td></tr>
+<tr class="memitem:a25aee96e2f3cdc90c3cd3231f61aaaf7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25aee96e2f3cdc90c3cd3231f61aaaf7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Time.html#a25aee96e2f3cdc90c3cd3231f61aaaf7">Time</a> ()</td></tr>
+<tr class="memdesc:a25aee96e2f3cdc90c3cd3231f61aaaf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:a25aee96e2f3cdc90c3cd3231f61aaaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe985e63be7308788d56331ef1846e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fe985e63be7308788d56331ef1846e4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Time.html#a0fe985e63be7308788d56331ef1846e4">~Time</a> ()</td></tr>
+<tr class="memdesc:a0fe985e63be7308788d56331ef1846e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor. <br /></td></tr>
+<tr class="separator:a0fe985e63be7308788d56331ef1846e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fdb4d52c83d8baebef441362de263ab"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Time.html#a4fdb4d52c83d8baebef441362de263ab">asSeconds</a> () const </td></tr>
+<tr class="memdesc:a4fdb4d52c83d8baebef441362de263ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classhb_1_1Time.html" title="Class for representing intervals of time. ">Time</a> as seconds.  <a href="#a4fdb4d52c83d8baebef441362de263ab">More...</a><br /></td></tr>
 <tr class="separator:a4fdb4d52c83d8baebef441362de263ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ba185f9fd207c3f36710da4bd11fffe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ba185f9fd207c3f36710da4bd11fffe"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>asMilliseconds</b> () const </td></tr>
+<tr class="memitem:a4ba185f9fd207c3f36710da4bd11fffe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Time.html#a4ba185f9fd207c3f36710da4bd11fffe">asMilliseconds</a> () const </td></tr>
+<tr class="memdesc:a4ba185f9fd207c3f36710da4bd11fffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classhb_1_1Time.html" title="Class for representing intervals of time. ">Time</a> as milliseconds.  <a href="#a4ba185f9fd207c3f36710da4bd11fffe">More...</a><br /></td></tr>
 <tr class="separator:a4ba185f9fd207c3f36710da4bd11fffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeea8ff24a55adc4a7f4f78810e560df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeeea8ff24a55adc4a7f4f78810e560df"></a>
-long long&#160;</td><td class="memItemRight" valign="bottom"><b>asMicroseconds</b> () const </td></tr>
+<tr class="memitem:aeeea8ff24a55adc4a7f4f78810e560df"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Time.html#aeeea8ff24a55adc4a7f4f78810e560df">asMicroseconds</a> () const </td></tr>
+<tr class="memdesc:aeeea8ff24a55adc4a7f4f78810e560df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classhb_1_1Time.html" title="Class for representing intervals of time. ">Time</a> as microseconds.  <a href="#aeeea8ff24a55adc4a7f4f78810e560df">More...</a><br /></td></tr>
 <tr class="separator:aeeea8ff24a55adc4a7f4f78810e560df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0ad46933068ef78876e223c2bb07bc67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ad46933068ef78876e223c2bb07bc67"></a>
-static <a class="el" href="classhb_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>seconds</b> (double seconds)</td></tr>
+static <a class="el" href="classhb_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Time.html#a0ad46933068ef78876e223c2bb07bc67">seconds</a> (double seconds)</td></tr>
+<tr class="memdesc:a0ad46933068ef78876e223c2bb07bc67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <a class="el" href="classhb_1_1Time.html" title="Class for representing intervals of time. ">Time</a> from seconds. <br /></td></tr>
 <tr class="separator:a0ad46933068ef78876e223c2bb07bc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bdae7470a2a3db3f62c0c52a31bb6fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bdae7470a2a3db3f62c0c52a31bb6fa"></a>
-static <a class="el" href="classhb_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>milliseconds</b> (int milliseconds)</td></tr>
+static <a class="el" href="classhb_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Time.html#a7bdae7470a2a3db3f62c0c52a31bb6fa">milliseconds</a> (int milliseconds)</td></tr>
+<tr class="memdesc:a7bdae7470a2a3db3f62c0c52a31bb6fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <a class="el" href="classhb_1_1Time.html" title="Class for representing intervals of time. ">Time</a> from milliseconds. <br /></td></tr>
 <tr class="separator:a7bdae7470a2a3db3f62c0c52a31bb6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0037189e76ee7000f794238d19fb8f34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0037189e76ee7000f794238d19fb8f34"></a>
-static <a class="el" href="classhb_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>microseconds</b> (long long microseconds)</td></tr>
+static <a class="el" href="classhb_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Time.html#a0037189e76ee7000f794238d19fb8f34">microseconds</a> (long long microseconds)</td></tr>
+<tr class="memdesc:a0037189e76ee7000f794238d19fb8f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <a class="el" href="classhb_1_1Time.html" title="Class for representing intervals of time. ">Time</a> from microseconds. <br /></td></tr>
 <tr class="separator:a0037189e76ee7000f794238d19fb8f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a37ff32146d65c40cb852e7763804fe48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37ff32146d65c40cb852e7763804fe48"></a>
-static <a class="el" href="classhb_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>deltaTime</b></td></tr>
+static <a class="el" href="classhb_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Time.html#a37ff32146d65c40cb852e7763804fe48">deltaTime</a></td></tr>
+<tr class="memdesc:a37ff32146d65c40cb852e7763804fe48"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classhb_1_1Game.html" title="Game class. ">Game</a> delta <a class="el" href="classhb_1_1Time.html" title="Class for representing intervals of time. ">Time</a>. <br /></td></tr>
 <tr class="separator:a37ff32146d65c40cb852e7763804fe48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for representing intervals of time. </p>
+<p>This class has microseconds precision. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aeeea8ff24a55adc4a7f4f78810e560df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long long hb::Time::asMicroseconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get <a class="el" href="classhb_1_1Time.html" title="Class for representing intervals of time. ">Time</a> as microseconds. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of microseconds represented. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4ba185f9fd207c3f36710da4bd11fffe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hb::Time::asMilliseconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get <a class="el" href="classhb_1_1Time.html" title="Class for representing intervals of time. ">Time</a> as milliseconds. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of milliseconds represented. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4fdb4d52c83d8baebef441362de263ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double hb::Time::asSeconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get <a class="el" href="classhb_1_1Time.html" title="Class for representing intervals of time. ">Time</a> as seconds. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of seconds represented. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Core/Core/<a class="el" href="Time_8h_source.html">Time.h</a></li>
 </ul>
@@ -157,7 +232,7 @@ static <a class="el" href="classhb_1_1Time.html">Time</a>&#160;</td><td class="m
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>hb</b></li><li class="navelem"><a class="el" href="classhb_1_1Time.html">Time</a></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:54 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

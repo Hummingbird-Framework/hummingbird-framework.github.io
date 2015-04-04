@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('Clock_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,24 +114,23 @@ $(document).ready(function(){initNavTree('Clock_8h_source.html','');});
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classhb_1_1Clock.html">    8</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhb_1_1Clock.html">Clock</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classhb_1_1Clock.html#a8beeb692fb23d602f6b93e7719867fd8">Clock</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classhb_1_1Clock.html#ab6c02100c85d07910b997684b1975b8f">~Clock</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classhb_1_1Time.html">Time</a> <a class="code" href="classhb_1_1Clock.html#a99c613d878168ddc06b117591d9238a0">getElapsedTime</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classhb_1_1Time.html">Time</a> <a class="code" href="classhb_1_1Clock.html#aeaaa06ca99ed4d4ec7e6e234a5c23729">reset</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        std::chrono::high_resolution_clock::time_point m_time_point;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="ttc" id="classhb_1_1Clock_html_aeaaa06ca99ed4d4ec7e6e234a5c23729"><div class="ttname"><a href="classhb_1_1Clock.html#aeaaa06ca99ed4d4ec7e6e234a5c23729">hb::Clock::reset</a></div><div class="ttdeci">Time reset()</div><div class="ttdoc">Returns the Time elapsed since creation or last reset and resets the counter. </div></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classhb_1_1Clock.html#a8beeb692fb23d602f6b93e7719867fd8">Clock</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classhb_1_1Clock.html#ab6c02100c85d07910b997684b1975b8f">~Clock</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classhb_1_1Time.html">Time</a> <a class="code" href="classhb_1_1Clock.html#a99c613d878168ddc06b117591d9238a0">getElapsedTime</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classhb_1_1Time.html">Time</a> <a class="code" href="classhb_1_1Clock.html#aeaaa06ca99ed4d4ec7e6e234a5c23729">reset</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        std::chrono::high_resolution_clock::time_point m_time_point;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="ttc" id="classhb_1_1Clock_html_aeaaa06ca99ed4d4ec7e6e234a5c23729"><div class="ttname"><a href="classhb_1_1Clock.html#aeaaa06ca99ed4d4ec7e6e234a5c23729">hb::Clock::reset</a></div><div class="ttdeci">Time reset()</div><div class="ttdoc">Restarts the Time counter. </div></div>
 <div class="ttc" id="classhb_1_1Clock_html_a8beeb692fb23d602f6b93e7719867fd8"><div class="ttname"><a href="classhb_1_1Clock.html#a8beeb692fb23d602f6b93e7719867fd8">hb::Clock::Clock</a></div><div class="ttdeci">Clock()</div><div class="ttdoc">Class constructor. </div></div>
-<div class="ttc" id="classhb_1_1Clock_html"><div class="ttname"><a href="classhb_1_1Clock.html">hb::Clock</a></div><div class="ttdef"><b>Definition:</b> Clock.h:8</div></div>
+<div class="ttc" id="classhb_1_1Clock_html"><div class="ttname"><a href="classhb_1_1Clock.html">hb::Clock</a></div><div class="ttdoc">A class for measuring Time intervals. </div><div class="ttdef"><b>Definition:</b> Clock.h:8</div></div>
 <div class="ttc" id="classhb_1_1Clock_html_ab6c02100c85d07910b997684b1975b8f"><div class="ttname"><a href="classhb_1_1Clock.html#ab6c02100c85d07910b997684b1975b8f">hb::Clock::~Clock</a></div><div class="ttdeci">~Clock()</div><div class="ttdoc">Class destructor. </div></div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
-<div class="ttc" id="classhb_1_1Time_html"><div class="ttname"><a href="classhb_1_1Time.html">hb::Time</a></div><div class="ttdef"><b>Definition:</b> Time.h:10</div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Box2DPlugin.h:6</div></div>
+<div class="ttc" id="classhb_1_1Time_html"><div class="ttname"><a href="classhb_1_1Time.html">hb::Time</a></div><div class="ttdoc">Class for representing intervals of time. </div><div class="ttdef"><b>Definition:</b> Time.h:13</div></div>
 <div class="ttc" id="classhb_1_1Clock_html_a99c613d878168ddc06b117591d9238a0"><div class="ttname"><a href="classhb_1_1Clock.html#a99c613d878168ddc06b117591d9238a0">hb::Clock::getElapsedTime</a></div><div class="ttdeci">Time getElapsedTime() const </div><div class="ttdoc">Returns the Time elapsed since creation or last reset. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -139,7 +138,7 @@ $(document).ready(function(){initNavTree('Clock_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_dedefa15ca1a139218af74091b4b5d5f.html">Core</a></li><li class="navelem"><b>Clock.h</b></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

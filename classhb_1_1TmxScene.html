@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classhb_1_1TmxScene.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -115,42 +115,53 @@ Inheritance diagram for hb::TmxScene:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhb_1_1TmxScene__inherit__graph.png" border="0" usemap="#hb_1_1TmxScene_inherit__map" alt="Inheritance graph"/></div>
 <map name="hb_1_1TmxScene_inherit__map" id="hb_1_1TmxScene_inherit__map">
-<area shape="rect" id="node2" href="classhb_1_1Game_1_1Scene.html" title="hb::Game::Scene" alt="" coords="5,5,129,32"/></map>
+<area shape="rect" id="node2" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. " alt="" coords="5,5,129,32"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for hb::TmxScene:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhb_1_1TmxScene__coll__graph.png" border="0" usemap="#hb_1_1TmxScene_coll__map" alt="Collaboration graph"/></div>
 <map name="hb_1_1TmxScene_coll__map" id="hb_1_1TmxScene_coll__map">
-<area shape="rect" id="node2" href="classhb_1_1Game_1_1Scene.html" title="hb::Game::Scene" alt="" coords="5,5,129,32"/></map>
+<area shape="rect" id="node2" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. " alt="" coords="5,5,129,32"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a73b7ddf8c3a4ab1a7a4b171073d9808d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73b7ddf8c3a4ab1a7a4b171073d9808d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TmxScene</b> (const std::string &amp;scene_name, const std::string &amp;file_name, std::function&lt; void(const Tmx::Map *)&gt; &amp;post_init)</td></tr>
+<tr class="separator:a73b7ddf8c3a4ab1a7a4b171073d9808d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17330806c4de07c1553487a55ba7bd3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17330806c4de07c1553487a55ba7bd3b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TmxScene</b> (const std::string &amp;scene_name, const std::string &amp;file_name, std::function&lt; void(const Tmx::Map *)&gt; &amp;&amp;post_init=std::move([](const Tmx::Map *){}))</td></tr>
 <tr class="separator:a17330806c4de07c1553487a55ba7bd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classhb_1_1Game_1_1Scene"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhb_1_1Game_1_1Scene')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhb_1_1Game_1_1Scene.html">hb::Game::Scene</a></td></tr>
-<tr class="memitem:aba398e1a0bcfbd8805a5393702055c20 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba398e1a0bcfbd8805a5393702055c20"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b> (const std::string &amp;name, std::function&lt; void(void)&gt; &amp;&amp;init)</td></tr>
+<tr class="memitem:aba398e1a0bcfbd8805a5393702055c20 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#aba398e1a0bcfbd8805a5393702055c20">Scene</a> (const std::string &amp;name, std::function&lt; void(void)&gt; &amp;&amp;<a class="el" href="classhb_1_1Game_1_1Scene.html#ad7f057198ee1ea192114067396997b9d">init</a>)</td></tr>
+<tr class="memdesc:aba398e1a0bcfbd8805a5393702055c20 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#aba398e1a0bcfbd8805a5393702055c20">More...</a><br /></td></tr>
 <tr class="separator:aba398e1a0bcfbd8805a5393702055c20 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee844c9f01763098394daf6b6f30a50d inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee844c9f01763098394daf6b6f30a50d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b> (const <a class="el" href="classhb_1_1Game_1_1Scene.html">Scene</a> &amp;other)</td></tr>
+<tr class="memitem:aee844c9f01763098394daf6b6f30a50d inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#aee844c9f01763098394daf6b6f30a50d">Scene</a> (const <a class="el" href="classhb_1_1Game_1_1Scene.html">Scene</a> &amp;other)</td></tr>
+<tr class="memdesc:aee844c9f01763098394daf6b6f30a50d inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor of <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a>.  <a href="#aee844c9f01763098394daf6b6f30a50d">More...</a><br /></td></tr>
 <tr class="separator:aee844c9f01763098394daf6b6f30a50d inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedec21f7572037f9a816feb41dd7b436 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedec21f7572037f9a816feb41dd7b436"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b> (<a class="el" href="classhb_1_1Game_1_1Scene.html">Scene</a> &amp;&amp;other)</td></tr>
+<tr class="memitem:aedec21f7572037f9a816feb41dd7b436 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#aedec21f7572037f9a816feb41dd7b436">Scene</a> (<a class="el" href="classhb_1_1Game_1_1Scene.html">Scene</a> &amp;&amp;other)</td></tr>
+<tr class="memdesc:aedec21f7572037f9a816feb41dd7b436 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor of <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a>.  <a href="#aedec21f7572037f9a816feb41dd7b436">More...</a><br /></td></tr>
 <tr class="separator:aedec21f7572037f9a816feb41dd7b436 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605cb9df4c9bc1cd8c742605b3b4f345 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a605cb9df4c9bc1cd8c742605b3b4f345"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#a605cb9df4c9bc1cd8c742605b3b4f345">~Scene</a> ()</td></tr>
+<tr class="memdesc:a605cb9df4c9bc1cd8c742605b3b4f345 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor. <br /></td></tr>
+<tr class="separator:a605cb9df4c9bc1cd8c742605b3b4f345 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7f057198ee1ea192114067396997b9d inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7f057198ee1ea192114067396997b9d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#ad7f057198ee1ea192114067396997b9d">init</a> ()</td></tr>
+<tr class="memdesc:ad7f057198ee1ea192114067396997b9d inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a> is being set. <br /></td></tr>
 <tr class="separator:ad7f057198ee1ea192114067396997b9d inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1a72c4b3e000aa8f80fa0548b199596 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1a72c4b3e000aa8f80fa0548b199596"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>exit</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#ad1a72c4b3e000aa8f80fa0548b199596">exit</a> ()</td></tr>
+<tr class="memdesc:ad1a72c4b3e000aa8f80fa0548b199596 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a> is being unset (<a class="el" href="classhb_1_1Game.html" title="Game class. ">Game</a> is changing the current <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a> or <a class="el" href="classhb_1_1Game.html" title="Game class. ">Game</a> is ending). <br /></td></tr>
 <tr class="separator:ad1a72c4b3e000aa8f80fa0548b199596 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab576103a79570273a236488211fe0225 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab576103a79570273a236488211fe0225"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> () const </td></tr>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#ab576103a79570273a236488211fe0225">getName</a> () const </td></tr>
+<tr class="memdesc:ab576103a79570273a236488211fe0225 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a>'s name. <br /></td></tr>
 <tr class="separator:ab576103a79570273a236488211fe0225 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f681eb0b64fd5775b91dde290af0609 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f681eb0b64fd5775b91dde290af0609"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setExit</b> (std::function&lt; void(void)&gt; &amp;&amp;exit)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1Game_1_1Scene.html#a2f681eb0b64fd5775b91dde290af0609">setExit</a> (std::function&lt; void(void)&gt; &amp;&amp;<a class="el" href="classhb_1_1Game_1_1Scene.html#ad1a72c4b3e000aa8f80fa0548b199596">exit</a>)</td></tr>
+<tr class="memdesc:a2f681eb0b64fd5775b91dde290af0609 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="classhb_1_1Game_1_1Scene.html" title="Scene of a Game. ">Scene</a>'s exit function. <br /></td></tr>
 <tr class="separator:a2f681eb0b64fd5775b91dde290af0609 inherit pub_methods_classhb_1_1Game_1_1Scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -175,7 +186,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>hb</b></li><li class="navelem"><a class="el" href="classhb_1_1TmxScene.html">TmxScene</a></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:54 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

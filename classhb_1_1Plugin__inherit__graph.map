@@ -1,3 +1,4 @@
 <map id="hb::Plugin" name="hb::Plugin">
-<area shape="rect" id="node2" href="$classhb_1_1SFMLPlugin.html" title="hb::SFMLPlugin" alt="" coords="5,80,120,107"/>
+<area shape="rect" id="node2" href="$classhb_1_1Box2DPlugin.html" title="hb::Box2DPlugin" alt="" coords="5,80,125,107"/>
+<area shape="rect" id="node3" href="$classhb_1_1SFMLPlugin.html" title="hb::SFMLPlugin" alt="" coords="149,80,264,107"/>
 </map>

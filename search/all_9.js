@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['listenercomponent',['ListenerComponent',['../classhb_1_1ListenerComponent.html',1,'hb']]],
-  ['listenerid',['ListenerId',['../structhb_1_1EventManager_1_1ListenerId.html',1,'hb::EventManager']]]
+  ['joyaxis',['JoyAxis',['../structhb_1_1JoyAxis.html',1,'hb']]],
+  ['joybuttonpressed',['JoyButtonPressed',['../structhb_1_1JoyButtonPressed.html',1,'hb']]],
+  ['joybuttonreleased',['JoyButtonReleased',['../structhb_1_1JoyButtonReleased.html',1,'hb']]]
 ];

@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classhb_1_1FunctionComponent.html','')
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,52 +110,129 @@ $(document).ready(function(){initNavTree('classhb_1_1FunctionComponent.html','')
 <div class="title">hb::FunctionComponent Class Reference<div class="ingroups"><a class="el" href="group__core.html">Hummingbird Core</a> &raquo; <a class="el" href="group__core-components.html">Components</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. ">GameObject::Component</a> with parametrized update function.This class allows you to set the functions that must be executed on <b>pre-update</b>, <b>update</b>, <b>post-update</b> and <b>destruction</b> of a <a class="el" href="classhb_1_1GameObject.html" title="GameObject (also known as Actor). ">GameObject</a>.  
+ <a href="classhb_1_1FunctionComponent.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FunctionComponent_8h_source.html">FunctionComponent.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for hb::FunctionComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhb_1_1FunctionComponent__inherit__graph.png" border="0" usemap="#hb_1_1FunctionComponent_inherit__map" alt="Inheritance graph"/></div>
 <map name="hb_1_1FunctionComponent_inherit__map" id="hb_1_1FunctionComponent_inherit__map">
-<area shape="rect" id="node2" href="classhb_1_1GameObject_1_1Component.html" title="hb::GameObject::Component" alt="" coords="5,5,197,32"/></map>
+<area shape="rect" id="node2" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. " alt="" coords="5,5,197,32"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for hb::FunctionComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhb_1_1FunctionComponent__coll__graph.png" border="0" usemap="#hb_1_1FunctionComponent_coll__map" alt="Collaboration graph"/></div>
 <map name="hb_1_1FunctionComponent_coll__map" id="hb_1_1FunctionComponent_coll__map">
-<area shape="rect" id="node2" href="classhb_1_1GameObject_1_1Component.html" title="hb::GameObject::Component" alt="" coords="5,5,197,32"/></map>
+<area shape="rect" id="node2" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. " alt="" coords="5,5,197,32"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2024d9dee403db6df3fd1f31c190ce03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2024d9dee403db6df3fd1f31c190ce03"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPreUpdateFunction</b> (std::function&lt; void(void)&gt; pre_update)</td></tr>
-<tr class="separator:a2024d9dee403db6df3fd1f31c190ce03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc6558a2e27e405512d8e4f2f58221cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc6558a2e27e405512d8e4f2f58221cf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setUpdateFunction</b> (std::function&lt; void(void)&gt; update)</td></tr>
-<tr class="separator:abc6558a2e27e405512d8e4f2f58221cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0273995e46c17e6acce99bc4fb431019"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0273995e46c17e6acce99bc4fb431019"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPostUpdateFunction</b> (std::function&lt; void(void)&gt; post_update)</td></tr>
-<tr class="separator:a0273995e46c17e6acce99bc4fb431019"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af387158144aad97d81fb157ca96d7349"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af387158144aad97d81fb157ca96d7349"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setDestroyFunction</b> (std::function&lt; void(void)&gt; destroy)</td></tr>
-<tr class="separator:af387158144aad97d81fb157ca96d7349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc59a5205104f86767fa513d20d32b30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc59a5205104f86767fa513d20d32b30"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>preUpdate</b> () override</td></tr>
-<tr class="separator:adc59a5205104f86767fa513d20d32b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeda7f1d1649091667c9972a0807056b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeda7f1d1649091667c9972a0807056b3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> () override</td></tr>
-<tr class="separator:aeda7f1d1649091667c9972a0807056b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2d172b9fcb75d036d4448fe43bd25b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2d172b9fcb75d036d4448fe43bd25b2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>postUpdate</b> () override</td></tr>
-<tr class="separator:ad2d172b9fcb75d036d4448fe43bd25b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3fdf4b9ec51c99d84bfd2e03176c9cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1FunctionComponent.html#ac3fdf4b9ec51c99d84bfd2e03176c9cb">FunctionComponent</a> ()</td></tr>
+<tr class="memdesc:ac3fdf4b9ec51c99d84bfd2e03176c9cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#ac3fdf4b9ec51c99d84bfd2e03176c9cb">More...</a><br /></td></tr>
+<tr class="separator:ac3fdf4b9ec51c99d84bfd2e03176c9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03af30fc399398cc8ce1cb5678a9cf4"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1FunctionComponent.html#ac03af30fc399398cc8ce1cb5678a9cf4">~FunctionComponent</a> () override</td></tr>
+<tr class="memdesc:ac03af30fc399398cc8ce1cb5678a9cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor.  <a href="#ac03af30fc399398cc8ce1cb5678a9cf4">More...</a><br /></td></tr>
+<tr class="separator:ac03af30fc399398cc8ce1cb5678a9cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae55102e63d05fd566db5c308d7887c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae55102e63d05fd566db5c308d7887c0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1FunctionComponent.html#aae55102e63d05fd566db5c308d7887c0">addListener</a> (const std::string &amp;name, std::function&lt; void(<a class="el" href="classhb_1_1DataRepository.html">DataRepository</a> &amp;)&gt; &amp;&amp;listener)</td></tr>
+<tr class="memdesc:aae55102e63d05fd566db5c308d7887c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add listener to <a class="el" href="classhb_1_1GameObject.html" title="GameObject (also known as Actor). ">GameObject</a> <a class="el" href="classhb_1_1MessageManager.html" title="Generic message manager class.This class allows to define callbacks for a set of predefined events wi...">MessageManager</a>. <br /></td></tr>
+<tr class="separator:aae55102e63d05fd566db5c308d7887c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classhb_1_1GameObject_1_1Component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhb_1_1GameObject_1_1Component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhb_1_1GameObject_1_1Component.html">hb::GameObject::Component</a></td></tr>
-<tr class="memitem:aa8015b12c5a5ae0c1eb36c510655d7c2 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8015b12c5a5ae0c1eb36c510655d7c2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
+<tr class="memitem:afec101ed4e9056dfba1dde5df6f788ab inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#afec101ed4e9056dfba1dde5df6f788ab">Component</a> ()</td></tr>
+<tr class="memdesc:afec101ed4e9056dfba1dde5df6f788ab inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#afec101ed4e9056dfba1dde5df6f788ab">More...</a><br /></td></tr>
+<tr class="separator:afec101ed4e9056dfba1dde5df6f788ab inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1c8bd83fba582eae1f53eb8b052327 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f1c8bd83fba582eae1f53eb8b052327"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#a6f1c8bd83fba582eae1f53eb8b052327">~Component</a> ()</td></tr>
+<tr class="memdesc:a6f1c8bd83fba582eae1f53eb8b052327 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
+<tr class="separator:a6f1c8bd83fba582eae1f53eb8b052327 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8015b12c5a5ae0c1eb36c510655d7c2 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#aa8015b12c5a5ae0c1eb36c510655d7c2">init</a> ()</td></tr>
+<tr class="memdesc:aa8015b12c5a5ae0c1eb36c510655d7c2 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called once after the <a class="el" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. ">Component</a> has been added to a <a class="el" href="classhb_1_1GameObject.html" title="GameObject (also known as Actor). ">GameObject</a>.  <a href="#aa8015b12c5a5ae0c1eb36c510655d7c2">More...</a><br /></td></tr>
 <tr class="separator:aa8015b12c5a5ae0c1eb36c510655d7c2 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a021c3f1e222601e407c07d5dc3043d10 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a021c3f1e222601e407c07d5dc3043d10"></a>
-<a class="el" href="classhb_1_1GameObject.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getGameObject</b> () const </td></tr>
+<tr class="memitem:a681bf0cc2a08c59c346334ac62a515e1 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a681bf0cc2a08c59c346334ac62a515e1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#a681bf0cc2a08c59c346334ac62a515e1">preUpdate</a> ()</td></tr>
+<tr class="memdesc:a681bf0cc2a08c59c346334ac62a515e1 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called in the pre-update step. <br /></td></tr>
+<tr class="separator:a681bf0cc2a08c59c346334ac62a515e1 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0672845dbeb31c8e6ca00435de3c4bd inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0672845dbeb31c8e6ca00435de3c4bd"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#ad0672845dbeb31c8e6ca00435de3c4bd">update</a> ()</td></tr>
+<tr class="memdesc:ad0672845dbeb31c8e6ca00435de3c4bd inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called in the update step. <br /></td></tr>
+<tr class="separator:ad0672845dbeb31c8e6ca00435de3c4bd inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69bddaec89a034e56d749117877e0541 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69bddaec89a034e56d749117877e0541"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#a69bddaec89a034e56d749117877e0541">postUpdate</a> ()</td></tr>
+<tr class="memdesc:a69bddaec89a034e56d749117877e0541 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called in the post-update step. <br /></td></tr>
+<tr class="separator:a69bddaec89a034e56d749117877e0541 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021c3f1e222601e407c07d5dc3043d10 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhb_1_1GameObject.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#a021c3f1e222601e407c07d5dc3043d10">getGameObject</a> () const </td></tr>
+<tr class="memdesc:a021c3f1e222601e407c07d5dc3043d10 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classhb_1_1GameObject.html" title="GameObject (also known as Actor). ">GameObject</a> instance composed by this <a class="el" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. ">Component</a>.  <a href="#a021c3f1e222601e407c07d5dc3043d10">More...</a><br /></td></tr>
 <tr class="separator:a021c3f1e222601e407c07d5dc3043d10 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb0b97ebe2d0f8e72d249e7c7fccba5 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#a3cb0b97ebe2d0f8e72d249e7c7fccba5">setActive</a> (bool active)</td></tr>
+<tr class="memdesc:a3cb0b97ebe2d0f8e72d249e7c7fccba5 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if <a class="el" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. ">Component</a> is active.  <a href="#a3cb0b97ebe2d0f8e72d249e7c7fccba5">More...</a><br /></td></tr>
+<tr class="separator:a3cb0b97ebe2d0f8e72d249e7c7fccba5 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47678813529b1051d42e4f4116f2ffe0 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhb_1_1GameObject_1_1Component.html#a47678813529b1051d42e4f4116f2ffe0">isActive</a> () const </td></tr>
+<tr class="memdesc:a47678813529b1051d42e4f4116f2ffe0 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get if <a class="el" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. ">Component</a> is active.  <a href="#a47678813529b1051d42e4f4116f2ffe0">More...</a><br /></td></tr>
+<tr class="separator:a47678813529b1051d42e4f4116f2ffe0 inherit pub_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classhb_1_1GameObject_1_1Component"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classhb_1_1GameObject_1_1Component')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classhb_1_1GameObject_1_1Component.html">hb::GameObject::Component</a></td></tr>
+<tr class="memitem:a57346d560a359e17a73abc5374fd246f inherit pro_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57346d560a359e17a73abc5374fd246f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addListenerToGameObject</b> (const std::string &amp;name, std::function&lt; void(<a class="el" href="classhb_1_1DataRepository.html">DataRepository</a> &amp;)&gt; &amp;&amp;listener)</td></tr>
+<tr class="separator:a57346d560a359e17a73abc5374fd246f inherit pro_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4772613d4bc20b5e7de29fa1486645a7 inherit pro_methods_classhb_1_1GameObject_1_1Component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4772613d4bc20b5e7de29fa1486645a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ignoreToGameObject</b> (const GameObjectMessageManager::ListenerId&lt; <a class="el" href="classhb_1_1DataRepository.html">DataRepository</a> &gt; &amp;listener_id)</td></tr>
+<tr class="separator:a4772613d4bc20b5e7de29fa1486645a7 inherit pro_methods_classhb_1_1GameObject_1_1Component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classhb_1_1GameObject_1_1Component.html" title="Base class for implementing custom Components. ">GameObject::Component</a> with parametrized update function.</p>
+<p>This class allows you to set the functions that must be executed on <b>pre-update</b>, <b>update</b>, <b>post-update</b> and <b>destruction</b> of a <a class="el" href="classhb_1_1GameObject.html" title="GameObject (also known as Actor). ">GameObject</a>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ac3fdf4b9ec51c99d84bfd2e03176c9cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hb::FunctionComponent::FunctionComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Class constructor. </p>
+<p>All functions are initialized as no-op. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac03af30fc399398cc8ce1cb5678a9cf4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual hb::FunctionComponent::~FunctionComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Class destructor. </p>
+<p>The function set for destroy is called here. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Core/Core/<a class="el" href="FunctionComponent_8h_source.html">FunctionComponent.h</a></li>
 </ul>
@@ -165,7 +242,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>hb</b></li><li class="navelem"><a class="el" href="classhb_1_1FunctionComponent.html">FunctionComponent</a></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

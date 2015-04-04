@@ -1,10 +1,4 @@
 var searchData=
 [
-  ['scene',['Scene',['../classhb_1_1Game_1_1Scene.html',1,'hb::Game']]],
-  ['sfmlplugin',['SFMLPlugin',['../classhb_1_1SFMLPlugin.html',1,'hb']]],
-  ['soundbuffer',['SoundBuffer',['../classhb_1_1SoundBuffer.html',1,'hb']]],
-  ['soundcomponent',['SoundComponent',['../classhb_1_1SoundComponent.html',1,'hb']]],
-  ['soundmanager',['SoundManager',['../classhb_1_1SoundManager.html',1,'hb']]],
-  ['sprite',['Sprite',['../classhb_1_1Sprite.html',1,'hb']]],
-  ['spritecomponent',['SpriteComponent',['../classhb_1_1SpriteComponent.html',1,'hb']]]
+  ['normalized',['normalized',['../classhb_1_1Vector2d.html#accf3d8a175a4dc454ff7a10457c1b655',1,'hb::Vector2d::normalized()'],['../classhb_1_1Vector3d.html#a36e21ac2545bbc97b47aca34835bc21d',1,'hb::Vector3d::normalized()']]]
 ];

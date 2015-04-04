@@ -1,6 +1,7 @@
 var classhb_1_1Resource =
 [
     [ "Resource", "classhb_1_1Resource.html#abbc0ec7e3f01a46752407f658c9685e0", null ],
+    [ "Resource", "classhb_1_1Resource.html#ab2b8d0fd205d26fecef4441af2e4896b", null ],
     [ "Resource", "classhb_1_1Resource.html#a018416978b99aa83f96b19e9eb432918", null ],
     [ "~Resource", "classhb_1_1Resource.html#a0cc756bfb07900149167c3fac9e5f974", null ],
     [ "get", "classhb_1_1Resource.html#a1866d9c1e3e3ea59e36d04516fbbcee8", null ],

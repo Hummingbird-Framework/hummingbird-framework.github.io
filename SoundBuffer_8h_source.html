@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('SoundBuffer_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,24 +116,25 @@ $(document).ready(function(){initNavTree('SoundBuffer_8h_source.html','');});
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>(<span class="keyword">const</span> sf::SoundBuffer&amp; buffer, <span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>():<a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>(sf::SoundBuffer(), <span class="stringliteral">&quot;&quot;</span>){}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        ~<a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">static</span> <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a> loadFromFile(<span class="keyword">const</span> std::string&amp; path);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classhb_1_1Time.html">Time</a> getDuration() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    };</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classhb_1_1Resource_html"><div class="ttname"><a href="classhb_1_1Resource.html">hb::Resource</a></div><div class="ttdef"><b>Definition:</b> Resource.h:12</div></div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>(<span class="keyword">const</span> std::string&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>():<a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>(sf::SoundBuffer(), <span class="stringliteral">&quot;&quot;</span>){}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        ~<a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">static</span> <a class="code" href="classhb_1_1SoundBuffer.html">SoundBuffer</a> loadFromFile(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classhb_1_1Time.html">Time</a> getDuration() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    };</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classhb_1_1Resource_html"><div class="ttname"><a href="classhb_1_1Resource.html">hb::Resource</a></div><div class="ttdoc">Class representing a loaded resource. </div><div class="ttdef"><b>Definition:</b> Resource.h:16</div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Box2DPlugin.h:6</div></div>
 <div class="ttc" id="classhb_1_1SoundBuffer_html"><div class="ttname"><a href="classhb_1_1SoundBuffer.html">hb::SoundBuffer</a></div><div class="ttdef"><b>Definition:</b> SoundBuffer.h:13</div></div>
-<div class="ttc" id="classhb_1_1Time_html"><div class="ttname"><a href="classhb_1_1Time.html">hb::Time</a></div><div class="ttdef"><b>Definition:</b> Time.h:10</div></div>
+<div class="ttc" id="classhb_1_1Time_html"><div class="ttname"><a href="classhb_1_1Time.html">hb::Time</a></div><div class="ttdoc">Class for representing intervals of time. </div><div class="ttdef"><b>Definition:</b> Time.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c9d62fd513ce19bab3d7ef8db833e3f1.html">SFML</a></li><li class="navelem"><a class="el" href="dir_9e7812ef929956c40f0ec0fafa91b536.html">SFML</a></li><li class="navelem"><b>SoundBuffer.h</b></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

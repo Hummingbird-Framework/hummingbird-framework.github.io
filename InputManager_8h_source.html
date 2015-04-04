@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('InputManager_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('InputManager_8h_source.html','');});
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;SFML/Window.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../Core/EventManager.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../Core/MessageManager.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../Core/Game.h&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;Renderer.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
@@ -144,8 +144,8 @@ $(document).ready(function(){initNavTree('InputManager_8h_source.html','');});
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            x += Renderer::getWindow().getView().getCenter().x - Renderer::getWindow().getSize().x / 2;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            y += Renderer::getWindow().getView().getCenter().y - Renderer::getWindow().getSize().y / 2;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="classhb_1_1Vector3d.html">Vector3d</a> v = x * Renderer::getCamera().getInverseAxisX() + y * Renderer::getCamera().getInverseAxisY();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            x = v.x;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            y = v.y;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            x = v.<a class="code" href="classhb_1_1Vector3d.html#a8631e4c9f33a0eb927219dcf2dd8dc4d">x</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            y = v.<a class="code" href="classhb_1_1Vector3d.html#a128f40f7e80f8b8b6f7928ed25b80a06">y</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
@@ -217,7 +217,7 @@ $(document).ready(function(){initNavTree('InputManager_8h_source.html','');});
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        {}</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    };</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classhb_1_1InputManager.html">  118</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhb_1_1InputManager.html">InputManager</a> : <span class="keyword">public</span> <a class="code" href="classhb_1_1EventManager.html">hb::EventManager</a>&lt;MouseButtonWindow, MouseButtonWorld, KeyPressed, KeyReleased, JoyButtonPressed, JoyButtonReleased, JoyAxis, WindowResized&gt;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classhb_1_1InputManager.html">  118</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhb_1_1InputManager.html">InputManager</a> : <span class="keyword">public</span> <a class="code" href="classhb_1_1MessageManager.html">hb::MessageManager</a>&lt;MouseButtonWindow, MouseButtonWorld, KeyPressed, KeyReleased, JoyButtonPressed, JoyButtonReleased, JoyAxis, WindowResized&gt;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keyword">static</span> <a class="code" href="classhb_1_1InputManager.html">InputManager</a>* instance();</div>
@@ -233,16 +233,18 @@ $(document).ready(function(){initNavTree('InputManager_8h_source.html','');});
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="structhb_1_1JoyButtonReleased_html"><div class="ttname"><a href="structhb_1_1JoyButtonReleased.html">hb::JoyButtonReleased</a></div><div class="ttdef"><b>Definition:</b> InputManager.h:87</div></div>
+<div class="ttc" id="classhb_1_1MessageManager_html"><div class="ttname"><a href="classhb_1_1MessageManager.html">hb::MessageManager</a></div><div class="ttdoc">Generic message manager class.This class allows to define callbacks for a set of predefined events wi...</div><div class="ttdef"><b>Definition:</b> MessageManager.h:87</div></div>
 <div class="ttc" id="structhb_1_1KeyReleased_html"><div class="ttname"><a href="structhb_1_1KeyReleased.html">hb::KeyReleased</a></div><div class="ttdef"><b>Definition:</b> InputManager.h:63</div></div>
-<div class="ttc" id="classhb_1_1Vector3d_html"><div class="ttname"><a href="classhb_1_1Vector3d.html">hb::Vector3d</a></div><div class="ttdef"><b>Definition:</b> Vector3d.h:14</div></div>
+<div class="ttc" id="classhb_1_1Vector3d_html"><div class="ttname"><a href="classhb_1_1Vector3d.html">hb::Vector3d</a></div><div class="ttdoc">A 3D vector. </div><div class="ttdef"><b>Definition:</b> Vector3d.h:14</div></div>
 <div class="ttc" id="structhb_1_1KeyPressed_html"><div class="ttname"><a href="structhb_1_1KeyPressed.html">hb::KeyPressed</a></div><div class="ttdef"><b>Definition:</b> InputManager.h:50</div></div>
-<div class="ttc" id="classhb_1_1EventManager_html"><div class="ttname"><a href="classhb_1_1EventManager.html">hb::EventManager</a></div><div class="ttdef"><b>Definition:</b> EventManager.h:65</div></div>
 <div class="ttc" id="structhb_1_1JoyButtonPressed_html"><div class="ttname"><a href="structhb_1_1JoyButtonPressed.html">hb::JoyButtonPressed</a></div><div class="ttdef"><b>Definition:</b> InputManager.h:77</div></div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Box2DPlugin.h:6</div></div>
 <div class="ttc" id="structhb_1_1MouseButtonWindow_html"><div class="ttname"><a href="structhb_1_1MouseButtonWindow.html">hb::MouseButtonWindow</a></div><div class="ttdef"><b>Definition:</b> InputManager.h:22</div></div>
 <div class="ttc" id="structhb_1_1JoyAxis_html"><div class="ttname"><a href="structhb_1_1JoyAxis.html">hb::JoyAxis</a></div><div class="ttdef"><b>Definition:</b> InputManager.h:97</div></div>
+<div class="ttc" id="classhb_1_1Vector3d_html_a128f40f7e80f8b8b6f7928ed25b80a06"><div class="ttname"><a href="classhb_1_1Vector3d.html#a128f40f7e80f8b8b6f7928ed25b80a06">hb::Vector3d::y</a></div><div class="ttdeci">double y</div><div class="ttdoc">y component of the vector. </div><div class="ttdef"><b>Definition:</b> Vector3d.h:18</div></div>
 <div class="ttc" id="structhb_1_1MouseButtonWorld_html"><div class="ttname"><a href="structhb_1_1MouseButtonWorld.html">hb::MouseButtonWorld</a></div><div class="ttdef"><b>Definition:</b> InputManager.h:33</div></div>
 <div class="ttc" id="structhb_1_1WindowResized_html"><div class="ttname"><a href="structhb_1_1WindowResized.html">hb::WindowResized</a></div><div class="ttdef"><b>Definition:</b> InputManager.h:109</div></div>
+<div class="ttc" id="classhb_1_1Vector3d_html_a8631e4c9f33a0eb927219dcf2dd8dc4d"><div class="ttname"><a href="classhb_1_1Vector3d.html#a8631e4c9f33a0eb927219dcf2dd8dc4d">hb::Vector3d::x</a></div><div class="ttdeci">double x</div><div class="ttdoc">x component of the vector. </div><div class="ttdef"><b>Definition:</b> Vector3d.h:17</div></div>
 <div class="ttc" id="classhb_1_1InputManager_html"><div class="ttname"><a href="classhb_1_1InputManager.html">hb::InputManager</a></div><div class="ttdef"><b>Definition:</b> InputManager.h:118</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -250,7 +252,7 @@ $(document).ready(function(){initNavTree('InputManager_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c9d62fd513ce19bab3d7ef8db833e3f1.html">SFML</a></li><li class="navelem"><a class="el" href="dir_9e7812ef929956c40f0ec0fafa91b536.html">SFML</a></li><li class="navelem"><b>InputManager.h</b></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

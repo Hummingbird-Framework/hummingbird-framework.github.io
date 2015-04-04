@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('Plugin_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,33 +112,35 @@ $(document).ready(function(){initNavTree('Plugin_8h_source.html','');});
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehb.html">hb</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classhb_1_1Plugin.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhb_1_1Plugin.html">Plugin</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classhb_1_1Plugin.html">Plugin</a>(){};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classhb_1_1Plugin.html">Plugin</a>(){};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classhb_1_1GameObject_1_1Component.html">GameObject::Component</a>* (*ComponentFactory)(std::map&lt;std::string, std::string&gt;&amp;, int);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">virtual</span> std::map&lt;std::string, ComponentFactory&gt; getComponentFactory()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">        </span>{<span class="keywordflow">return</span> std::map&lt;std::string, ComponentFactory&gt;();};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> gameStart(){};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> preUpdate(){};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> postUpdate(){};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> gameEnd(){};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    };</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> CollisionComponent.h:9</div></div>
-<div class="ttc" id="classhb_1_1GameObject_1_1Component_html"><div class="ttname"><a href="classhb_1_1GameObject_1_1Component.html">hb::GameObject::Component</a></div><div class="ttdef"><b>Definition:</b> GameObject.h:22</div></div>
-<div class="ttc" id="classhb_1_1Plugin_html"><div class="ttname"><a href="classhb_1_1Plugin.html">hb::Plugin</a></div><div class="ttdef"><b>Definition:</b> Plugin.h:13</div></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classhb_1_1Plugin.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhb_1_1Plugin.html">Plugin</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classhb_1_1Plugin.html#ab7b831c869fef08c1717c2c55c7b4dfd">   20</a></span>&#160;        <a class="code" href="classhb_1_1Plugin.html#ab7b831c869fef08c1717c2c55c7b4dfd">Plugin</a>(){};</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classhb_1_1Plugin.html#aa28c3a588399d4225bfa88af5446b192">   24</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classhb_1_1Plugin.html#aa28c3a588399d4225bfa88af5446b192">~Plugin</a>(){};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classhb_1_1Plugin.html#adc73d8b72ad12047aa287d7667fcdfa6">   29</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhb_1_1Plugin.html#adc73d8b72ad12047aa287d7667fcdfa6">gameStart</a>(){};</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classhb_1_1Plugin.html#ad3f4efcc4f93db5aae18a7f8cf22c145">   33</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhb_1_1Plugin.html#ad3f4efcc4f93db5aae18a7f8cf22c145">preUpdate</a>(){};</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classhb_1_1Plugin.html#aa2bac682d7b94adc65312741db703d92">   37</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhb_1_1Plugin.html#aa2bac682d7b94adc65312741db703d92">postUpdate</a>(){};</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classhb_1_1Plugin.html#afe9be4cb388e7d69d7deb7709581be9f">   41</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhb_1_1Plugin.html#afe9be4cb388e7d69d7deb7709581be9f">gameEnd</a>(){};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    };</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classhb_1_1Plugin_html_ad3f4efcc4f93db5aae18a7f8cf22c145"><div class="ttname"><a href="classhb_1_1Plugin.html#ad3f4efcc4f93db5aae18a7f8cf22c145">hb::Plugin::preUpdate</a></div><div class="ttdeci">virtual void preUpdate()</div><div class="ttdoc">Function executed before updating the GameObjects. </div><div class="ttdef"><b>Definition:</b> Plugin.h:33</div></div>
+<div class="ttc" id="classhb_1_1Plugin_html_afe9be4cb388e7d69d7deb7709581be9f"><div class="ttname"><a href="classhb_1_1Plugin.html#afe9be4cb388e7d69d7deb7709581be9f">hb::Plugin::gameEnd</a></div><div class="ttdeci">virtual void gameEnd()</div><div class="ttdoc">Function executed after exiting the gameloop. </div><div class="ttdef"><b>Definition:</b> Plugin.h:41</div></div>
+<div class="ttc" id="classhb_1_1Plugin_html_aa28c3a588399d4225bfa88af5446b192"><div class="ttname"><a href="classhb_1_1Plugin.html#aa28c3a588399d4225bfa88af5446b192">hb::Plugin::~Plugin</a></div><div class="ttdeci">virtual ~Plugin()</div><div class="ttdoc">Class destructor. </div><div class="ttdef"><b>Definition:</b> Plugin.h:24</div></div>
+<div class="ttc" id="classhb_1_1Plugin_html_ab7b831c869fef08c1717c2c55c7b4dfd"><div class="ttname"><a href="classhb_1_1Plugin.html#ab7b831c869fef08c1717c2c55c7b4dfd">hb::Plugin::Plugin</a></div><div class="ttdeci">Plugin()</div><div class="ttdoc">Class constructor. </div><div class="ttdef"><b>Definition:</b> Plugin.h:20</div></div>
+<div class="ttc" id="namespacehb_html"><div class="ttname"><a href="namespacehb.html">hb</a></div><div class="ttdef"><b>Definition:</b> Box2DPlugin.h:6</div></div>
+<div class="ttc" id="classhb_1_1Plugin_html_aa2bac682d7b94adc65312741db703d92"><div class="ttname"><a href="classhb_1_1Plugin.html#aa2bac682d7b94adc65312741db703d92">hb::Plugin::postUpdate</a></div><div class="ttdeci">virtual void postUpdate()</div><div class="ttdoc">Function executed after updating the GameObjects. </div><div class="ttdef"><b>Definition:</b> Plugin.h:37</div></div>
+<div class="ttc" id="classhb_1_1Plugin_html_adc73d8b72ad12047aa287d7667fcdfa6"><div class="ttname"><a href="classhb_1_1Plugin.html#adc73d8b72ad12047aa287d7667fcdfa6">hb::Plugin::gameStart</a></div><div class="ttdeci">virtual void gameStart()</div><div class="ttdoc">Function executed just before entering the gameloop. </div><div class="ttdef"><b>Definition:</b> Plugin.h:29</div></div>
+<div class="ttc" id="classhb_1_1Plugin_html"><div class="ttname"><a href="classhb_1_1Plugin.html">hb::Plugin</a></div><div class="ttdoc">Base class for implementing custom Plugins. </div><div class="ttdef"><b>Definition:</b> Plugin.h:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_dedefa15ca1a139218af74091b4b5d5f.html">Core</a></li><li class="navelem"><b>Plugin.h</b></li>
-    <li class="footer">Generated on Tue Mar 31 2015 17:09:53 for Hummingbird Framework by
+    <li class="footer">Generated on Sat Apr 4 2015 15:01:46 for Hummingbird Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>
